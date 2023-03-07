@@ -1,5 +1,5 @@
 import java.io.*;
-import java.util.ArrayList;
+import java.util.Scanner; // Import the Scanner class to read text files
 
 public class Dizionario {
     private String parola;
@@ -17,33 +17,21 @@ public class Dizionario {
     }
 
     public void Trovaparola(String p){
-        FileReader f;
-        try {
-            f=new FileReader("660000_parole_italiane.txt");
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-
-        BufferedReader b;
-        b=new BufferedReader(f);
-
-        String parolaDizionario;
 
         try {
-            while(true) {
-                parolaDizionario = b.readLine();
-                if (parolaDizionario == null) {
-                    break;
-                } else {
-                    if (true) {
-                        System.out.println(parolaDizionario);
-                    }
-                }
-
+            File myObj = new File("dictionary.txt");
+            Scanner myReader = new Scanner(myObj);
+            while (myReader.hasNextLine()) {
+                String data = myReader.nextLine();
+               // if(p.equals(data)){}
+                System.out.println(data);
 
             }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+                myReader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
         }
+
     }
 }

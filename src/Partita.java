@@ -5,7 +5,7 @@ public class Partita {
 
     //costruttore
     public Partita(Utente u){
-        this.Utente = utente;
+        this.utente = utente;
         this.puntiTotali = 0;
         this.parolaMigliore = null;
     }
