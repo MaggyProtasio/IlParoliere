@@ -16,22 +16,26 @@ public class Dizionario {
         this.parola = parola;
     }
 
-    public void Trovaparola(String p){
-
+    public boolean trovaParola(String p){
+        boolean b = false;
+        p = "abati";
         try {
-            File myObj = new File("dictionary.txt");
-            Scanner myReader = new Scanner(myObj);
-            while (myReader.hasNextLine()) {
-                String data = myReader.nextLine();
-               // if(p.equals(data)){}
-                System.out.println(data);
-
+            String filePath = "src/dictionary.txt"; // filename and Main.java are in the same folder
+            BufferedReader reader = new BufferedReader(new FileReader(filePath));
+            String line = reader.readLine();
+            while (line != null) {
+                if(p.equals(line)){
+                    System.out.println(line+"-----");
+                    b = true;
+                    break;
+                }
+                line = reader.readLine();
             }
-                myReader.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
+            System.out.println("FINE");
+            reader.close();
+        } catch (IOException e) {
             e.printStackTrace();
         }
-
+        return b;
     }
 }
