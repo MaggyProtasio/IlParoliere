@@ -10,12 +10,21 @@ public class Main {
 
         System.out.println("Benvenuto nel paroliere!");
         System.out.println("Inserisci il nickname");
-        nickname=in.nextLine();
-
-        //creo giocatore + scelta nickname (inserito da utente in precedenza)
+        nickname = in.nextLine();
         Utente giocatore = new Utente(nickname);
+        Partita partita = new Partita(giocatore);
 
-        System.out.println(giocatore.getNickname());
+        System.out.println("Inzia giocare!");
+        //inzio la partita
+        String parolaInserita = "";
+        for(int i = 1; i <= 5; i++){
+
+            System.out.println("Parola " + i + " \nInserisci una parola");
+            parolaInserita = in.nextLine();
+
+
+        }
+
 
 
     }
