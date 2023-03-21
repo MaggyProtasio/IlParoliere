@@ -1,8 +1,13 @@
+import java.util.Iterator;
+import java.util.Vector;
+
 public class Partita {
     public int puntiTotali;
     public Utente utente;
     public String parolaMigliore;
     public int parolaNum;
+
+    Vector<String> paroleArray= new Vector<>();
 
     //costruttore
     public Partita(Utente u){
@@ -44,12 +49,22 @@ public class Partita {
         int punti = lunghezzaParola * k;
         puntiTotali = puntiTotali + punti;
     }
-    public boolean controllaParolaMigliore(String parola){
-        if(parola.length() > parolaMigliore.length()){
-            parolaMigliore = parola;
-            return true;
-        }else{
-            return false;
+    public void controllaParolaMigliore(String parola) {
+        String best = "";
+        Iterator<String> i = paroleArray.iterator();
+        while (i.hasNext()) {
+            String parolatmp = i.next();
+            System.out.println(parolatmp.length());
+            System.out.println(parola.length());
+            if (parolatmp.length() < parola.length()) {
+                if(best.length() < parola.length()){
+
+                }
+                //per trovare la parola piu lunga
+                best = parola;
+                setParolaMigliore(best);
+                System.out.println(best);
+            }
         }
     }
 
@@ -57,13 +72,12 @@ public class Partita {
         int lunghezzaParola = parola.length();
         int k = 100;            //costante
         int punti = lunghezzaParola * k;
+        paroleArray.add(parola);
         return punti;
     }
 
     public void contaParola(){
         parolaNum++;
     }
-
-
 
 }
