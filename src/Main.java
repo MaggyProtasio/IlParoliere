@@ -1,30 +1,21 @@
 import java.io.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hello world!");
-        System.out.println(System.getProperty("user.dir"));
-        boolean b = false;
-        String p = "abaco";
-        try {
-            String filePath = "src/dictionary.txt"; // filename and Main.java are in the same folder
-            BufferedReader reader = new BufferedReader(new FileReader(filePath));
-            String line = reader.readLine();
-            while (line != null) {
-                if(p.equals(line)){
-                    System.out.println(line+"-----");
-                    b = true;
-                    break;
-                }
-                line = reader.readLine();
-            }
-            System.out.println("FINE");
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        //per iserimento dati
+        Scanner in = new Scanner(System.in);
+        String nickname;
 
+        System.out.println("Benvenuto nel paroliere!");
+        System.out.println("Inserisci il nickname");
+        nickname=in.nextLine();
+
+        //creo giocatore + scelta nickname (inserito da utente in precedenza)
+        Utente giocatore = new Utente(nickname);
+
+        System.out.println(giocatore.getNickname());
 
 
     }
