@@ -2,6 +2,7 @@ public class Partita {
     public int puntiTotali;
     public Utente utente;
     public String parolaMigliore;
+    public int parolaNum;
 
     //costruttore
     public Partita(Utente u){
@@ -29,9 +30,16 @@ public class Partita {
     public void setParolaMigliore(String parolaMigliore) {
         this.parolaMigliore = parolaMigliore;
     }
+    public int getParolaNum() {
+        return parolaNum;
+    }
+    public void setParolaNum(int parolaNum) {
+        this.parolaNum = parolaNum;
+    }
 
     //metodi
-    public void aggiungiPunti(int lunghezzaParola){
+    public void aggiungiPunti(String parola){
+        int lunghezzaParola = parola.length();
         int k = 100;            //costante
         int punti = lunghezzaParola * k;
         puntiTotali = puntiTotali + punti;
@@ -43,6 +51,17 @@ public class Partita {
         }else{
             return false;
         }
+    }
+
+    public int puntiParola(String parola){
+        int lunghezzaParola = parola.length();
+        int k = 100;            //costante
+        int punti = lunghezzaParola * k;
+        return punti;
+    }
+
+    public void contaParola(){
+        parolaNum++;
     }
 
 
