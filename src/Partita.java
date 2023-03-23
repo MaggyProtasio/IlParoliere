@@ -49,23 +49,30 @@ public class Partita {
         int punti = lunghezzaParola * k;
         puntiTotali = puntiTotali + punti;
     }
-    public void controllaParolaMigliore(String parola) {
+    public boolean controllaParolaMigliore() {
         String best = "";
+        boolean unique = true;
         Iterator<String> i = paroleArray.iterator();
+        Iterator<String> n = paroleArray.iterator();
         while (i.hasNext()) {
-            String parolatmp = i.next();
-            System.out.println(parolatmp.length());
-            System.out.println(parola.length());
-            if (parolatmp.length() < parola.length()) {
-                if(best.length() < parola.length()){
-
+            String parolai = i.next();
+            System.out.println(parolai.length());
+            while(n.hasNext()){
+                String parolan = n.next();
+                if (parolai.length() < parolan.length()) {
+                    if(best.length() < parolan.length()){
+                        if(best.length() == parolan.length()){
+                            unique = false;
+                        }
+                        //per trovare la parola piu lunga
+                        best = parolan;
+                        System.out.println("Best---"+best);
+                    }
                 }
-                //per trovare la parola piu lunga
-                best = parola;
-                setParolaMigliore(best);
-                System.out.println(best);
             }
         }
+        setParolaMigliore(best);
+        return unique;
     }
 
     public int puntiParola(String parola){

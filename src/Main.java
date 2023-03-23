@@ -31,7 +31,6 @@ public class Main {
                 System.out.println("Punti della parola: "+partita.puntiParola(parolaInserita));
                 //contatore
                 partita.contaParola();
-                partita.controllaParolaMigliore(parolaInserita);
             }else{
                 System.out.println("Questa parola non esiste nel dizionario >:(");
             }
@@ -39,6 +38,11 @@ public class Main {
         }while(i < 5);
         System.out.println("Punti della parita: "+partita.getPuntiTotali());
         System.out.println("Parole trovate: "+partita.getParolaNum());
-        System.out.println("Parola migliore: "+partita.getParolaMigliore());
+        if(partita.controllaParolaMigliore()){
+            System.out.println("Parola migliore: "+partita.getParolaMigliore());
+        }else{
+            //da sistemare per fare array di alice??
+            System.out.println("Hai diverse parole migliori");
+        }
     }
 }
