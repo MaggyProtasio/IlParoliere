@@ -4,22 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment=":add Dizionario obj, sistemato partita, manca parolaMigliore">
+    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="Creazione Utente">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_23__12_16__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_23__12_16__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Partita.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,7 +32,6 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/Nastya/IdeaProjects/IlParoliere&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -46,11 +39,6 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,59 +48,39 @@
       <option name="presentableId" value="Default" />
       <updated>1678184607277</updated>
       <workItem from="1678184608473" duration="1000" />
-      <workItem from="1678185005684" duration="1221000" />
-      <workItem from="1678188292233" duration="1901000" />
-      <workItem from="1679567791335" duration="2622000" />
+      <workItem from="1678184953155" duration="667000" />
+      <workItem from="1679391089464" duration="4206000" />
+      <workItem from="1679567902632" duration="64000" />
+      <workItem from="1679567983383" duration="1234000" />
+      <workItem from="1679996166363" duration="95000" />
+      <workItem from="1679996410242" duration="3028000" />
     </task>
-    <task id="LOCAL-00001" summary=":add user and dizionari">
-      <created>1678188079722</created>
+    <task id="LOCAL-00001" summary="Creazione Utente">
+      <created>1679392748872</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1678188079722</updated>
+      <updated>1679392748872</updated>
     </task>
-    <task id="LOCAL-00002" summary=":add user and dizionari">
-      <created>1678188096489</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1678188096489</updated>
-    </task>
-    <task id="LOCAL-00003" summary=":rename file to dictionary.txt">
-      <created>1678189356605</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1678189356605</updated>
-    </task>
-    <task id="LOCAL-00004" summary=": ADD ciclo for e iniziato il gioco">
-      <created>1679392892862</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1679392892862</updated>
-    </task>
-    <task id="LOCAL-00005" summary=":add Dizionario obj, sistemato partita, manca parolaMigliore">
-      <created>1679397101138</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1679397101138</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value=":add user and dizionari" />
-    <MESSAGE value=":rename file to dictionary.txt" />
-    <MESSAGE value=": ADD ciclo for e iniziato il gioco" />
-    <MESSAGE value=":add Dizionario obj, sistemato partita, manca parolaMigliore" />
-    <option name="LAST_COMMIT_MESSAGE" value=":add Dizionario obj, sistemato partita, manca parolaMigliore" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1678185044864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creazione Utente" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creazione Utente" />
   </component>
 </project>

@@ -1,4 +1,5 @@
 import java.util.Iterator;
+import java.util.Random;
 import java.util.Vector;
 
 public class Partita {
@@ -18,15 +19,18 @@ public class Partita {
 
     // getter e setter
     public int getPuntiTotali() {
+
         return puntiTotali;
     }
     public void setPuntiTotali(int puntiTotali) {
         this.puntiTotali = puntiTotali;
     }
     public Utente getUtente() {
+
         return utente;
     }
     public void setUtente(Utente utente) {
+
         this.utente = utente;
     }
     public String getParolaMigliore() {
@@ -52,8 +56,8 @@ public class Partita {
     public boolean controllaParolaMigliore() {
         String best = "";
         boolean unique = true;
-        Iterator<String> i = paroleArray.iterator();
-        Iterator<String> n = paroleArray.iterator();
+        Iterator<String> i = paroleArray.iterator(); //parola prima
+        Iterator<String> n = paroleArray.iterator(); //parola seconda
         while (i.hasNext()) {
             String parolai = i.next();
             System.out.println(parolai.length());
@@ -63,6 +67,11 @@ public class Partita {
                     if(best.length() < parolan.length()){
                         if(best.length() == parolan.length()){
                             unique = false;
+                            int bestRandom;
+                            Random random = new Random();  // crea oggetto Random
+                            bestRandom = random.nextInt(parolaNum); //genero un numero random da 0 a parolaNum
+                            best=paroleArray.get(parolaNum);
+                            System.out.println("best è: "+best);
                         }
                         //per trovare la parola piu lunga
                         best = parolan;
@@ -74,6 +83,7 @@ public class Partita {
         setParolaMigliore(best);
         return unique;
     }
+
 
     public int puntiParola(String parola){
         int lunghezzaParola = parola.length();
