@@ -1,47 +1,48 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-import java.awt.EventQueue;
-
-public class StartPage {
-    private JPanel panel1;
+public class StartPage extends JFrame {
+    private JPanel panelMain;
     private JButton startButton;
     private JLabel image;
+    private JTextField nomeBox;
+    private JPanel panelNome;
     JFrame frameStartPage;
 
-    //run application
-    public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                try {
-                    StartPage window = new StartPage();
-                    window.frameStartPage.setVisible(true);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+    //costruttore
+    public StartPage(){
+        //intialize();
+        startButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(startButton, "Hello " + nomeBox.getText() );
             }
         });
     }
 
     //costruttore
-    public StartPage(){
-        intialize();
+    public static void main(String[] args) {
+        StartPage s = new StartPage();
+        s.setResizable(false);
+        s.setContentPane(s.panelMain);
+        s.setTitle("Start");
+        s.setSize(760,510);
+        s.setLocationRelativeTo(null);
+        s.setVisible(true);
+        s.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     private void intialize(){
         frameStartPage = new JFrame();
-        frameStartPage.setResizable(false);
         frameStartPage.setBounds(100, 100, 795, 395);
         frameStartPage.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        panel1 = new JPanel(); // initialize panel1
-        frameStartPage.getContentPane().add(panel1); // add panel1 to the content pane
-        panel1.setLayout(null); // set the layout manager of panel1 to null
+        panelMain = new JPanel(); // initialize panel1
+        frameStartPage.getContentPane().add(panelMain); // add panel1 to the content pane
+        panelMain.setLayout(null); // set the layout manager of panel1 to null
     }
 
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-
-    }
 
 
 }
