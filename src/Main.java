@@ -1,8 +1,20 @@
+import java.awt.*;
 import java.io.*;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    StartPage window = new StartPage();
+                    window.frameStartPage.setVisible(true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
         //Oggetti e variabili
         Dizionario diz = new Dizionario();
