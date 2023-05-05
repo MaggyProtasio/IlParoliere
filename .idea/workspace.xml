@@ -9,8 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="DELETE: file logoEs.png">
-      <change beforePath="$PROJECT_DIR$/src/img/Logo.PNG" beforeDir="false" />
+    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: file Logo.png">
+      <changelist_data name="alice" email="alice.minuzzo@edu.cobianchi.it" date="1683303964000" />
+      <change beforePath="$PROJECT_DIR$/src/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -129,7 +136,7 @@
       <workItem from="1684693907762" duration="1542000" />
       <workItem from="1684695480728" duration="954000" />
       <workItem from="1684751397385" duration="93000" />
-      <workItem from="1684763433379" duration="1149000" />
+      <workItem from="1684763433379" duration="2183000" />
     </task>
     <task id="LOCAL-00001" summary=":add user and dizionari">
       <created>1678188079722</created>
@@ -341,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684764543250</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="FIX: file Logo.png">
+      <created>1684764735062</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1684764735062</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +376,19 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="icona" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -372,6 +398,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="icona" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="origin/master" />
@@ -389,7 +420,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":rename file to dictionary.txt" />
     <MESSAGE value=": ADD ciclo for e iniziato il gioco" />
     <MESSAGE value=":add Dizionario obj, sistemato partita, manca parolaMigliore" />
     <MESSAGE value=":sistemazione parolamigliore" />
@@ -414,7 +444,8 @@
     <MESSAGE value="ADD:codice per icona in MenuPage, ResultPage, SpecialMode, StartPage" />
     <MESSAGE value="ADD:Copyright" />
     <MESSAGE value="DELETE: file logoEs.png" />
-    <option name="LAST_COMMIT_MESSAGE" value="DELETE: file logoEs.png" />
+    <MESSAGE value="FIX: file Logo.png" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX: file Logo.png" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683812690821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

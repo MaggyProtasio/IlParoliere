@@ -11,7 +11,6 @@ import java.io.IOException;
  *
  * This file is part of the WordCraft project.
  */
-
 public class StartPage extends JFrame {
     private JPanel panelMain;
     private JButton startButton;
