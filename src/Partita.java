@@ -89,4 +89,20 @@ public class Partita {
         }
         return d;
     }
+
+    /***************************************************************/
+    //funzione che inizializza il tabellone di gioco
+    public void InizializzaTabellone(){
+        char[][] tabellone = new char[6][6];
+        char[] lettere = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+                'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                int index = (int) (Math.random() * lettere.length);
+                tabellone[i][j] = lettere[index];
+            }
+        }
+    }
+
 }
