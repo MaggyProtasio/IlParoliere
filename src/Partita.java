@@ -57,7 +57,7 @@ public class Partita {
         Iterator<String> n = paroleArray.iterator();
         while (i.hasNext()) {
             String parolai = i.next();
-            System.out.println(parolai.length());
+           //System.out.println(parolai.length());
             while(n.hasNext()){
                 String parolan = n.next();
                 if (parolai.length() < parolan.length()) {
