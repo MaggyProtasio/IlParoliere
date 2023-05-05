@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Vector;
 
@@ -63,6 +64,7 @@ public class Partita {
                     if(best.length() < parolan.length()){
                         if(best.length() == parolan.length()){
                             unique = false;
+
                         }
                         //per trovare la parola piu lunga
                         best = parolan;
@@ -86,5 +88,45 @@ public class Partita {
     public void contaParola(){
         parolaNum++;
     }
+
+    public boolean doppione(String parolaInserita){
+        System.out.println("hello da doppione");
+        boolean d = false; //doppione
+        int size = paroleArray.size(); //grandezza array
+        for(int x=0; x<size; x++){ //ciclo vettore grande
+            if(parolaInserita.equals(paroleArray.get(x))){
+                d = true;
+            }
+        }
+        return d;
+    }
+
+    public boolean findDuplicates() {
+        boolean d = false; //doppione
+        Vector<String> duplicates = new Vector<String>();
+        if(paroleArray.size() == 2){
+            d = paroleArray.get(0).equals(paroleArray.get(1));
+            System.out.println(d);
+        }
+        for (int i = 0; i < paroleArray.size() - 1; i++) {
+            for (int j = i+1; j < paroleArray.size(); j++) {
+                if (paroleArray.get(i).equals(paroleArray.get(j))) {
+                    if (!duplicates.contains(paroleArray.get(i))) {
+                        duplicates.add(paroleArray.get(i));
+                        d = true;
+                    }
+                    if (!duplicates.contains(paroleArray.get(j))) {
+                        duplicates.add(paroleArray.get(j));
+                        d = true;
+                    }
+                    //d = true;
+                    break;
+                }
+            }
+        }
+        return d;
+    }
+
+
 
 }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment=":add Dizionario obj, sistemato partita, manca parolaMigliore">
+    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment=":sistemazione parolamigliore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Partita.java" afterDir="false" />
@@ -62,7 +62,13 @@
       <workItem from="1678184608473" duration="1000" />
       <workItem from="1678185005684" duration="1221000" />
       <workItem from="1678188292233" duration="1901000" />
-      <workItem from="1679567791335" duration="2622000" />
+      <workItem from="1679567791335" duration="2677000" />
+      <workItem from="1679996146394" duration="3802000" />
+      <workItem from="1680601684537" duration="1782000" />
+      <workItem from="1681810082945" duration="575000" />
+      <workItem from="1681810667700" duration="1221000" />
+      <workItem from="1683020363813" duration="2223000" />
+      <workItem from="1683023042829" duration="561000" />
     </task>
     <task id="LOCAL-00001" summary=":add user and dizionari">
       <created>1678188079722</created>
@@ -99,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679397101138</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=":sistemazione parolamigliore">
+      <created>1679570450866</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679570450866</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,7 +123,8 @@
     <MESSAGE value=":rename file to dictionary.txt" />
     <MESSAGE value=": ADD ciclo for e iniziato il gioco" />
     <MESSAGE value=":add Dizionario obj, sistemato partita, manca parolaMigliore" />
-    <option name="LAST_COMMIT_MESSAGE" value=":add Dizionario obj, sistemato partita, manca parolaMigliore" />
+    <MESSAGE value=":sistemazione parolamigliore" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sistemazione parolamigliore" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1678185044864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
