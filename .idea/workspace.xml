@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment=":sistemazione parolamigliore">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment=":sistemazione funzione doppione">
       <change beforePath="$PROJECT_DIR$/src/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Partita.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +67,7 @@
       <workItem from="1681810667700" duration="1221000" />
       <workItem from="1683020363813" duration="2223000" />
       <workItem from="1683023042829" duration="561000" />
+      <workItem from="1683297457506" duration="225000" />
     </task>
     <task id="LOCAL-00001" summary=":add user and dizionari">
       <created>1678188079722</created>
@@ -112,7 +111,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679570450866</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=":sistemazione funzione doppione">
+      <created>1683297492858</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683297492858</updated>
+    </task>
+    <task id="LOCAL-00008" summary=":sistemazione funzione doppione">
+      <created>1683297535598</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683297535598</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +137,8 @@
     <MESSAGE value=": ADD ciclo for e iniziato il gioco" />
     <MESSAGE value=":add Dizionario obj, sistemato partita, manca parolaMigliore" />
     <MESSAGE value=":sistemazione parolamigliore" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sistemazione parolamigliore" />
+    <MESSAGE value=":sistemazione funzione doppione" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sistemazione funzione doppione" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1678185044864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

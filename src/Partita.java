@@ -90,7 +90,6 @@ public class Partita {
     }
 
     public boolean doppione(String parolaInserita){
-        System.out.println("hello da doppione");
         boolean d = false; //doppione
         int size = paroleArray.size(); //grandezza array
         for(int x=0; x<size; x++){ //ciclo vettore grande
