@@ -44,11 +44,8 @@ public class Main {
         }while(i < 5);
         System.out.println("Punti della parita: "+partita.getPuntiTotali());
         System.out.println("Parole trovate: "+partita.getParolaNum());
-        if(partita.controllaParolaMigliore()){
-            System.out.println("Parola migliore: "+partita.getParolaMigliore());
-        }else{
-            //da sistemare per fare array di alice??
-            System.out.println("Hai diverse parole migliori");
-        }
+        //stampa la prima parola inserita migliore
+        partita.controllaParolaMigliore();
+        System.out.println("Parola migliore: "+partita.getParolaMigliore());
     }
 }
