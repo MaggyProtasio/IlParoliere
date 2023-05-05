@@ -33,5 +33,4 @@ public class StartPage extends JFrame {
         s.setVisible(true);
         s.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-
 }
