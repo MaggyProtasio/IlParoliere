@@ -54,23 +54,13 @@ public class Partita {
         String best = "";
         boolean unique = true;
         Iterator<String> i = paroleArray.iterator();
-        Iterator<String> n = paroleArray.iterator();
         while (i.hasNext()) {
-            String parolai = i.next();
-           //System.out.println(parolai.length());
-            while(n.hasNext()){
-                String parolan = n.next();
-                if (parolai.length() < parolan.length()) {
-                    if(best.length() < parolan.length()){
-                        if(best.length() == parolan.length()){
-                            unique = false;
-
-                        }
-                        //per trovare la parola piu lunga
-                        best = parolan;
-                        System.out.println("Best---"+best);
-                    }
-                }
+            String parola = i.next();
+            if (parola.length() > best.length()) {
+                best = parola;
+                unique = true;
+            } else if (parola.length() == best.length() && !parola.equals(best)) {
+                unique = false;
             }
         }
         setParolaMigliore(best);
@@ -99,33 +89,4 @@ public class Partita {
         }
         return d;
     }
-
-   /* public boolean findDuplicates() {
-        boolean d = false; //doppione
-        Vector<String> duplicates = new Vector<String>();
-        if(paroleArray.size() == 2){
-            d = paroleArray.get(0).equals(paroleArray.get(1));
-            System.out.println(d);
-        }
-        for (int i = 0; i < paroleArray.size() - 1; i++) {
-            for (int j = i+1; j < paroleArray.size(); j++) {
-                if (paroleArray.get(i).equals(paroleArray.get(j))) {
-                    if (!duplicates.contains(paroleArray.get(i))) {
-                        duplicates.add(paroleArray.get(i));
-                        d = true;
-                    }
-                    if (!duplicates.contains(paroleArray.get(j))) {
-                        duplicates.add(paroleArray.get(j));
-                        d = true;
-                    }
-                    //d = true;
-                    break;
-                }
-            }
-        }
-        return d;
-    }*/
-
-
-
 }
