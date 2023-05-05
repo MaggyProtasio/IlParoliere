@@ -1,8 +1,10 @@
+import java.awt.*;
 import java.io.*;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
 
         //Oggetti e variabili
         Dizionario diz = new Dizionario();
@@ -26,11 +28,15 @@ public class Main {
             parolaInserita = in.nextLine();
             //trova parola
             if(diz.trovaParola(parolaInserita)){
-                System.out.println("Parola trovata nel dizionario!");
-                partita.aggiungiPunti(parolaInserita);
-                System.out.println("Punti della parola: "+partita.puntiParola(parolaInserita));
-                //contatore
-                partita.contaParola();
+                    if(partita.doppione(parolaInserita) == false){
+                        System.out.println("Parola trovata nel dizionario!");
+                        partita.aggiungiPunti(parolaInserita);
+                        System.out.println("Punti della parola: "+partita.puntiParola(parolaInserita));
+                        //contatore
+                        partita.contaParola();
+                    }else{
+                        System.out.println("Hai già inserito questa parola >:(");
+                    }
             }else{
                 System.out.println("Questa parola non esiste nel dizionario >:(");
             }
