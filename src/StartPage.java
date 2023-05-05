@@ -12,11 +12,12 @@ public class StartPage extends JFrame {
 
     //costruttore
     public StartPage(){
-        //intialize();
         startButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(startButton, "Hello " + nomeBox.getText() );
+                MenuPage m = new MenuPage();
+                m.setVisible(true);
+                dispose();
             }
         });
     }
@@ -32,17 +33,5 @@ public class StartPage extends JFrame {
         s.setVisible(true);
         s.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-
-    private void intialize(){
-        frameStartPage = new JFrame();
-        frameStartPage.setBounds(100, 100, 795, 395);
-        frameStartPage.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        panelMain = new JPanel(); // initialize panel1
-        frameStartPage.getContentPane().add(panelMain); // add panel1 to the content pane
-        panelMain.setLayout(null); // set the layout manager of panel1 to null
-    }
-
-
 
 }
