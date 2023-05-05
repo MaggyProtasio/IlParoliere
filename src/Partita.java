@@ -100,7 +100,7 @@ public class Partita {
         return d;
     }
 
-    public boolean findDuplicates() {
+   /* public boolean findDuplicates() {
         boolean d = false; //doppione
         Vector<String> duplicates = new Vector<String>();
         if(paroleArray.size() == 2){
@@ -124,7 +124,7 @@ public class Partita {
             }
         }
         return d;
-    }
+    }*/
 
 
 
