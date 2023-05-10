@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="ADD: Created Menu GUI page and Classico Game GUI. Connected them">
-      <change beforePath="$PROJECT_DIR$/src/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Partita.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +77,8 @@
       <workItem from="1683020363813" duration="2223000" />
       <workItem from="1683023042829" duration="561000" />
       <workItem from="1683297457506" duration="225000" />
+      <workItem from="1683716109530" duration="274000" />
+      <workItem from="1683748303812" duration="4256000" />
     </task>
     <task id="LOCAL-00001" summary=":add user and dizionari">
       <created>1678188079722</created>
@@ -139,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683308242016</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ADD: Created Menu GUI page and Classico Game GUI. Connected them">
+      <created>1683308426433</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683308426433</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +178,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="ADD: Created Menu GUI page and Classico Game GUI. Connected them" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683298229438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683752900482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/IlParoliere$StartPage.ic" NAME="StartPage Coverage Results" MODIFIED="1683308106935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

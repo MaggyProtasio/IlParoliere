@@ -1,12 +1,14 @@
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Vector;
+import java.util.Random;
 
 public class Partita {
     public int puntiTotali;
     public Utente utente;
     public String parolaMigliore;
     public int parolaNum;
+    public char[][] matrice;
 
     Vector<String> paroleArray= new Vector<>();
 
@@ -41,6 +43,14 @@ public class Partita {
     }
     public void setParolaNum(int parolaNum) {
         this.parolaNum = parolaNum;
+    }
+
+    public char[][] getMatrice() {
+        return matrice;
+    }
+
+    public void setMatrice(char[][] matrice) {
+        this.matrice = matrice;
     }
 
     //metodi
@@ -89,4 +99,157 @@ public class Partita {
         }
         return d;
     }
+
+    public void creaMatrice(){
+        String[] words = {
+                "CASA", "AMORE", "TEMPO", "SOLE", "VITA", "BELLO", "GIORNO", "MARE", "AMICO", "BUONO"
+        };
+
+        char[][] matrix = new char[7][7];
+        Random random = new Random();
+
+        // Insert Italian words horizontally
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
+            int wordLength = word.length();
+            int row = random.nextInt(7);
+            int col = random.nextInt(7 - wordLength + 1);
+
+            for (int j = 0; j < wordLength; j++) {
+                matrix[row][col + j] = word.charAt(j);
+            }
+        }
+
+        // Insert Italian words vertically
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
+            int wordLength = word.length();
+            int row = random.nextInt(7 - wordLength + 1);
+            int col = random.nextInt(7);
+
+            for (int j = 0; j < wordLength; j++) {
+                matrix[row + j][col] = word.charAt(j);
+            }
+        }
+
+        // Fill remaining empty slots with random letters
+        for (int i = 0; i < 7; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (matrix[i][j] == '\u0000') {
+                    matrix[i][j] = (char) (random.nextInt(26) + 'A');
+                }
+            }
+        }
+
+        this.matrice = matrix;
+
+    }
+
+    public void stampaMatrice(){
+        for (int i = 0; i < this.matrice.length; i++) {
+            for (int j = 0; j < this.matrice[i].length; j++) {
+                System.out.print("┌───┐\t"); // Top border
+            }
+            System.out.println();
+
+            for (int j = 0; j < this.matrice[i].length; j++) {
+                System.out.printf("│ %c │\t", this.matrice[i][j]); // Cell content
+            }
+            System.out.println();
+
+            for (int j = 0; j < this.matrice[i].length; j++) {
+                System.out.print("└───┘\t"); // Bottom border
+            }
+            System.out.println();
+        }
+    }
+
+    public boolean trovaParolaMatrice(String word) {
+        char[][] matrix = this.matrice;
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        int wordLength = word.length();
+
+        // Check horizontally
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j <= cols - wordLength; j++) {
+                boolean found = true;
+                for (int k = 0; k < wordLength; k++) {
+                    if (matrix[i][j + k] != word.charAt(k)) {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found) {
+                    return true;
+                }
+            }
+        }
+
+        // Check vertically
+        for (int i = 0; i <= rows - wordLength; i++) {
+            for (int j = 0; j < cols; j++) {
+                boolean found = true;
+                for (int k = 0; k < wordLength; k++) {
+                    if (matrix[i + k][j] != word.charAt(k)) {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found) {
+                    return true;
+                }
+            }
+        }
+
+        // Check diagonally (top-left to bottom-right)
+        for (int i = 0; i <= rows - wordLength; i++) {
+            for (int j = 0; j <= cols - wordLength; j++) {
+                boolean found = true;
+                for (int k = 0; k < wordLength; k++) {
+                    if (matrix[i + k][j + k] != word.charAt(k)) {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found) {
+                    return true;
+                }
+            }
+        }
+
+        // Check diagonally (bottom-left to top-right)
+        for (int i = wordLength - 1; i < rows; i++) {
+            for (int j = 0; j <= cols - wordLength; j++) {
+                boolean found = true;
+                for (int k = 0; k < wordLength; k++) {
+                    if (matrix[i - k][j + k] != word.charAt(k)) {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+
+    private boolean checkWord(char[][] matrix, String word, int row, int col, int rowStep, int colStep) {
+        int wordLength = word.length();
+        for (int i = 0; i < wordLength; i++) {
+            if (row < 0 || row >= matrix.length || col < 0 || col >= matrix[0].length ||
+                    matrix[row][col] != word.charAt(i)) {
+                return false;
+            }
+            row += rowStep;
+            col += colStep;
+        }
+        return true;
+    }
+
+
 }
