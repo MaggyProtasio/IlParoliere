@@ -13,7 +13,7 @@ public class Partita {
     public String parolaMigliore;
     public int parolaNum;
 
-    static char[][] tabellone = new char[6][6];
+    static char[][] tabellone = new char[7][7];
     /*char[] lettere = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
             'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};*/
 
@@ -98,24 +98,6 @@ public class Partita {
             }
         }
         return d;
-    }
-
-    /*public void inizializzaTabellone(){
-        for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < 6; j++) {
-                int index = (int) (Math.random() * lettere.length);
-                tabellone[i][j] = lettere[index];
-            }
-        }
-    }*/
-
-    public void stampaTabellone(){
-        for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < 6; j++) {
-                System.out.print(tabellone[i][j] + " ");
-            }
-            System.out.println();
-        }
     }
 
     //metodo per creare un vettore inizializato con lettere casuali
@@ -231,53 +213,4 @@ public class Partita {
         }
     }
 
-    /*public static void inizializzaMatrice(String[] parole) {
-        Random random = new Random();
-        int i, j, k;
-        for (String parola : parole) {
-            if (parola.length() >= 3 && parola.length() <= 6) {
-                boolean piazzata = false;
-                while (!piazzata) {
-                    i = random.nextInt(6);
-                    j = random.nextInt(6);
-                    k = random.nextInt(8);
-                    if (tabellone[i][j] == '\0') {
-                        tabellone[i][j] = parola.charAt(0);
-                        int x = i + dx[k];
-                        int y = j + dy[k];
-                        boolean ok = true;
-                        for (int l = 1; l < parola.length(); l++) {
-                            if (x >= 0 && x < 6 && y >= 0 && y < 6) {
-                                if (tabellone[x][y] == '\0') {
-                                    tabellone[x][y] = parola.charAt(l);
-                                    x += dx[k];
-                                    y += dy[k];
-                                } else {
-                                    ok = false;
-                                    break;
-                                }
-                            } else {
-                                ok = false;
-                                break;
-                            }
-                        }
-                        if (ok) {
-                            Dizionario d = new Dizionario();
-                            d.setParola(parola);
-                            paroleArray.add(d);
-                            piazzata = true;
-                        } else {
-                            for (int l = 0; l < parola.length(); l++) {
-                                if (tabellone[i][j] == parola.charAt(l)) {
-                                    tabellone[i][j] = '\0';
-                                }
-                                i -= dx[k];
-                                j -= dy[k];
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }*/
 }

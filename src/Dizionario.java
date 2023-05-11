@@ -5,6 +5,14 @@ public class Dizionario {
     private String parola;
     String[] words = new String[661563]; // parole in file NON MODIFICARE
 
+    public String[] getWords() {
+        return words;
+    }
+
+    public void setWords(String[] words) {
+        this.words = words;
+    }
+
     public Dizionario() {
 
     }
@@ -39,6 +47,13 @@ public class Dizionario {
         return b;
     }
 
+    public void stampaWords(){
+
+        for (int i = 0; i < words.length; i++) {
+            System.out.println(words[i]);
+        }
+    }
+
     public boolean stampaParole(String p){
         boolean b = false;
         try {
@@ -61,7 +76,7 @@ public class Dizionario {
         return b;
     }
 
-    public String[] leggiParole() {
+    public void inizializzaWords() {
             String filePath = "src/dictionary.txt"; // filename and Main.java are in the same folder
             File file = new File(filePath);
             try {
@@ -71,7 +86,7 @@ public class Dizionario {
                     String line = scanner.nextLine();
                     String[] lineWords = line.split(" "); // Split della riga
                     for (String word : lineWords) {
-                        words[i] = word; // metti parola in array wors
+                        this.words[i] = word; // metti parola in array wors
                         i++;
                     }
                 }
@@ -81,6 +96,5 @@ public class Dizionario {
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
-            return words;
         }
     }
