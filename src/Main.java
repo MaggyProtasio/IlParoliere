@@ -1,5 +1,6 @@
 import java.awt.*;
 import java.io.*;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -9,6 +10,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         String nickname;
         String parolaInserita = "";
+        Random rand = new Random();
 
         //creazione utente
         System.out.println("Benvenuto nel paroliere!");
@@ -16,6 +18,13 @@ public class Main {
         nickname = in.nextLine();
         Utente giocatore = new Utente(nickname);
         Partita partita = new Partita(giocatore);
+
+        //provaAAAAAAAAAA
+        partita.matriceRandomInizio();
+        partita.stampaTabellone();
+        String[] dizionario = diz.leggiParole();
+        partita.inserisciParoleMatrice(dizionario);
+        partita.stampaTabellone();
 
         //creazione partita
         System.out.println("Inzia giocare! Vuoi testare la matrice [1] o parole nel dizionario [2]?");
