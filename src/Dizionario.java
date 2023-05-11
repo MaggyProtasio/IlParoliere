@@ -25,10 +25,32 @@ public class Dizionario {
         this.parola = parola;
     }
 
-    public boolean trovaParola(String p){
+    public boolean trovaParoladiz(String p){
         boolean b = false;
         try {
             String filePath = "src/dictionary.txt"; // filename and Main.java are in the same folder
+            BufferedReader reader = new BufferedReader(new FileReader(filePath));
+            String line = reader.readLine();
+            while (line != null) {
+                if(p.equals(line)){
+                    System.out.println(line+" - trovato :D");
+                    b = true;
+                    break;
+                }
+                line = reader.readLine();
+            }
+            System.out.println("FINE");
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return b;
+    }
+
+    public boolean trovaParolaComuni(String p){
+        boolean b = false;
+        try {
+            String filePath = "src/ParoleComuni.txt"; // filename and Main.java are in the same folder
             BufferedReader reader = new BufferedReader(new FileReader(filePath));
             String line = reader.readLine();
             while (line != null) {
@@ -77,7 +99,7 @@ public class Dizionario {
     }
 
     public void inizializzaWords() {
-            String filePath = "src/dictionary.txt"; // filename and Main.java are in the same folder
+            String filePath = "src/ParoleComuni.txt"; // filename and Main.java are in the same folder
             File file = new File(filePath);
             try {
                 Scanner scanner = new Scanner(file);

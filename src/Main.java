@@ -21,7 +21,6 @@ public class Main {
 
         //provaAAAAAAAAAA
         partita.matriceRandomInizio();
-        partita.stampaTabellone();
         diz.inizializzaWords();
 
         diz.stampaWords();
@@ -78,7 +77,7 @@ public class Main {
             System.out.println("Parola " + (i + 1) + " \nInserisci una parola");
             parolaInserita = in.nextLine();
             //trova parola
-            if (diz.trovaParola(parolaInserita)) {
+            if (diz.trovaParoladiz(parolaInserita)) {
                 if (partita.doppione(parolaInserita) == false) {
                     System.out.println("Parola trovata nel dizionario!");
                     partita.aggiungiPunti(parolaInserita);
