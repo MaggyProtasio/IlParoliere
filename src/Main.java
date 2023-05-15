@@ -35,7 +35,8 @@ public class Main {
             String parolaInseritaUpper = parolaInserita.toUpperCase();
             boolean trovata = partita.trovaParolaMatrice(parolaInseritaUpper);
             if (trovata) {
-                System.out.println("Prola " + parolaInserita + " esiste nella matrice!");
+                System.out.println("Parola " + parolaInserita + " esiste nella matrice!");
+
                 //controlla se parola esiste nel dizionario
                 if (diz.trovaParoladiz(parolaInserita)) {
                     if (partita.doppione(parolaInserita) == false) {
@@ -50,10 +51,10 @@ public class Main {
                 } else {
                     System.out.println("Questa parola non esiste nel dizionario >:(");
                 }
-                i++;        //incrementa tentativi
             } else {
                 System.out.println("Parola " + parolaInserita + " non esiste nella matrice :(");
             }
+            i++;        //incrementa tentativi
         } while (i < 5);        //numero dei tentativi per finire il gioco
         System.out.println("Punti della parita: " + partita.getPuntiTotali());
         System.out.println("Parole trovate: " + partita.getParolaNum());
