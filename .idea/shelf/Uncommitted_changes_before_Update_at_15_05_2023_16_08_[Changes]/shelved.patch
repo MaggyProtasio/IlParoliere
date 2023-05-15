@@ -1,0 +1,148 @@
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.awt.*;\r\nimport java.io.*;\r\nimport java.util.Random;\r\nimport java.util.Scanner;\r\n\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n        //Oggetti e variabili\r\n        Dizionario diz = new Dizionario();\r\n        Scanner in = new Scanner(System.in);\r\n        String nickname;\r\n        String parolaInserita = \"\";\r\n        Random rand = new Random();\r\n\r\n        //creazione utente\r\n        System.out.println(\"Benvenuto nel paroliere!\");\r\n        System.out.println(\"Inserisci il nickname\");\r\n        nickname = in.nextLine();\r\n        Utente giocatore = new Utente(nickname);\r\n        Partita partita = new Partita(giocatore);\r\n\r\n        //provaAAAAAAAAAA\r\n        partita.matriceRandomInizio();\r\n        partita.stampaTabellone();\r\n        diz.inizializzaWords();\r\n\r\n        diz.stampaWords();\r\n        System.out.println(\"inizia stampa: /n\");\r\n        //diz.getWords();\r\n        //partita.inserisciParoleMatrice(diz.getWords());\r\n        //partita.stampaTabellone();\r\n\r\n        //creazione partita\r\n       /* System.out.println(\"Inzia giocare! Vuoi testare la matrice [1] o parole nel dizionario [2]?\");\r\n        int scelta = in.nextInt();\r\n        in.nextLine();\r\n        if(scelta == 1){\r\n            //parte della matrice\r\n            //prova 1\r\n            partita.creaMatrice();\r\n            partita.stampaMatrice();\r\n            System.out.println(\"\\nInserisci una parola\");\r\n            parolaInserita = in.nextLine();\r\n\r\n            //controllo se parola esiste nella matrice (e anche se è una parola)\r\n            boolean trovata = partita.trovaParolaMatrice(parolaInserita);\r\n            if (trovata) {\r\n                System.out.println(\"La parola \" + parolaInserita + \" esiste, brava!\");\r\n            } else {\r\n                System.out.println(\"La parola \" + parolaInserita + \" non esiste nella matrice :(\");\r\n            }\r\n\r\n            //prova 2\r\n            System.out.println(\"\\nInserisci una parola\");\r\n            parolaInserita = in.nextLine();\r\n            //controllo se parola esiste nella matrice\r\n            trovata = partita.trovaParolaMatrice(parolaInserita);\r\n            if (trovata) {\r\n                System.out.println(\"La parola \" + parolaInserita + \" esiste, brava!\");\r\n            } else {\r\n                System.out.println(\"La parola \" + parolaInserita + \" non esiste nella matrice :(\");\r\n            }\r\n\r\n            //prova 3\r\n            System.out.println(\"\\nInserisci una parola\");\r\n            parolaInserita = in.nextLine();\r\n            //controllo se parola esiste nella matrice\r\n            trovata = partita.trovaParolaMatrice(parolaInserita);\r\n            if (trovata) {\r\n                System.out.println(\"La parola \" + parolaInserita + \" esiste, brava!\");\r\n            } else {\r\n                System.out.println(\"La parola \" + parolaInserita + \" non esiste nella matrice :(\");\r\n            }\r\n        }else {*/\r\n\r\n        int i = 0;\r\n        do {\r\n            System.out.println(\"Parola \" + (i + 1) + \" \\nInserisci una parola\");\r\n            parolaInserita = in.nextLine();\r\n            //trova parola\r\n            if (diz.trovaParola(parolaInserita)) {\r\n                if (partita.doppione(parolaInserita) == false) {\r\n                    System.out.println(\"Parola trovata nel dizionario!\");\r\n                    partita.aggiungiPunti(parolaInserita);\r\n                    System.out.println(\"Punti della parola: \" + partita.puntiParola(parolaInserita));\r\n                    //contatore\r\n                    partita.contaParola();\r\n                } else {\r\n                    System.out.println(\"Hai già inserito questa parola >:(\");\r\n                }\r\n            } else {\r\n                System.out.println(\"Questa parola non esiste nel dizionario >:(\");\r\n            }\r\n            i++;\r\n        } while (i < 5);\r\n        System.out.println(\"Punti della parita: \" + partita.getPuntiTotali());\r\n        System.out.println(\"Parole trovate: \" + partita.getParolaNum());\r\n        //stampa la prima parola inserita migliore\r\n        partita.controllaParolaMigliore();\r\n        System.out.println(\"Parola migliore: \" + partita.getParolaMigliore());\r\n    }\r\n\r\n    }\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+--- a/src/Main.java	
++++ b/src/Main.java	
+@@ -20,24 +20,26 @@
+         Partita partita = new Partita(giocatore);
+ 
+         //provaAAAAAAAAAA
+-        partita.matriceRandomInizio();
+-        partita.stampaTabellone();
++        //partita.matriceRandomInizio();
++        //partita.stampaTabellone();
+         diz.inizializzaWords();
+ 
+-        diz.stampaWords();
+-        System.out.println("inizia stampa: /n");
++        //diz.stampaWords();
+         //diz.getWords();
+         //partita.inserisciParoleMatrice(diz.getWords());
+         //partita.stampaTabellone();
+ 
++        String[] trial = {"MAGGY", "ANAS", "ALICE"};
++
+         //creazione partita
+-       /* System.out.println("Inzia giocare! Vuoi testare la matrice [1] o parole nel dizionario [2]?");
++        System.out.println("Inzia giocare! Vuoi testare la matrice [1] o parole nel dizionario [2]?");
+         int scelta = in.nextInt();
+         in.nextLine();
+         if(scelta == 1){
+             //parte della matrice
+             //prova 1
+-            partita.creaMatrice();
++            diz.stampaWords();
++            partita.creaMatrice(diz.getWords());
+             partita.stampaMatrice();
+             System.out.println("\nInserisci una parola");
+             parolaInserita = in.nextLine();
+@@ -71,33 +73,34 @@
+             } else {
+                 System.out.println("La parola " + parolaInserita + " non esiste nella matrice :(");
+             }
+-        }else {*/
++        }else {
+ 
+-        int i = 0;
+-        do {
+-            System.out.println("Parola " + (i + 1) + " \nInserisci una parola");
+-            parolaInserita = in.nextLine();
+-            //trova parola
+-            if (diz.trovaParola(parolaInserita)) {
+-                if (partita.doppione(parolaInserita) == false) {
+-                    System.out.println("Parola trovata nel dizionario!");
+-                    partita.aggiungiPunti(parolaInserita);
+-                    System.out.println("Punti della parola: " + partita.puntiParola(parolaInserita));
+-                    //contatore
+-                    partita.contaParola();
+-                } else {
+-                    System.out.println("Hai già inserito questa parola >:(");
+-                }
+-            } else {
+-                System.out.println("Questa parola non esiste nel dizionario >:(");
+-            }
+-            i++;
+-        } while (i < 5);
+-        System.out.println("Punti della parita: " + partita.getPuntiTotali());
+-        System.out.println("Parole trovate: " + partita.getParolaNum());
+-        //stampa la prima parola inserita migliore
+-        partita.controllaParolaMigliore();
+-        System.out.println("Parola migliore: " + partita.getParolaMigliore());
++            int i = 0;
++            do {
++                System.out.println("Parola " + (i + 1) + " \nInserisci una parola");
++                parolaInserita = in.nextLine();
++                //trova parola
++                if (diz.trovaParola(parolaInserita)) {
++                    if (partita.doppione(parolaInserita) == false) {
++                        System.out.println("Parola trovata nel dizionario!");
++                        partita.aggiungiPunti(parolaInserita);
++                        System.out.println("Punti della parola: " + partita.puntiParola(parolaInserita));
++                        //contatore
++                        partita.contaParola();
++                    } else {
++                        System.out.println("Hai già inserito questa parola >:(");
++                    }
++                } else {
++                    System.out.println("Questa parola non esiste nel dizionario >:(");
++                }
++                i++;
++            } while (i < 5);
++            System.out.println("Punti della parita: " + partita.getPuntiTotali());
++            System.out.println("Parole trovate: " + partita.getParolaNum());
++            //stampa la prima parola inserita migliore
++            partita.controllaParolaMigliore();
++            System.out.println("Parola migliore: " + partita.getParolaMigliore());
++        }
+     }
+ 
+-    }
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"8462984d-23c0-4314-847e-acde3a7b6bf0\" name=\"Changes\" comment=\"ADD: funzioni per tabellone e creazione array per dizionario\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Dizionario.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Dizionario.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Main.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Partita.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Partita.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2MgM7lntEbmlzdqeqLILpROIR0b\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;261&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maggy/IdeaProjects/IlParoliere/src/img&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Maggy\\IdeaProjects\\IlParoliere\\src\\img\" />\r\n      <recent name=\"C:\\Users\\Maggy\\IdeaProjects\\IlParoliere\\src\" />\r\n      <recent name=\"C:\\Users\\Maggy\\IdeaProjects\\IlParoliere\\src\\MenuPage\" />\r\n      <recent name=\"$PROJECT_DIR$\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"8462984d-23c0-4314-847e-acde3a7b6bf0\" name=\"Changes\" comment=\"\" />\r\n      <created>1678184607277</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1678184607277</updated>\r\n      <workItem from=\"1678184608473\" duration=\"1000\" />\r\n      <workItem from=\"1678185005684\" duration=\"1221000\" />\r\n      <workItem from=\"1678188292233\" duration=\"1901000\" />\r\n      <workItem from=\"1679567791335\" duration=\"2677000\" />\r\n      <workItem from=\"1679996146394\" duration=\"3802000\" />\r\n      <workItem from=\"1680601684537\" duration=\"1782000\" />\r\n      <workItem from=\"1681810082945\" duration=\"575000\" />\r\n      <workItem from=\"1681810667700\" duration=\"1221000\" />\r\n      <workItem from=\"1683020363813\" duration=\"2223000\" />\r\n      <workItem from=\"1683023042829\" duration=\"561000\" />\r\n      <workItem from=\"1683297457506\" duration=\"225000\" />\r\n      <workItem from=\"1683716109530\" duration=\"274000\" />\r\n      <workItem from=\"1683748303812\" duration=\"4256000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\":add user and dizionari\">\r\n      <created>1678188079722</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678188079722</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\":add user and dizionari\">\r\n      <created>1678188096489</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678188096489</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\":rename file to dictionary.txt\">\r\n      <created>1678189356605</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678189356605</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\": ADD ciclo for e iniziato il gioco\">\r\n      <created>1679392892862</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679392892862</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\":add Dizionario obj, sistemato partita, manca parolaMigliore\">\r\n      <created>1679397101138</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679397101138</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\":sistemazione parolamigliore\">\r\n      <created>1679570450866</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679570450866</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\":sistemazione funzione doppione\">\r\n      <created>1683297492858</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683297492858</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\":sistemazione funzione doppione\">\r\n      <created>1683297535598</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683297535598</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"ADD: Created Menu GUI page and Classico Game GUI. Connected them\">\r\n      <created>1683308242016</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683308242016</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"ADD: Created Menu GUI page and Classico Game GUI. Connected them\">\r\n      <created>1683308426433</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683308426433</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"ADD: funzioni per tabellone e creazione array per dizionario\">\r\n      <created>1683811269024</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683811269024</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"12\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\":add user and dizionari\" />\r\n    <MESSAGE value=\":rename file to dictionary.txt\" />\r\n    <MESSAGE value=\": ADD ciclo for e iniziato il gioco\" />\r\n    <MESSAGE value=\":add Dizionario obj, sistemato partita, manca parolaMigliore\" />\r\n    <MESSAGE value=\":sistemazione parolamigliore\" />\r\n    <MESSAGE value=\":sistemazione funzione doppione\" />\r\n    <MESSAGE value=\"ADD: Created Menu GUI page and Classico Game GUI. Connected them\" />\r\n    <MESSAGE value=\"ADD: funzioni per tabellone e creazione array per dizionario\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"ADD: funzioni per tabellone e creazione array per dizionario\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/IlParoliere$Main.ic\" NAME=\"Main Coverage Results\" MODIFIED=\"1683812690821\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\r\n    <SUITE FILE_PATH=\"coverage/IlParoliere$StartPage.ic\" NAME=\"StartPage Coverage Results\" MODIFIED=\"1683308106935\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,9 +4,12 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="ADD: funzioni per tabellone e creazione array per dizionario">
++    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="ADD: Created matrix and algorithm to search word from it">
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_2023_16_39_[Changes]1/shelved.patch" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_2023_16_39__Changes_1.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_2023_16_44_[Changes]1/shelved.patch" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_2023_16_44__Changes_1.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Dizionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dizionario.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Partita.java" afterDir="false" />
+     </list>
+@@ -80,6 +83,7 @@
+       <workItem from="1683297457506" duration="225000" />
+       <workItem from="1683716109530" duration="274000" />
+       <workItem from="1683748303812" duration="4256000" />
++      <workItem from="1684159206699" duration="435000" />
+     </task>
+     <task id="LOCAL-00001" summary=":add user and dizionari">
+       <created>1678188079722</created>
+@@ -187,7 +191,7 @@
+     <option name="LAST_COMMIT_MESSAGE" value="ADD: funzioni per tabellone e creazione array per dizionario" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+-    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683812690821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
++    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683818102881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+     <SUITE FILE_PATH="coverage/IlParoliere$StartPage.ic" NAME="StartPage Coverage Results" MODIFIED="1683308106935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+   </component>
+ </project>
+\ No newline at end of file
