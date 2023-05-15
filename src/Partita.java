@@ -1,24 +1,16 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.Iterator;
-import java.util.Random;
 import java.util.Vector;
+import java.util.Random;
 
 public class Partita {
     public int puntiTotali;
     public Utente utente;
     public String parolaMigliore;
     public int parolaNum;
-
-    static char[][] tabellone = new char[7][7];
-    /*char[] lettere = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
-            'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};*/
+    public char[][] matrice;
 
     Vector<String> paroleArray= new Vector<>();
-    Vector<String> paroleArray2= new Vector<>();
 
     //costruttore
     public Partita(Utente u){
@@ -51,6 +43,14 @@ public class Partita {
     }
     public void setParolaNum(int parolaNum) {
         this.parolaNum = parolaNum;
+    }
+
+    public char[][] getMatrice() {
+        return matrice;
+    }
+
+    public void setMatrice(char[][] matrice) {
+        this.matrice = matrice;
     }
 
     //metodi
@@ -100,117 +100,179 @@ public class Partita {
         return d;
     }
 
-    //metodo per creare un vettore inizializato con lettere casuali
-    public void matriceRandomInizio(){
-        Random rand = new Random();
-        // riempimento casuale della matrice con lettere dell'alfabeto
-        for (int i = 0; i < tabellone.length; i++) {
-            for (int j = 0; j < tabellone[i].length; j++) {
-                // genero valore casuale tra 'a' e 'z' e lo metto in maiuscolo
-                tabellone[i][j] = Character.toUpperCase((char) (rand.nextInt(26) + 'a'));
+    public void creaMatrice(String[] words){
+
+        char[][] matrix = new char[10][10];
+        Random random = new Random();
+        //String[] wordsInject = new String[10];
+        String[] wordsInject = new String[10];
+
+        // Populate wordsInject array with 10 words of length 10 or less
+        for (int i = 0; i < wordsInject.length; i++) {
+            String randomWord;
+            do {
+                int randomIndex = random.nextInt(words.length);
+                randomWord = words[randomIndex];
+            } while (randomWord.length() > 10);
+            wordsInject[i] = randomWord.toUpperCase();
+            System.out.println("parola added - " + wordsInject[i]);
+        }
+
+        // Insert Italian words horizontally
+        for (int i = 0; i < wordsInject.length; i++) {
+            String word = wordsInject[i];
+            int wordLength = word.length();
+            int row = random.nextInt(10);
+            int col = random.nextInt(10 - wordLength + 1);
+
+            for (int j = 0; j < wordLength; j++) {
+                matrix[row][col + j] = word.charAt(j);
             }
+        }
+
+        // Insert Italian words vertically
+        for (int i = 0; i < wordsInject.length; i++) {
+            String word = wordsInject[i];
+            int wordLength = word.length();
+            int row = random.nextInt(10 - wordLength + 1);
+            int col = random.nextInt(10);
+
+            for (int j = 0; j < wordLength; j++) {
+                matrix[row + j][col] = word.charAt(j);
+            }
+        }
+
+        // Insert Italian words diagonally
+        for (int i = 0; i < wordsInject.length; i++) {
+            String word = wordsInject[i];
+            int wordLength = word.length();
+            int row = random.nextInt(10 - wordLength + 1);
+            int col = random.nextInt(10 - wordLength + 1);
+
+            for (int j = 0; j < wordLength; j++) {
+                matrix[row + j][col + j] = word.charAt(j);
+            }
+        }
+
+
+        // Fill remaining empty slots with random letters
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                if (matrix[i][j] == '\u0000') {
+                    matrix[i][j] = (char) (random.nextInt(26) + 'A');
+                }
+            }
+        }
+
+        this.matrice = matrix;
+
+    }
+
+    public void stampaMatrice(){
+        for (int i = 0; i < this.matrice.length; i++) {
+            for (int j = 0; j < this.matrice[i].length; j++) {
+                System.out.print("┌───┐\t"); // Top border
+            }
+            System.out.println();
+
+            for (int j = 0; j < this.matrice[i].length; j++) {
+                System.out.printf("│ %c │\t", this.matrice[i][j]); // Cell content
+            }
+            System.out.println();
+
+            for (int j = 0; j < this.matrice[i].length; j++) {
+                System.out.print("└───┘\t"); // Bottom border
+            }
+            System.out.println();
         }
     }
 
-    // controlla se è possibile inserire una parola nella matrice in una determinata posizione e direzione
-    public static boolean canInsertWord(String word, int row, int col, int dir) {
-        int dx = 0;
-        int dy = 0;
-        if (dir == 0) {
-            dy = 1;
-        } else if (dir == 1) {
-            dx = 1;
-            dy = 1;
-        } else if (dir == 2) {
-            dx = 1;
-        } else if (dir == 3) {
-            dx = 1;
-            dy = -1;
-        } else if (dir == 4) {
-            dy = -1;
-        } else if (dir == 5) {
-            dx = -1;
-            dy = -1;
-        } else if (dir == 6) {
-            dx = -1;
-        } else if (dir == 7) {
-            dx = -1;
-            dy = 1;
-        }
-        int x = col;
-        int y = row;
-        for (int i = 0; i < word.length(); i++) {
-            // controlla se la posizione è all'interno della matrice
-            if (x < 0 || x >= tabellone[0].length || y < 0 || y >= tabellone.length) {
-                return false;
-            }
+    public boolean trovaParolaMatrice(String word) {
+        char[][] matrix = this.matrice;
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        int wordLength = word.length();
 
-            // controlla se la posizione è già occupata da un'altra lettera
-            if (tabellone[y][x] != '\u0000' && tabellone[y][x] != word.charAt(i)) {
-                System.out.println("La posizione (" + y + ", " + x + ") è già occupata da " + tabellone[y][x] + " e non da " + word.charAt(i));
+        // Check horizontally
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j <= cols - wordLength; j++) {
+                boolean found = true;
+                for (int k = 0; k < wordLength; k++) {
+                    if (matrix[i][j + k] != word.charAt(k)) {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found) {
+                    return true;
+                }
+            }
+        }
+
+        // Check vertically
+        for (int i = 0; i <= rows - wordLength; i++) {
+            for (int j = 0; j < cols; j++) {
+                boolean found = true;
+                for (int k = 0; k < wordLength; k++) {
+                    if (matrix[i + k][j] != word.charAt(k)) {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found) {
+                    return true;
+                }
+            }
+        }
+
+        // Check diagonally (top-left to bottom-right)
+        for (int i = 0; i <= rows - wordLength; i++) {
+            for (int j = 0; j <= cols - wordLength; j++) {
+                boolean found = true;
+                for (int k = 0; k < wordLength; k++) {
+                    if (matrix[i + k][j + k] != word.charAt(k)) {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found) {
+                    return true;
+                }
+            }
+        }
+
+        // Check diagonally (bottom-left to top-right)
+        for (int i = wordLength - 1; i < rows; i++) {
+            for (int j = 0; j <= cols - wordLength; j++) {
+                boolean found = true;
+                for (int k = 0; k < wordLength; k++) {
+                    if (matrix[i - k][j + k] != word.charAt(k)) {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+
+    private boolean checkWord(char[][] matrix, String word, int row, int col, int rowStep, int colStep) {
+        int wordLength = word.length();
+        for (int i = 0; i < wordLength; i++) {
+            if (row < 0 || row >= matrix.length || col < 0 || col >= matrix[0].length ||
+                    matrix[row][col] != word.charAt(i)) {
                 return false;
             }
-            x += dx;
-            y += dy;
+            row += rowStep;
+            col += colStep;
         }
         return true;
     }
-    
-    // inserisce una parola nella matrice in una determinata posizione e direzione
-    public static void inserisciParola(String word, int row, int col, int dir) {
-        int dx = 0;
-        int dy = 0;
-        if (dir == 0) {
-            dy = 1;
-        } else if (dir == 1) {
-            dx = 1;
-            dy = 1;
-        } else if (dir == 2) {
-            dx = 1;
-        } else if (dir == 3) {
-            dx = 1;
-            dy = -1;
-        } else if (dir == 4) {
-            dy = -1;
-        } else if (dir == 5) {
-            dx = -1;
-            dy = -1;
-        } else if (dir == 6) {
-            dx = -1;
-        } else if (dir == 7) {
-            dx = -1;
-            dy = 1;
-        }
-        int x = col;
-        int y = row;
-        for (int i = 0; i < word.length(); i++) {
-            tabellone[y][x] = word.charAt(i);
-            x += dx;
-            y += dy;
-        }
-    }
 
-    //metodo per inserire parole dentro la matrice da un array che ha nomi presi dal file
-    public void inserisciParoleMatrice(String words[]){
-        Random rand = new Random();
-        int maxTentativi = 10; // Numero massimo di tentativi per ogni parola
-        for (String word : words) {
-            boolean inserted = false;
-            int tentativi = 0;
-            while (!inserted && tentativi < maxTentativi) {
-                int row = rand.nextInt(tabellone.length);
-                int col = rand.nextInt(tabellone[row].length);
-                int dir = rand.nextInt(8);
-                if (canInsertWord(word, row, col, dir)) {
-                    inserisciParola(word, row, col, dir);
-                    inserted = true;
-                }
-                tentativi++;
-            }
-            if (!inserted) {
-                System.out.println("Non è stato possibile inserire la parola " + word);
-            }
-        }
-    }
 
 }

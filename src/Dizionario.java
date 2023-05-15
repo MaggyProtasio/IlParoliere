@@ -3,7 +3,7 @@ import java.util.Scanner; // Import the Scanner class to read text files
 
 public class Dizionario {
     private String parola;
-    String[] words = new String[661563]; // parole in file NON MODIFICARE
+    String[] words = new String[1158]; // parole in file NON MODIFICARE
 
     public String[] getWords() {
         return words;
@@ -39,7 +39,7 @@ public class Dizionario {
                 }
                 line = reader.readLine();
             }
-            System.out.println("FINE");
+            //System.out.println("FINE");
             reader.close();
         } catch (IOException e) {
             e.printStackTrace();
