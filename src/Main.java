@@ -12,6 +12,9 @@ public class Main {
         String parolaInserita = "";
         Random rand = new Random();
 
+        //inizia gioco con GUI
+        StartPage s = new StartPage();
+
         //creazione utente
         System.out.println("Benvenuto nel paroliere!");
         System.out.println("Inserisci il nickname");

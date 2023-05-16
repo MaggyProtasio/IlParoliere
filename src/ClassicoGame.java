@@ -1,6 +1,4 @@
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class ClassicoGame extends JFrame {
     private JPanel panelMain;
@@ -9,50 +7,52 @@ public class ClassicoGame extends JFrame {
     private JButton inviaBtn;
     private JPanel PanelMatrice;
     private JPanel panelCronologia;
-    private JButton button1;
-    private JButton button2;
-    private JButton button3;
-    private JButton button4;
-    private JButton button5;
-    private JButton button6;
-    private JButton button7;
-    private JButton button8;
-    private JButton button9;
-    private JButton button10;
-    private JButton button11;
-    private JButton button12;
-    private JButton button13;
-    private JButton button14;
-    private JButton button15;
-    private JButton button16;
-    private JButton button17;
-    private JButton button18;
-    private JButton button19;
-    private JButton button20;
-    private JButton button21;
-    private JButton button22;
-    private JButton button23;
-    private JButton button24;
-    private JButton button25;
-    private JButton button26;
-    private JButton button27;
-    private JButton button28;
-    private JButton button29;
-    private JButton button30;
-    private JButton button31;
-    private JButton button32;
-    private JButton button33;
-    private JButton button34;
-    private JButton button35;
-    private JButton button36;
+    private JButton lett1;
+    private JButton lett2;
+    private JButton aButton3;
+    private JButton aButton4;
+    private JButton aButton5;
+    private JButton aButton6;
+    private JButton aButton7;
+    private JButton aButton8;
+    private JButton aButton9;
+    private JButton aButton10;
+    private JButton aButton11;
+    private JButton aButton12;
+    private JButton aButton13;
+    private JButton aButton14;
+    private JButton aButton15;
+    private JButton aButton16;
+    private JButton aButton17;
+    private JButton aButton18;
+    private JButton aButton19;
+    private JButton aButton;
+    private JButton aButton20;
+    private JButton aButton21;
+    private JButton aButton22;
+    private JButton aButton23;
+    private JButton aButton24;
+    private JButton aButton25;
+    private JButton aButton26;
+    private JButton aButton27;
+    private JButton aButton28;
+    private JButton aButton29;
+    private JButton aButton30;
+    private JButton aButton31;
+    private JButton aButton32;
+    private JButton aButton33;
+    private JButton aButton34;
+    private JButton aButton35;
     private JButton exitBtn;
+    private JLabel nomeBox;
 
-    public ClassicoGame(){
+    public ClassicoGame(Utente giocatore){
         // Set the properties of the frame
         setContentPane(panelMain);
         setTitle("Menu Page");
         setSize(1300,750);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        nomeBox.setText("Player: " + giocatore.getNickname());
     }
 }

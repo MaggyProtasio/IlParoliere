@@ -12,25 +12,25 @@ public class StartPage extends JFrame {
 
     //costruttore
     public StartPage(){
+        this.setResizable(false);
+        this.setContentPane(this.panelMain);
+        this.setTitle("Start");
+        this.setSize(760,510);
+        this.setLocationRelativeTo(null);
+        this.setVisible(true);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         startButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                MenuPage m = new MenuPage();
+                //crea utente base del nome inserito
+                Utente giocatore = new Utente(nomeBox.getText());
+                //lo passa giocatore cosi si può memorizzare il nome
+                MenuPage m = new MenuPage(giocatore);
                 m.setVisible(true);
                 dispose();
             }
         });
     }
 
-    //costruttore
-    public static void main(String[] args) {
-        StartPage s = new StartPage();
-        s.setResizable(false);
-        s.setContentPane(s.panelMain);
-        s.setTitle("Start");
-        s.setSize(760,510);
-        s.setLocationRelativeTo(null);
-        s.setVisible(true);
-        s.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    }
+
 }

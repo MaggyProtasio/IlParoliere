@@ -9,7 +9,7 @@ public class MenuPage extends JFrame {
     private JButton classicoBtn;
     private JButton timerBtn;
 
-    public MenuPage(){
+    public MenuPage(Utente giocatore){
         // Set the properties of the frame
         setContentPane(panelMain);
         setTitle("Menu Page");
@@ -19,7 +19,7 @@ public class MenuPage extends JFrame {
         classicoBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ClassicoGame g = new ClassicoGame();
+                ClassicoGame g = new ClassicoGame(giocatore);
                 g.setVisible(true);
                 dispose();
             }
