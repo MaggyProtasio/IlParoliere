@@ -3,7 +3,7 @@ import java.util.Scanner; // Import the Scanner class to read text files
 
 public class Dizionario {
     private String parola;
-    String[] words = new String[1158]; // parole in file NON MODIFICARE
+    String[] words = new String[1068]; // parole in file NON MODIFICARE
 
     public String[] getWords() {
         return words;
