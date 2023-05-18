@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="Creazione Utente">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_23__12_16__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_23__12_16__Changes_.xml" afterDir="false" />
+    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: minimal fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Partita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dizionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dizionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ParoleComuni.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ParoleComuni.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,7 +28,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2MgM7lntEbmlzdqeqLILpROIR0b" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,7 +39,9 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;261&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maggy/IdeaProjects/IlParoliere/src/img&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -39,6 +49,17 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src\img" />
+      <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src" />
+      <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src\MenuPage" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -48,21 +69,133 @@
       <option name="presentableId" value="Default" />
       <updated>1678184607277</updated>
       <workItem from="1678184608473" duration="1000" />
-      <workItem from="1678184953155" duration="667000" />
-      <workItem from="1679391089464" duration="4206000" />
-      <workItem from="1679567902632" duration="64000" />
-      <workItem from="1679567983383" duration="1234000" />
-      <workItem from="1679996166363" duration="95000" />
-      <workItem from="1679996410242" duration="3028000" />
+      <workItem from="1678185005684" duration="1221000" />
+      <workItem from="1678188292233" duration="1901000" />
+      <workItem from="1679567791335" duration="2677000" />
+      <workItem from="1679996146394" duration="3802000" />
+      <workItem from="1680601684537" duration="1782000" />
+      <workItem from="1681810082945" duration="575000" />
+      <workItem from="1681810667700" duration="1221000" />
+      <workItem from="1683020363813" duration="2223000" />
+      <workItem from="1683023042829" duration="561000" />
+      <workItem from="1683297457506" duration="225000" />
+      <workItem from="1683716109530" duration="274000" />
+      <workItem from="1683748303812" duration="4256000" />
+      <workItem from="1684226082783" duration="2179000" />
     </task>
-    <task id="LOCAL-00001" summary="Creazione Utente">
-      <created>1679392748872</created>
+    <task id="LOCAL-00001" summary=":add user and dizionari">
+      <created>1678188079722</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1679392748872</updated>
+      <updated>1678188079722</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=":add user and dizionari">
+      <created>1678188096489</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678188096489</updated>
+    </task>
+    <task id="LOCAL-00003" summary=":rename file to dictionary.txt">
+      <created>1678189356605</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678189356605</updated>
+    </task>
+    <task id="LOCAL-00004" summary=": ADD ciclo for e iniziato il gioco">
+      <created>1679392892862</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679392892862</updated>
+    </task>
+    <task id="LOCAL-00005" summary=":add Dizionario obj, sistemato partita, manca parolaMigliore">
+      <created>1679397101138</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679397101138</updated>
+    </task>
+    <task id="LOCAL-00006" summary=":sistemazione parolamigliore">
+      <created>1679570450866</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679570450866</updated>
+    </task>
+    <task id="LOCAL-00007" summary=":sistemazione funzione doppione">
+      <created>1683297492858</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683297492858</updated>
+    </task>
+    <task id="LOCAL-00008" summary=":sistemazione funzione doppione">
+      <created>1683297535598</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683297535598</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ADD: Created Menu GUI page and Classico Game GUI. Connected them">
+      <created>1683308242016</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683308242016</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ADD: Created Menu GUI page and Classico Game GUI. Connected them">
+      <created>1683308426433</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683308426433</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ADD: funzioni per tabellone e creazione array per dizionario">
+      <created>1683811269024</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683811269024</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ADD: stampawords">
+      <created>1683813484618</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683813484618</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ADD: Connected ParoleComuni.txt to the matrix and improved game flow">
+      <created>1684162955447</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684162955447</updated>
+    </task>
+    <task id="LOCAL-00014" summary="FIX: Parole count and spelling">
+      <created>1684163530580</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684163530580</updated>
+    </task>
+    <task id="LOCAL-00015" summary="FIX: minimal fixes">
+      <created>1684165946943</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684165946944</updated>
+    </task>
+    <task id="LOCAL-00016" summary="FIX: minimal fixes">
+      <created>1684165989033</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1684165989033</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,7 +213,22 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creazione Utente" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creazione Utente" />
+    <MESSAGE value=":add user and dizionari" />
+    <MESSAGE value=":rename file to dictionary.txt" />
+    <MESSAGE value=": ADD ciclo for e iniziato il gioco" />
+    <MESSAGE value=":add Dizionario obj, sistemato partita, manca parolaMigliore" />
+    <MESSAGE value=":sistemazione parolamigliore" />
+    <MESSAGE value=":sistemazione funzione doppione" />
+    <MESSAGE value="ADD: Created Menu GUI page and Classico Game GUI. Connected them" />
+    <MESSAGE value="ADD: funzioni per tabellone e creazione array per dizionario" />
+    <MESSAGE value="ADD: stampawords" />
+    <MESSAGE value="ADD: Connected ParoleComuni.txt to the matrix and improved game flow" />
+    <MESSAGE value="FIX: Parole count and spelling" />
+    <MESSAGE value="FIX: minimal fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX: minimal fixes" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683812690821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/IlParoliere$StartPage.ic" NAME="StartPage Coverage Results" MODIFIED="1683308106935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

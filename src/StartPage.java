@@ -12,37 +12,25 @@ public class StartPage extends JFrame {
 
     //costruttore
     public StartPage(){
-        //intialize();
+        this.setResizable(false);
+        this.setContentPane(this.panelMain);
+        this.setTitle("Start");
+        this.setSize(760,510);
+        this.setLocationRelativeTo(null);
+        this.setVisible(true);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         startButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(startButton, "Hello " + nomeBox.getText() );
+                //crea utente base del nome inserito
+                Utente giocatore = new Utente(nomeBox.getText());
+                //lo passa giocatore cosi si può memorizzare il nome
+                MenuPage m = new MenuPage(giocatore);
+                m.setVisible(true);
+                dispose();
             }
         });
     }
-
-    //costruttore
-    public static void main(String[] args) {
-        StartPage s = new StartPage();
-        s.setResizable(false);
-        s.setContentPane(s.panelMain);
-        s.setTitle("Start");
-        s.setSize(760,510);
-        s.setLocationRelativeTo(null);
-        s.setVisible(true);
-        s.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    }
-
-    private void intialize(){
-        frameStartPage = new JFrame();
-        frameStartPage.setBounds(100, 100, 795, 395);
-        frameStartPage.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        panelMain = new JPanel(); // initialize panel1
-        frameStartPage.getContentPane().add(panelMain); // add panel1 to the content pane
-        panelMain.setLayout(null); // set the layout manager of panel1 to null
-    }
-
 
 
 }

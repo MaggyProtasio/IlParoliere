@@ -1,51 +1,68 @@
 import java.awt.*;
 import java.io.*;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
-
-        //Oggetti e variabili
+        //creazione dizionario e variabili
         Dizionario diz = new Dizionario();
         Scanner in = new Scanner(System.in);
         String nickname;
         String parolaInserita = "";
+        Random rand = new Random();
+
+        //inizia gioco con GUI
+        StartPage s = new StartPage();
 
         //creazione utente
         System.out.println("Benvenuto nel paroliere!");
         System.out.println("Inserisci il nickname");
         nickname = in.nextLine();
-
         Utente giocatore = new Utente(nickname);
-        Partita partita = new Partita(giocatore);
 
-        //creazione partita
-        System.out.println("Inzia giocare!");
+        //creazione partita e matrice
+        System.out.println("Press Enter to start");
+        in.nextLine();
+        Partita partita = new Partita(giocatore);
+        diz.inizializzaWords();         //mette tutti parole comuni nell'array per usarlo dopo
+        partita.creaMatrice(diz.getWords());
+        partita.stampaMatrice();
+
         int i = 0;
         do {
-            System.out.println("Parola " + (i+1) + " \nInserisci una parola");
+            System.out.println("******** Parola " + (i + 1) + " ******** \nInserisci una parola");
             parolaInserita = in.nextLine();
-            //trova parola
-            if(diz.trovaParola(parolaInserita)){
-                    if(partita.doppione(parolaInserita) == false){
+
+            //controlla se parola esiste nella matrice
+            String parolaInseritaUpper = parolaInserita.toUpperCase();
+            boolean trovata = partita.trovaParolaMatrice(parolaInseritaUpper);
+            if (trovata) {
+                System.out.println("Parola " + parolaInserita + " esiste nella matrice!");
+
+                //controlla se parola esiste nel dizionario
+                if (diz.trovaParoladiz(parolaInserita)) {
+                    if (partita.doppione(parolaInserita) == false) {
                         System.out.println("Parola trovata nel dizionario!");
                         partita.aggiungiPunti(parolaInserita);
-                        System.out.println("Punti della parola: "+partita.puntiParola(parolaInserita));
+                        System.out.println("Punti della parola: " + partita.puntiParola(parolaInserita));
                         //contatore
                         partita.contaParola();
-                    }else{
+                    } else {
                         System.out.println("Hai già inserito questa parola >:(");
                     }
-            }else{
-                System.out.println("Questa parola non esiste nel dizionario >:(");
+                } else {
+                    System.out.println("Questa parola non esiste nel dizionario >:(");
+                }
+            } else {
+                System.out.println("Parola " + parolaInserita + " non esiste nella matrice :(");
             }
-            i++;
-        }while(i < 5);
-        System.out.println("Punti della parita: "+partita.getPuntiTotali());
-        System.out.println("Parole trovate: "+partita.getParolaNum());
+            i++;        //incrementa tentativi
+        } while (i < 5);        //numero dei tentativi per finire il gioco
+        System.out.println("Punti della parita: " + partita.getPuntiTotali());
+        System.out.println("Parole trovate: " + partita.getParolaNum());
         //stampa la prima parola inserita migliore
         partita.controllaParolaMigliore();
-        System.out.println("Parola migliore: "+partita.getParolaMigliore());
+        System.out.println("Parola migliore: " + partita.getParolaMigliore());
     }
 }
