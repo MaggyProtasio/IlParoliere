@@ -6,7 +6,7 @@
       <xy x="48" y="25" width="882" height="503"/>
     </constraints>
     <properties>
-      <background color="-16216646"/>
+      <background color="-15767380"/>
       <enabled value="false"/>
     </properties>
     <border type="none"/>
@@ -40,7 +40,7 @@
           </grid>
         </constraints>
         <properties>
-          <background color="-16216646"/>
+          <background color="-15767380"/>
         </properties>
         <border type="none"/>
         <children>
@@ -61,7 +61,7 @@
               </grid>
             </constraints>
             <properties>
-              <background color="-16216646"/>
+              <background color="-15767380"/>
               <caretColor color="-2592"/>
               <font name="Rubik" size="20" style="0"/>
               <foreground color="-524292"/>
@@ -73,11 +73,11 @@
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <background color="-16630134"/>
+              <background color="-815562"/>
               <borderPainted value="false"/>
               <enabled value="true"/>
               <font name="Rubik" size="26" style="1"/>
-              <foreground color="-524292"/>
+              <foreground color="-11850215"/>
               <hideActionText value="false"/>
               <text value="Start"/>
             </properties>

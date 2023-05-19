@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="ADD: Design for start, menu and easy mode page">
+    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: design color">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EasyMode.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyMode.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EasyMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MenuPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StartPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartPage.form" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +89,7 @@
       <workItem from="1684428837470" duration="2532000" />
       <workItem from="1684485401673" duration="610000" />
       <workItem from="1684493040889" duration="203000" />
-      <workItem from="1684496346903" duration="7026000" />
+      <workItem from="1684496346903" duration="7861000" />
     </task>
     <task id="LOCAL-00001" summary=":add user and dizionari">
       <created>1678188079722</created>
@@ -220,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684499715079</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="FIX: design color">
+      <created>1684503448770</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1684503448770</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +256,8 @@
     <MESSAGE value="FIX: minimal fixes" />
     <MESSAGE value="ADD: letters to GUI gioco page" />
     <MESSAGE value="ADD: Design for start, menu and easy mode page" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD: Design for start, menu and easy mode page" />
+    <MESSAGE value="FIX: design color" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX: design color" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1684163274824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
