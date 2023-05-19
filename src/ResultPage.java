@@ -6,6 +6,6 @@ public class ResultPage {
     private JPanel labelPunti;
 
     private void createUIComponents() {
-
+        //commento di prova
     }
 }
