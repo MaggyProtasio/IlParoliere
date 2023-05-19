@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.border.AbstractBorder;
 
 public class StartPage extends JFrame {
     private JPanel panelMain;
@@ -24,12 +25,29 @@ public class StartPage extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 //crea utente base del nome inserito
                 Utente giocatore = new Utente(nomeBox.getText());
+
                 //lo passa giocatore cosi si può memorizzare il nome
                 MenuPage m = new MenuPage(giocatore);
                 m.setVisible(true);
                 dispose();
             }
         });
+
+
+        Action enterAction = new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //crea utente base del nome inserito
+                Utente giocatore = new Utente(nomeBox.getText());
+
+                //lo passa giocatore cosi si può memorizzare il nome
+                MenuPage m = new MenuPage(giocatore);
+                m.setVisible(true);
+                dispose();
+            }
+        };
+
+        nomeBox.addActionListener(enterAction);
     }
 
 

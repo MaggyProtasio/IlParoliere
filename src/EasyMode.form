@@ -1,0 +1,2001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="EasyMode">
+  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1646" height="1331"/>
+    </constraints>
+    <properties>
+      <enabled value="false"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="572a8" binding="panelMain" layout-manager="GridLayoutManager" row-count="6" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10998005"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <vspacer id="5af4c">
+            <constraints>
+              <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="120" height="120"/>
+                <preferred-size width="120" height="120"/>
+                <maximum-size width="120" height="120"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <grid id="bae19" binding="PanelMatrice" layout-manager="GridLayoutManager" row-count="10" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="1" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="600" height="600"/>
+                <preferred-size width="600" height="600"/>
+                <maximum-size width="600" height="600"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-7122923"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="d9859" class="javax.swing.JButton" binding="Lettera1">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <hideActionText value="true"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="f3c18" class="javax.swing.JButton" binding="Lettera2">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="a0cf3" class="javax.swing.JButton" binding="Lettera3">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="42b98" class="javax.swing.JButton" binding="Lettera4">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="7bb1d" class="javax.swing.JButton" binding="Lettera5">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="8d601" class="javax.swing.JButton" binding="Lettera6">
+                <constraints>
+                  <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="50e79" class="javax.swing.JButton" binding="Lettera7">
+                <constraints>
+                  <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="24b4" class="javax.swing.JButton" binding="Lettera8">
+                <constraints>
+                  <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="8d690" class="javax.swing.JButton" binding="Lettera9">
+                <constraints>
+                  <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="4b240" class="javax.swing.JButton" binding="Lettera10">
+                <constraints>
+                  <grid row="0" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="cdab3" class="javax.swing.JButton" binding="Lettera11">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="9bcda" class="javax.swing.JButton" binding="Lettera12">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="964a6" class="javax.swing.JButton" binding="Lettera13">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="4ecb1" class="javax.swing.JButton" binding="Lettera14">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="4b175" class="javax.swing.JButton" binding="Lettera15">
+                <constraints>
+                  <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="ff05f" class="javax.swing.JButton" binding="Lettera16">
+                <constraints>
+                  <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="4e2cd" class="javax.swing.JButton" binding="Lettera17">
+                <constraints>
+                  <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="a78af" class="javax.swing.JButton" binding="Lettera18">
+                <constraints>
+                  <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="f2ae0" class="javax.swing.JButton" binding="Lettera19">
+                <constraints>
+                  <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="c1fe1" class="javax.swing.JButton" binding="Lettera20">
+                <constraints>
+                  <grid row="1" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="48829" class="javax.swing.JButton" binding="Lettera21">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="ab025" class="javax.swing.JButton" binding="Lettera22">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="8d77e" class="javax.swing.JButton" binding="Lettera23">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="eaf5e" class="javax.swing.JButton" binding="Lettera24">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="77fcb" class="javax.swing.JButton" binding="Lettera25">
+                <constraints>
+                  <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="1a71b" class="javax.swing.JButton" binding="Lettera26">
+                <constraints>
+                  <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="438fa" class="javax.swing.JButton" binding="Lettera27">
+                <constraints>
+                  <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="48572" class="javax.swing.JButton" binding="Lettera28">
+                <constraints>
+                  <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="87d21" class="javax.swing.JButton" binding="Lettera29">
+                <constraints>
+                  <grid row="2" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="276f6" class="javax.swing.JButton" binding="Lettera30">
+                <constraints>
+                  <grid row="2" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="4c25f" class="javax.swing.JButton" binding="Lettera31">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="7783d" class="javax.swing.JButton" binding="Lettera32">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="39f1c" class="javax.swing.JButton" binding="Lettera33">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="38bff" class="javax.swing.JButton" binding="Lettera34">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="17427" class="javax.swing.JButton" binding="Lettera35">
+                <constraints>
+                  <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="3b417" class="javax.swing.JButton" binding="Lettera36">
+                <constraints>
+                  <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="54e2c" class="javax.swing.JButton" binding="Lettera37">
+                <constraints>
+                  <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="aa67f" class="javax.swing.JButton" binding="Lettera38">
+                <constraints>
+                  <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="13580" class="javax.swing.JButton" binding="Lettera39">
+                <constraints>
+                  <grid row="3" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="10c1a" class="javax.swing.JButton" binding="Lettera40">
+                <constraints>
+                  <grid row="3" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="bb022" class="javax.swing.JButton" binding="Lettera41">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="30297" class="javax.swing.JButton" binding="Lettera42">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="eab96" class="javax.swing.JButton" binding="Lettera43">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="4e7dd" class="javax.swing.JButton" binding="Lettera44">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="c1057" class="javax.swing.JButton" binding="Lettera45">
+                <constraints>
+                  <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="2f88d" class="javax.swing.JButton" binding="Lettera46">
+                <constraints>
+                  <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="67140" class="javax.swing.JButton" binding="Lettera47">
+                <constraints>
+                  <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="12a22" class="javax.swing.JButton" binding="Lettera48">
+                <constraints>
+                  <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="31dd9" class="javax.swing.JButton" binding="Lettera49">
+                <constraints>
+                  <grid row="4" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="b66a1" class="javax.swing.JButton" binding="Lettera50">
+                <constraints>
+                  <grid row="4" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="769fd" class="javax.swing.JButton" binding="Lettera51">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="6dbb6" class="javax.swing.JButton" binding="Lettera52">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="fd006" class="javax.swing.JButton" binding="Lettera53">
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="2b857" class="javax.swing.JButton" binding="Lettera54">
+                <constraints>
+                  <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="94eb2" class="javax.swing.JButton" binding="Lettera55">
+                <constraints>
+                  <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="b333b" class="javax.swing.JButton" binding="Lettera56">
+                <constraints>
+                  <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="1ff87" class="javax.swing.JButton" binding="Lettera57">
+                <constraints>
+                  <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="bb25b" class="javax.swing.JButton" binding="Lettera58">
+                <constraints>
+                  <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="135dd" class="javax.swing.JButton" binding="Lettera59">
+                <constraints>
+                  <grid row="5" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="2a5de" class="javax.swing.JButton" binding="Lettera61">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="dd17e" class="javax.swing.JButton" binding="Lettera62">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="2f43f" class="javax.swing.JButton" binding="Lettera71">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="f9d99" class="javax.swing.JButton" binding="Lettera72">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="39f42" class="javax.swing.JButton" binding="Lettera63">
+                <constraints>
+                  <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="273c8" class="javax.swing.JButton" binding="Lettera73">
+                <constraints>
+                  <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="8cda6" class="javax.swing.JButton" binding="Lettera64">
+                <constraints>
+                  <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="5a4c3" class="javax.swing.JButton" binding="Lettera65">
+                <constraints>
+                  <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="cd5a5" class="javax.swing.JButton" binding="Lettera66">
+                <constraints>
+                  <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="2a8ff" class="javax.swing.JButton" binding="Lettera67">
+                <constraints>
+                  <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="274d4" class="javax.swing.JButton" binding="Lettera68">
+                <constraints>
+                  <grid row="6" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="8f842" class="javax.swing.JButton" binding="Lettera69">
+                <constraints>
+                  <grid row="6" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="6fe2c" class="javax.swing.JButton" binding="Lettera60">
+                <constraints>
+                  <grid row="5" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="b1aaf" class="javax.swing.JButton" binding="Lettera70">
+                <constraints>
+                  <grid row="6" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="e4ec5" class="javax.swing.JButton" binding="Lettera80">
+                <constraints>
+                  <grid row="7" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="88819" class="javax.swing.JButton" binding="Lettera79">
+                <constraints>
+                  <grid row="7" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="47e1b" class="javax.swing.JButton" binding="Lettera78">
+                <constraints>
+                  <grid row="7" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="1ffdf" class="javax.swing.JButton" binding="Lettera77">
+                <constraints>
+                  <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="679ea" class="javax.swing.JButton" binding="Lettera76">
+                <constraints>
+                  <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="491a" class="javax.swing.JButton" binding="Lettera75">
+                <constraints>
+                  <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="f4f40" class="javax.swing.JButton" binding="Lettera74">
+                <constraints>
+                  <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="96284" class="javax.swing.JButton" binding="Lettera81">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="2c4f7" class="javax.swing.JButton" binding="Lettera82">
+                <constraints>
+                  <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="c6d15" class="javax.swing.JButton" binding="Lettera83">
+                <constraints>
+                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="65e59" class="javax.swing.JButton" binding="Lettera84">
+                <constraints>
+                  <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="260c9" class="javax.swing.JButton" binding="Lettera85">
+                <constraints>
+                  <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="daeff" class="javax.swing.JButton" binding="Lettera86">
+                <constraints>
+                  <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="7aaac" class="javax.swing.JButton" binding="Lettera87">
+                <constraints>
+                  <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="c1d69" class="javax.swing.JButton" binding="Lettera88">
+                <constraints>
+                  <grid row="8" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="e1990" class="javax.swing.JButton" binding="Lettera89">
+                <constraints>
+                  <grid row="8" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="1eceb" class="javax.swing.JButton" binding="Lettera90">
+                <constraints>
+                  <grid row="8" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="93d8f" class="javax.swing.JButton" binding="Lettera91">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="49db3" class="javax.swing.JButton" binding="Lettera92">
+                <constraints>
+                  <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="30bd2" class="javax.swing.JButton" binding="Lettera93">
+                <constraints>
+                  <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="68ee" class="javax.swing.JButton" binding="Lettera94">
+                <constraints>
+                  <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="fa483" class="javax.swing.JButton" binding="Lettera95">
+                <constraints>
+                  <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="52cb1" class="javax.swing.JButton" binding="Lettera96">
+                <constraints>
+                  <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="17553" class="javax.swing.JButton" binding="Lettera97">
+                <constraints>
+                  <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="e9c74" class="javax.swing.JButton" binding="Lettera98">
+                <constraints>
+                  <grid row="9" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="10f5a" class="javax.swing.JButton" binding="Lettera99">
+                <constraints>
+                  <grid row="9" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+              <component id="5e317" class="javax.swing.JButton" binding="Lettera100">
+                <constraints>
+                  <grid row="9" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="50"/>
+                    <preferred-size width="50" height="50"/>
+                    <maximum-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11395"/>
+                  <borderPainted value="false"/>
+                  <enabled value="true"/>
+                  <font name="Rubik" size="18" style="1"/>
+                  <foreground color="-9812703"/>
+                  <text value="a"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="bc4c6" class="javax.swing.JTextField" binding="parolaInput">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="508" height="33"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-11395"/>
+              <font name="Sora" size="24" style="1"/>
+              <foreground color="-10272988"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <grid id="1aa51" binding="panelCronologia" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="3" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-10998005"/>
+              <foreground color="-1"/>
+            </properties>
+            <border type="line">
+              <color color="-524292"/>
+            </border>
+            <children>
+              <component id="e4b01" class="javax.swing.JLabel" binding="image">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="0" height="0"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <icon value="img/ezgif.com-crop.gif"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="25010" class="javax.swing.JLabel" binding="nomeBox">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Rubik" size="22" style="0"/>
+                  <foreground color="-524292"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <grid id="77aff" binding="panelParoleTrovate" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="250" height="410"/>
+                    <preferred-size width="250" height="410"/>
+                    <maximum-size width="250" height="410"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-7122923"/>
+                </properties>
+                <border type="line">
+                  <color color="-2592"/>
+                </border>
+                <children>
+                  <component id="c3be4" class="javax.swing.JLabel" binding="labelParoleTrovate">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Rubik" size="14" style="0"/>
+                      <foreground color="-2592"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <vspacer id="2e66d">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                        <preferred-size width="30" height="30"/>
+                      </grid>
+                    </constraints>
+                  </vspacer>
+                  <component id="ba93f" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Rubik" size="22" style="1"/>
+                      <foreground color="-2592"/>
+                      <text value="Words Found"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="87de7" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="250" height="370"/>
+                    <preferred-size width="250" height="370"/>
+                    <maximum-size width="250" height="370"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-10998005"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="f32d7" class="javax.swing.JLabel" binding="labelPunti">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Rubik" size="22" style="1"/>
+                      <foreground color="-2592"/>
+                      <text value="Points:"/>
+                    </properties>
+                  </component>
+                  <vspacer id="cbe1b">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                        <minimum-size width="185" height="185"/>
+                        <preferred-size width="185" height="185"/>
+                        <maximum-size width="185" height="185"/>
+                      </grid>
+                    </constraints>
+                  </vspacer>
+                  <vspacer id="8e626">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                        <minimum-size width="120" height="120"/>
+                        <preferred-size width="120" height="120"/>
+                        <maximum-size width="120" height="120"/>
+                      </grid>
+                    </constraints>
+                  </vspacer>
+                  <component id="6b713" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Rubik" size="22" style="0"/>
+                      <foreground color="-2592"/>
+                      <text value="Timer: 1:00"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <vspacer id="c37bd">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="120" height="120"/>
+                <preferred-size width="120" height="120"/>
+                <maximum-size width="120" height="120"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="956a">
+            <constraints>
+              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="60" height="60"/>
+                <preferred-size width="60" height="60"/>
+                <maximum-size width="60" height="60"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="9ff6">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="30" height="30"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="bd185">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="30" height="30"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="af5ae">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="20" height="20"/>
+                <preferred-size width="20" height="20"/>
+                <maximum-size width="20" height="20"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="42c06">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="30" height="30"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="5d94e">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="60" height="60"/>
+                <preferred-size width="60" height="60"/>
+                <maximum-size width="60" height="60"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <grid id="a16ec" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-10404066"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="bb554" class="javax.swing.JButton" binding="sendBtn">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-11108553"/>
+                  <borderPainted value="false"/>
+                  <font name="Sora" size="18" style="1"/>
+                  <foreground color="-1"/>
+                  <hideActionText value="false"/>
+                  <text value="Enter"/>
+                </properties>
+              </component>
+              <component id="18de2" class="javax.swing.JButton" binding="exitBtn">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-5297374"/>
+                  <borderPainted value="false"/>
+                  <font name="Sora" size="18" style="1"/>
+                  <foreground color="-1"/>
+                  <hideActionText value="false"/>
+                  <text value="Exit"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <hspacer id="57109">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+    </children>
+  </grid>
+</form>

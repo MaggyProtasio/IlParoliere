@@ -104,7 +104,6 @@ public class Partita {
 
         char[][] matrix = new char[10][10];
         Random random = new Random();
-        //String[] wordsInject = new String[10];
         String[] wordsInject = new String[10];
 
         // Populate wordsInject array with 10 words of length 10 or less
@@ -130,18 +129,6 @@ public class Partita {
             }
         }
 
-        // Insert Italian words vertically
-        for (int i = 0; i < wordsInject.length; i++) {
-            String word = wordsInject[i];
-            int wordLength = word.length();
-            int row = random.nextInt(10 - wordLength + 1);
-            int col = random.nextInt(10);
-
-            for (int j = 0; j < wordLength; j++) {
-                matrix[row + j][col] = word.charAt(j);
-            }
-        }
-
         // Insert Italian words diagonally
         for (int i = 0; i < wordsInject.length; i++) {
             String word = wordsInject[i];
@@ -151,6 +138,18 @@ public class Partita {
 
             for (int j = 0; j < wordLength; j++) {
                 matrix[row + j][col + j] = word.charAt(j);
+            }
+        }
+
+        // Insert Italian words vertically
+        for (int i = 0; i < wordsInject.length; i++) {
+            String word = wordsInject[i];
+            int wordLength = word.length();
+            int row = random.nextInt(10 - wordLength + 1);
+            int col = random.nextInt(10);
+
+            for (int j = 0; j < wordLength; j++) {
+                matrix[row + j][col] = word.charAt(j);
             }
         }
 
@@ -184,6 +183,17 @@ public class Partita {
                 System.out.print("└───┘\t"); // Bottom border
             }
             System.out.println();
+        }
+    }
+
+    public void stampaMatriceSemplice(){
+        for (int i = 0; i < this.matrice.length; i++) {
+           System.out.println("row " + i);
+
+            for (int j = 0; j < this.matrice[i].length; j++) {
+                System.out.println(this.matrice[i][j]); // Cell content
+            }
+
         }
     }
 

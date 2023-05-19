@@ -11,10 +11,7 @@ public class Main {
         String nickname;
         String parolaInserita = "";
         Random rand = new Random();
-
-        //inizia gioco con GUI
-        StartPage s = new StartPage();
-
+        
         //creazione utente
         System.out.println("Benvenuto nel paroliere!");
         System.out.println("Inserisci il nickname");
@@ -27,7 +24,10 @@ public class Main {
         Partita partita = new Partita(giocatore);
         diz.inizializzaWords();         //mette tutti parole comuni nell'array per usarlo dopo
         partita.creaMatrice(diz.getWords());
-        partita.stampaMatrice();
+        //partita.stampaMatrice();
+        //partita.stampaMatriceSemplice();
+        //inizia gioco con GUI
+        StartPage s = new StartPage();
 
         int i = 0;
         do {
