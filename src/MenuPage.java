@@ -8,7 +8,6 @@ public class MenuPage extends JFrame {
     private JPanel panelOut;
     private JButton easyModeBtn;
     private JButton specialBtn;
-    private JButton mediumModeBtn;
     private JButton hardModeBtn;
     private JButton backBtn;
 

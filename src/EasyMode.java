@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
 
 public class EasyMode extends JFrame {
     private JPanel panelMain;
@@ -114,6 +115,7 @@ public class EasyMode extends JFrame {
     private JPanel panelParoleTrovate;
     private JLabel labelParoleTrovate;
     private JLabel labelPunti;
+    private JLabel labelTimer;
     private JLabel sampleLabel;
 
     public EasyMode(Utente g, Partita p){
@@ -130,6 +132,15 @@ public class EasyMode extends JFrame {
         //inizializza dizionario
         Dizionario diz = new Dizionario();
         diz.inizializzaWords();   //mette tutti parole comuni nell'array per usarlo dopo
+
+        //inizializza timer
+        int mintmp = 3;         //3 minuti per easy mode
+        labelTimer.setText("0"+ mintmp +":00"); //metti minuti necessari
+        secondi = 0;
+        minuti = mintmp;        //metti anche qui, 5 esempio
+        onTimer();
+        //faccio partire timer, per stop - timer.stop()
+        timer.start();
 
         //carica matrice e mette nei bottoni
         p.creaMatrice(diz.getWords());
@@ -158,7 +169,6 @@ public class EasyMode extends JFrame {
                 dispose();
             }
         });
-        //da mettere timer
 
         //quando si preme enter key si fa la stessa azione
         String listaParole =  "<html>";
@@ -233,5 +243,45 @@ public class EasyMode extends JFrame {
             e.printStackTrace();
             return null;
         }
+    }
+
+    //timer di javaswing
+    Timer timer;
+    String ddSecondi, ddMinuti; //riferiti per i decimali
+    DecimalFormat dFormat = new DecimalFormat("00"); //mi serve per fare 00
+    int secondi,minuti;
+    int mintmp = 0; //variabile per modificare il tempo in base alle modalità
+
+    public void onTimer(){
+        //argomento ha la velocita update del timer [1000 = 1sec]
+        timer = new Timer(1000, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //scrivi che cosa succede quando timer updata (ogni sec)
+                secondi--;
+
+                //converto 1 in 01, secondi in forma decimale
+                ddSecondi = dFormat.format(secondi);
+                ddMinuti = dFormat.format(minuti);
+
+                //per mostrare timer su window - decrescente
+                labelTimer.setText(ddMinuti + ":" + ddSecondi);
+
+                if(secondi == -1){ //-1 perche è tricky, non mettiamo 60 su orologio ma 59
+                    secondi = 59;
+                    minuti--;
+
+                    ddSecondi = dFormat.format(secondi);
+                    ddMinuti = dFormat.format(minuti);
+                    labelTimer.setText(ddMinuti + ":" + ddSecondi);
+                }
+
+                //tempo scaduto!
+                if(minuti == 0 && secondi == 0){
+                    timer.stop();
+                }
+            }
+        });
+
     }
 }
