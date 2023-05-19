@@ -1,0 +1,124 @@
+Index: src/Partita.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.Arrays;\nimport java.util.Iterator;\nimport java.util.Vector;\n\npublic class Partita {\n    public int puntiTotali;\n    public Utente utente;\n    public String parolaMigliore;\n    public int parolaNum;\n\n    Vector<String> paroleArray= new Vector<>();\n\n    //costruttore\n    public Partita(Utente u){\n        this.utente = utente;\n        this.puntiTotali = 0;\n        this.parolaMigliore = null;\n    }\n\n    // getter e setter\n    public int getPuntiTotali() {\n        return puntiTotali;\n    }\n    public void setPuntiTotali(int puntiTotali) {\n        this.puntiTotali = puntiTotali;\n    }\n    public Utente getUtente() {\n        return utente;\n    }\n    public void setUtente(Utente utente) {\n        this.utente = utente;\n    }\n    public String getParolaMigliore() {\n        return parolaMigliore;\n    }\n    public void setParolaMigliore(String parolaMigliore) {\n        this.parolaMigliore = parolaMigliore;\n    }\n    public int getParolaNum() {\n        return parolaNum;\n    }\n    public void setParolaNum(int parolaNum) {\n        this.parolaNum = parolaNum;\n    }\n\n    //metodi\n    public void aggiungiPunti(String parola){\n        int lunghezzaParola = parola.length();\n        int k = 100;            //costante\n        int punti = lunghezzaParola * k;\n        puntiTotali = puntiTotali + punti;\n    }\n    public boolean controllaParolaMigliore() {\n        String best = \"\";\n        boolean unique = true;\n        Iterator<String> i = paroleArray.iterator();\n        Iterator<String> n = paroleArray.iterator();\n        while (i.hasNext()) {\n            String parolai = i.next();\n           //System.out.println(parolai.length());\n            while(n.hasNext()){\n                String parolan = n.next();\n                if (parolai.length() < parolan.length()) {\n                    if(best.length() < parolan.length()){\n                        if(best.length() == parolan.length()){\n                            unique = false;\n\n                        }\n                        //per trovare la parola piu lunga\n                        best = parolan;\n                        System.out.println(\"Best---\"+best);\n                    }\n                }\n            }\n        }\n        setParolaMigliore(best);\n        return unique;\n    }\n\n    public int puntiParola(String parola){\n        int lunghezzaParola = parola.length();\n        int k = 100;            //costante\n        int punti = lunghezzaParola * k;\n        paroleArray.add(parola);\n        return punti;\n    }\n\n    public void contaParola(){\n        parolaNum++;\n    }\n\n    public boolean doppione(String parolaInserita){\n        boolean d = false; //doppione\n        int size = paroleArray.size(); //grandezza array\n        for(int x=0; x<size; x++){ //ciclo vettore grande\n            if(parolaInserita.equals(paroleArray.get(x))){\n                d = true;\n            }\n        }\n        return d;\n    }\n\n    public boolean findDuplicates() {\n        boolean d = false; //doppione\n        Vector<String> duplicates = new Vector<String>();\n        if(paroleArray.size() == 2){\n            d = paroleArray.get(0).equals(paroleArray.get(1));\n            System.out.println(d);\n        }\n        for (int i = 0; i < paroleArray.size() - 1; i++) {\n            for (int j = i+1; j < paroleArray.size(); j++) {\n                if (paroleArray.get(i).equals(paroleArray.get(j))) {\n                    if (!duplicates.contains(paroleArray.get(i))) {\n                        duplicates.add(paroleArray.get(i));\n                        d = true;\n                    }\n                    if (!duplicates.contains(paroleArray.get(j))) {\n                        duplicates.add(paroleArray.get(j));\n                        d = true;\n                    }\n                    //d = true;\n                    break;\n                }\n            }\n        }\n        return d;\n    }\n\n\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Partita.java b/src/Partita.java
+--- a/src/Partita.java	
++++ b/src/Partita.java	
+@@ -50,7 +50,17 @@
+         int punti = lunghezzaParola * k;
+         puntiTotali = puntiTotali + punti;
+     }
+-    public boolean controllaParolaMigliore() {
++
++    public static String findLongestWord(Vector<String> vector) {
++        String longestWord = "";
++        for (String word : vector) {
++            if (word.length() > longestWord.length()) {
++                longestWord = word;
++            }
++        }
++        return longestWord;
++    }
++    public boolean controllaParolaMigliore4() {
+         String best = "";
+         boolean unique = true;
+         Iterator<String> i = paroleArray.iterator();
+@@ -64,6 +74,7 @@
+                     if(best.length() < parolan.length()){
+                         if(best.length() == parolan.length()){
+                             unique = false;
++                            best = parolan;
+ 
+                         }
+                         //per trovare la parola piu lunga
+@@ -76,6 +87,23 @@
+         setParolaMigliore(best);
+         return unique;
+     }
++
++    public boolean controllaParolaMigliore() {
++        String best = "";
++        boolean unique = true;
++        Iterator<String> i = paroleArray.iterator();
++        while (i.hasNext()) {
++            String parola = i.next();
++            if (parola.length() > best.length()) {
++                best = parola;
++                unique = true;
++            } else if (parola.length() == best.length() && !parola.equals(best)) {
++                unique = false;
++            }
++        }
++        setParolaMigliore(best);
++        return unique;
++    }
+ 
+     public int puntiParola(String parola){
+         int lunghezzaParola = parola.length();
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"8462984d-23c0-4314-847e-acde3a7b6bf0\" name=\"Changes\" comment=\":sistemazione funzione doppione\">\n      <change beforePath=\"$PROJECT_DIR$/src/Partita.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Partita.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2MgM7lntEbmlzdqeqLILpROIR0b\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Users/Nastya/IdeaProjects/IlParoliere&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"8462984d-23c0-4314-847e-acde3a7b6bf0\" name=\"Changes\" comment=\"\" />\n      <created>1678184607277</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1678184607277</updated>\n      <workItem from=\"1678184608473\" duration=\"1000\" />\n      <workItem from=\"1678185005684\" duration=\"1221000\" />\n      <workItem from=\"1678188292233\" duration=\"1901000\" />\n      <workItem from=\"1679567791335\" duration=\"2677000\" />\n      <workItem from=\"1679996146394\" duration=\"3802000\" />\n      <workItem from=\"1680601684537\" duration=\"1782000\" />\n      <workItem from=\"1681810082945\" duration=\"575000\" />\n      <workItem from=\"1681810667700\" duration=\"1221000\" />\n      <workItem from=\"1683020363813\" duration=\"2223000\" />\n      <workItem from=\"1683023042829\" duration=\"561000\" />\n      <workItem from=\"1683297457506\" duration=\"225000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\":add user and dizionari\">\n      <created>1678188079722</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1678188079722</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\":add user and dizionari\">\n      <created>1678188096489</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1678188096489</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\":rename file to dictionary.txt\">\n      <created>1678189356605</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1678189356605</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\": ADD ciclo for e iniziato il gioco\">\n      <created>1679392892862</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1679392892862</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\":add Dizionario obj, sistemato partita, manca parolaMigliore\">\n      <created>1679397101138</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1679397101138</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\":sistemazione parolamigliore\">\n      <created>1679570450866</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1679570450866</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\":sistemazione funzione doppione\">\n      <created>1683297492858</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1683297492858</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\":sistemazione funzione doppione\">\n      <created>1683297535598</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1683297535598</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"9\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\":add user and dizionari\" />\n    <MESSAGE value=\":rename file to dictionary.txt\" />\n    <MESSAGE value=\": ADD ciclo for e iniziato il gioco\" />\n    <MESSAGE value=\":add Dizionario obj, sistemato partita, manca parolaMigliore\" />\n    <MESSAGE value=\":sistemazione parolamigliore\" />\n    <MESSAGE value=\":sistemazione funzione doppione\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\":sistemazione funzione doppione\" />\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/IlParoliere$Main.ic\" NAME=\"Main Coverage Results\" MODIFIED=\"1678185044864\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,7 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment=":sistemazione funzione doppione">
++    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment=":tolto commenti">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Partita.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -67,7 +69,7 @@
+       <workItem from="1681810667700" duration="1221000" />
+       <workItem from="1683020363813" duration="2223000" />
+       <workItem from="1683023042829" duration="561000" />
+-      <workItem from="1683297457506" duration="225000" />
++      <workItem from="1683297457506" duration="4712000" />
+     </task>
+     <task id="LOCAL-00001" summary=":add user and dizionari">
+       <created>1678188079722</created>
+@@ -125,7 +127,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1683297535598</updated>
+     </task>
+-    <option name="localTasksCounter" value="9" />
++    <task id="LOCAL-00009" summary=":tolto commenti">
++      <created>1683297883949</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1683297883949</updated>
++    </task>
++    <task id="LOCAL-00010" summary=":tolto commenti">
++      <created>1683297969129</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1683297969129</updated>
++    </task>
++    <option name="localTasksCounter" value="11" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -138,7 +154,8 @@
+     <MESSAGE value=":add Dizionario obj, sistemato partita, manca parolaMigliore" />
+     <MESSAGE value=":sistemazione parolamigliore" />
+     <MESSAGE value=":sistemazione funzione doppione" />
+-    <option name="LAST_COMMIT_MESSAGE" value=":sistemazione funzione doppione" />
++    <MESSAGE value=":tolto commenti" />
++    <option name="LAST_COMMIT_MESSAGE" value=":tolto commenti" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1678185044864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
