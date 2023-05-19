@@ -14,8 +14,9 @@ public class MainprovaTimer {
     String ddSecondi, ddMinuti; //riferiti per i decimali
     DecimalFormat dFormat = new DecimalFormat("00"); //mi serve per fare 00
     int secondi,minuti;
+    int mintmp = 0; //variabile per modificare il tempo in base alle modalità
 
-    public MainprovaTimer(){
+    public MainprovaTimer(int mintmp){ //passo minuti da cui parte il timer
 
         //per window dove stampa timer
         window = new JFrame();
@@ -33,9 +34,9 @@ public class MainprovaTimer {
         window.setVisible(true);
 
         //per defualt
-        counterLabel.setText("05:00"); //metti minuti necessari
+        counterLabel.setText("0"+ mintmp +":00"); //metti minuti necessari
         secondi = 0;
-        minuti = 5; //metti anche qui, 5 esempio
+        minuti = mintmp; //metti anche qui, 5 esempio
         timer();
         //faccio partire timer, per stop - timer.stop()
         timer.start();
