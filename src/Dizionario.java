@@ -25,10 +25,11 @@ public class Dizionario {
         this.parola = parola;
     }
 
+    // dizionario originale --------------------------------------------------------------------------
     public boolean trovaParoladiz(String p){
         boolean b = false;
         try {
-            String filePath = "src/dictionary.txt"; // filename and Main.java are in the same folder
+            String filePath = "src/file/dictionary.txt"; // filename and Main.java are in the same folder
             BufferedReader reader = new BufferedReader(new FileReader(filePath));
             String line = reader.readLine();
             while (line != null) {
@@ -47,10 +48,11 @@ public class Dizionario {
         return b;
     }
 
+    //per file comuni -------------------------------------------------------------------------------
     public boolean trovaParolaComuni(String p){
         boolean b = false;
         try {
-            String filePath = "src/ParoleComuni.txt"; // filename and Main.java are in the same folder
+            String filePath = "src/file/ParoleComuni.txt"; // filename and Main.java are in the same folder
             BufferedReader reader = new BufferedReader(new FileReader(filePath));
             String line = reader.readLine();
             while (line != null) {
@@ -69,6 +71,29 @@ public class Dizionario {
         return b;
     }
 
+    //per file speciale ------------------------------------------------------------------------------
+    public boolean trovaParolaSpecial(String p){
+        boolean b = false;
+        try {
+            String filePath = "src/file/fileSpeciale.txt"; // filename and Main.java are in the same folder
+            BufferedReader reader = new BufferedReader(new FileReader(filePath));
+            String line = reader.readLine();
+            while (line != null) {
+                if(p.equals(line)){
+                    System.out.println(line+" - trovato :D");
+                    b = true;
+                    break;
+                }
+                line = reader.readLine();
+            }
+            //System.out.println("FINE");
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return b;
+    }
+
     public void stampaWords(){
 
         for (int i = 0; i < words.length; i++) {
@@ -79,7 +104,7 @@ public class Dizionario {
     public boolean stampaParole(String p){
         boolean b = false;
         try {
-            String filePath = "src/dictionary.txt"; // filename and Main.java are in the same folder
+            String filePath = "src/file/dictionary.txt"; // filename and Main.java are in the same folder
             BufferedReader reader = new BufferedReader(new FileReader(filePath));
             String line = reader.readLine();
             while (line != null) {
@@ -99,7 +124,7 @@ public class Dizionario {
     }
 
     public void inizializzaWords() {
-            String filePath = "src/ParoleComuni.txt"; // filename and Main.java are in the same folder
+            String filePath = "src/file/ParoleComuni.txt"; // filename and Main.java are in the same folder
             File file = new File(filePath);
             try {
                 Scanner scanner = new Scanner(file);
@@ -119,4 +144,27 @@ public class Dizionario {
                 e.printStackTrace();
             }
         }
+
+    public void inizializzaWordsSpecial() {
+        String filePath = "src/file/fileSpeciale.txt"; // filename and Main.java are in the same folder
+        File file = new File(filePath);
+        try {
+            Scanner scanner = new Scanner(file);
+            int i = 0;
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                String[] lineWords = line.split(" "); // Split della riga
+                for (String word : lineWords) {
+                    this.words[i] = word; // metti parola in array words
+                    i++;
+                }
+            }
+            scanner.close();
+            // Now you can use the 'words' array to process the words as needed
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
+    }
+
+

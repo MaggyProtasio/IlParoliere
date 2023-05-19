@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="ADD: file contenente un timer di prova, da adattare alle varie difficoltà del gioco :)">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2023_15_22_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2023_15_22__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2023_16_28_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2023_16_28__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_23,_15_17_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_23__15_17__Changes_1.xml" beforeDir="false" />
+    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="MODIFY: sistemato timer per renderlo dinamico e utilizzabile per le varie modalità">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainprovaTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainprovaTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dizionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dizionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ParoleComuni.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dictionary.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileSpeciale.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +102,7 @@
       <workItem from="1684408899295" duration="4938000" />
       <workItem from="1684477957837" duration="280000" />
       <workItem from="1684493540077" duration="890000" />
-      <workItem from="1684496698983" duration="297000" />
+      <workItem from="1684496698983" duration="2888000" />
     </task>
     <task id="LOCAL-00001" summary=":add user and dizionari">
       <created>1678188079722</created>
@@ -240,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684436789086</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="MODIFY: sistemato timer per renderlo dinamico e utilizzabile per le varie modalità">
+      <created>1684497149154</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1684497149154</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +276,8 @@
     <MESSAGE value="FIX: minimal fixes" />
     <MESSAGE value="MODIFY: sistemato file parole comuni e modificato size words" />
     <MESSAGE value="ADD: file contenente un timer di prova, da adattare alle varie difficoltà del gioco :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD: file contenente un timer di prova, da adattare alle varie difficoltà del gioco :)" />
+    <MESSAGE value="MODIFY: sistemato timer per renderlo dinamico e utilizzabile per le varie modalità" />
+    <option name="LAST_COMMIT_MESSAGE" value="MODIFY: sistemato timer per renderlo dinamico e utilizzabile per le varie modalità" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683812690821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
