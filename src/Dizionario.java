@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Scanner; // Import the Scanner class to read text files
 
 public class Dizionario {
-    private String parola;
+    //private String parola;
     String[] words = new String[1068]; // parole in file NON MODIFICARE
 
     public String[] getWords() {
@@ -17,13 +17,13 @@ public class Dizionario {
 
     }
 
-    public String getParola() {
+    /*public String getParola() {
         return parola;
-    }
+    }*
 
     public void setParola(String parola) {
         this.parola = parola;
-    }
+    }*/
 
     // dizionario originale --------------------------------------------------------------------------
     public boolean trovaParoladiz(String p){
@@ -101,7 +101,8 @@ public class Dizionario {
         }
     }
 
-    public boolean stampaParole(String p){
+    /*
+    public boolean stampaParole(String p){ //NON SERVE ELIMINA O COMMENTA
         boolean b = false;
         try {
             String filePath = "src/file/dictionary.txt"; // filename and Main.java are in the same folder
@@ -121,7 +122,7 @@ public class Dizionario {
             e.printStackTrace();
         }
         return b;
-    }
+    }*/
 
     public void inizializzaWords() {
             String filePath = "src/file/ParoleComuni.txt"; // filename and Main.java are in the same folder

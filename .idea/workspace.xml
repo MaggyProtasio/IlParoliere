@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: aggiunta parole eng su dizionario">
-      <change afterPath="$PROJECT_DIR$/src/audio/hehe.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/audio/music1.wav" afterDir="false" />
+    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="ADD: aggiunta file audio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dizionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dizionario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +105,8 @@
       <workItem from="1684493540077" duration="890000" />
       <workItem from="1684496698983" duration="6674000" />
       <workItem from="1684607281803" duration="2954000" />
-      <workItem from="1684611423641" duration="39000" />
+      <workItem from="1684611423641" duration="187000" />
+      <workItem from="1684611904262" duration="1405000" />
     </task>
     <task id="LOCAL-00001" summary=":add user and dizionari">
       <created>1678188079722</created>
@@ -270,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684503412897</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="ADD: aggiunta file audio">
+      <created>1684611482373</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1684611482373</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +311,8 @@
     <MESSAGE value="MODIFY: sistemato timer per renderlo dinamico e utilizzabile per le varie modalità" />
     <MESSAGE value="FIX: cose per timer" />
     <MESSAGE value="FIX: aggiunta parole eng su dizionario" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX: aggiunta parole eng su dizionario" />
+    <MESSAGE value="ADD: aggiunta file audio" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD: aggiunta file audio" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683812690821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
