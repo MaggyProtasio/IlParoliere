@@ -138,7 +138,7 @@ public class EasyMode extends JFrame {
         labelTimer.setText("0"+ mintmp +":00"); //metti minuti necessari
         secondi = 0;
         minuti = mintmp;        //metti anche qui, 5 esempio
-        onTimer();
+        onTimer(p,g);
         //faccio partire timer, per stop - timer.stop()
         timer.start();
 
@@ -252,7 +252,7 @@ public class EasyMode extends JFrame {
     int secondi,minuti;
     int mintmp = 0; //variabile per modificare il tempo in base alle modalità
 
-    public void onTimer(){
+    public void onTimer(Partita p, Utente g){
         //argomento ha la velocita update del timer [1000 = 1sec]
         timer = new Timer(1000, new ActionListener() {
             @Override
@@ -279,6 +279,9 @@ public class EasyMode extends JFrame {
                 //tempo scaduto!
                 if(minuti == 0 && secondi == 0){
                     timer.stop();
+                    ResultPage result = new ResultPage(p,g);
+                    result.setVisible(true);
+                    parolaInput.disable();
                 }
             }
         });
