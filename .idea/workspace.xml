@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: Color correcting">
-      <change afterPath="$PROJECT_DIR$/src/img/menu8.gif" afterDir="false" />
+    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: aggiunta parole eng su dizionario">
+      <change afterPath="$PROJECT_DIR$/src/audio/hehe.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/audio/music1.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StartPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/menu1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/menu2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/menu3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/menu5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,25 +42,42 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;261&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maggy/IdeaProjects/IlParoliere/src/img&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/Nastya/IdeaProjects/IlParoliere/src&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src\img" />
       <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src" />
       <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src\MenuPage" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/audio" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TimerGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TimerGUI" />
+      <module name="IlParoliere" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TimerGUI" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -87,14 +100,14 @@
       <workItem from="1683297457506" duration="225000" />
       <workItem from="1683716109530" duration="274000" />
       <workItem from="1683748303812" duration="4256000" />
-      <workItem from="1684226082783" duration="10027000" />
-      <workItem from="1684306601001" duration="923000" />
-      <workItem from="1684320773356" duration="15000" />
-      <workItem from="1684395897380" duration="15408000" />
-      <workItem from="1684428837470" duration="2532000" />
-      <workItem from="1684485401673" duration="610000" />
-      <workItem from="1684493040889" duration="203000" />
-      <workItem from="1684496346903" duration="8260000" />
+      <workItem from="1684226082783" duration="2179000" />
+      <workItem from="1684303407544" duration="3229000" />
+      <workItem from="1684408899295" duration="4938000" />
+      <workItem from="1684477957837" duration="280000" />
+      <workItem from="1684493540077" duration="890000" />
+      <workItem from="1684496698983" duration="6674000" />
+      <workItem from="1684607281803" duration="2954000" />
+      <workItem from="1684611423641" duration="39000" />
     </task>
     <task id="LOCAL-00001" summary=":add user and dizionari">
       <created>1678188079722</created>
@@ -208,35 +221,56 @@
       <option name="project" value="LOCAL" />
       <updated>1684165989033</updated>
     </task>
-    <task id="LOCAL-00017" summary="ADD: letters to GUI gioco page">
-      <created>1684228312850</created>
+    <task id="LOCAL-00017" summary="MODIFY: sistemato file parole comuni e modificato size words">
+      <created>1684235207833</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1684228312850</updated>
+      <updated>1684235207833</updated>
     </task>
-    <task id="LOCAL-00018" summary="ADD: Design for start, menu and easy mode page">
-      <created>1684499715079</created>
+    <task id="LOCAL-00018" summary="ADD: file contenente un timer di prova, da adattare alle varie difficoltà del gioco :)">
+      <created>1684436746571</created>
       <option name="number" value="00018" />
       <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1684499715079</updated>
+      <updated>1684436746571</updated>
     </task>
-    <task id="LOCAL-00019" summary="FIX: design color">
-      <created>1684503448770</created>
+    <task id="LOCAL-00019" summary="ADD: file contenente un timer di prova, da adattare alle varie difficoltà del gioco :)">
+      <created>1684436789086</created>
       <option name="number" value="00019" />
       <option name="presentableId" value="LOCAL-00019" />
       <option name="project" value="LOCAL" />
-      <updated>1684503448770</updated>
+      <updated>1684436789086</updated>
     </task>
-    <task id="LOCAL-00020" summary="FIX: Color correcting">
-      <created>1684504298699</created>
+    <task id="LOCAL-00020" summary="MODIFY: sistemato timer per renderlo dinamico e utilizzabile per le varie modalità">
+      <created>1684497149154</created>
       <option name="number" value="00020" />
       <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
-      <updated>1684504298699</updated>
+      <updated>1684497149154</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="FIX: cose per timer">
+      <created>1684500069280</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1684500069280</updated>
+    </task>
+    <task id="LOCAL-00022" summary="FIX: cose per timer">
+      <created>1684500110622</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1684500110622</updated>
+    </task>
+    <task id="LOCAL-00023" summary="FIX: aggiunta parole eng su dizionario">
+      <created>1684503412896</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1684503412897</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,14 +300,15 @@
     <MESSAGE value="ADD: Connected ParoleComuni.txt to the matrix and improved game flow" />
     <MESSAGE value="FIX: Parole count and spelling" />
     <MESSAGE value="FIX: minimal fixes" />
-    <MESSAGE value="ADD: letters to GUI gioco page" />
-    <MESSAGE value="ADD: Design for start, menu and easy mode page" />
-    <MESSAGE value="FIX: design color" />
-    <MESSAGE value="FIX: Color correcting" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX: Color correcting" />
+    <MESSAGE value="MODIFY: sistemato file parole comuni e modificato size words" />
+    <MESSAGE value="ADD: file contenente un timer di prova, da adattare alle varie difficoltà del gioco :)" />
+    <MESSAGE value="MODIFY: sistemato timer per renderlo dinamico e utilizzabile per le varie modalità" />
+    <MESSAGE value="FIX: cose per timer" />
+    <MESSAGE value="FIX: aggiunta parole eng su dizionario" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX: aggiunta parole eng su dizionario" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1684163274824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683812690821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/IlParoliere$StartPage.ic" NAME="StartPage Coverage Results" MODIFIED="1683308106935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
