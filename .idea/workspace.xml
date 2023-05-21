@@ -9,11 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: modifica font bottoni">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/IlParoliere_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/Logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="ADD:aggiunto icona, file &quot;Logo.png&quot; nella cartella img">
       <change beforePath="$PROJECT_DIR$/src/EasyMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyMode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -121,7 +122,7 @@
       <workItem from="1684680036408" duration="5571000" />
       <workItem from="1684692439743" duration="552000" />
       <workItem from="1684693108858" duration="48000" />
-      <workItem from="1684693907762" duration="543000" />
+      <workItem from="1684693907762" duration="983000" />
     </task>
     <task id="LOCAL-00001" summary=":add user and dizionari">
       <created>1678188079722</created>
@@ -277,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684688679907</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="ADD:aggiunto icona, file &quot;Logo.png&quot; nella cartella img">
+      <created>1684694513759</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1684694513759</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +294,16 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="2492afbb-a6ec-45c8-93e6-189dc945b3e3">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="8cba96a9-870a-4180-9974-21fe3ea5b71f">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -314,7 +332,8 @@
     <MESSAGE value="FIX: page flow" />
     <MESSAGE value="FIX: grafica ResultPage" />
     <MESSAGE value="FIX: modifica font bottoni" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX: modifica font bottoni" />
+    <MESSAGE value="ADD:aggiunto icona, file &quot;Logo.png&quot; nella cartella img" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD:aggiunto icona, file &quot;Logo.png&quot; nella cartella img" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683812690821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

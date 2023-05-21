@@ -128,6 +128,9 @@ public class EasyMode extends JFrame {
 
     //costruttore
     public EasyMode(Utente g, Partita p){
+        //icona
+        ImageIcon icon = new ImageIcon("src/img/Logo.png");
+        this.setIconImage(icon.getImage());
         // Set the properties of the frame
         setContentPane(panelMain);
         setTitle("WordCraft - Normal mode");
