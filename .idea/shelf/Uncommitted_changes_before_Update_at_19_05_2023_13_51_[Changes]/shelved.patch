@@ -1,0 +1,304 @@
+Index: src/ResultPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class ResultPage {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ResultPage.java b/src/ResultPage.java
+--- a/src/ResultPage.java	(revision 923d72f3f29e85e4c2cd5bd148f349fafda272bd)
++++ b/src/ResultPage.java	(date 1684497057112)
+@@ -1,2 +1,6 @@
++import javax.swing.*;
++
+ public class ResultPage {
++    private JButton button1;
++    private JButton button2;
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"8462984d-23c0-4314-847e-acde3a7b6bf0\" name=\"Changes\" comment=\"FIX: minimal fixes\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Dizionario.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Dizionario.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/ParoleComuni.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/ParoleComuni.txt\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2MgM7lntEbmlzdqeqLILpROIR0b\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;261&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maggy/IdeaProjects/IlParoliere/src/img&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Maggy\\IdeaProjects\\IlParoliere\\src\\img\" />\r\n      <recent name=\"C:\\Users\\Maggy\\IdeaProjects\\IlParoliere\\src\" />\r\n      <recent name=\"C:\\Users\\Maggy\\IdeaProjects\\IlParoliere\\src\\MenuPage\" />\r\n      <recent name=\"$PROJECT_DIR$\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"8462984d-23c0-4314-847e-acde3a7b6bf0\" name=\"Changes\" comment=\"\" />\r\n      <created>1678184607277</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1678184607277</updated>\r\n      <workItem from=\"1678184608473\" duration=\"1000\" />\r\n      <workItem from=\"1678185005684\" duration=\"1221000\" />\r\n      <workItem from=\"1678188292233\" duration=\"1901000\" />\r\n      <workItem from=\"1679567791335\" duration=\"2677000\" />\r\n      <workItem from=\"1679996146394\" duration=\"3802000\" />\r\n      <workItem from=\"1680601684537\" duration=\"1782000\" />\r\n      <workItem from=\"1681810082945\" duration=\"575000\" />\r\n      <workItem from=\"1681810667700\" duration=\"1221000\" />\r\n      <workItem from=\"1683020363813\" duration=\"2223000\" />\r\n      <workItem from=\"1683023042829\" duration=\"561000\" />\r\n      <workItem from=\"1683297457506\" duration=\"225000\" />\r\n      <workItem from=\"1683716109530\" duration=\"274000\" />\r\n      <workItem from=\"1683748303812\" duration=\"4256000\" />\r\n      <workItem from=\"1684226082783\" duration=\"2179000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\":add user and dizionari\">\r\n      <created>1678188079722</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678188079722</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\":add user and dizionari\">\r\n      <created>1678188096489</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678188096489</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\":rename file to dictionary.txt\">\r\n      <created>1678189356605</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678189356605</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\": ADD ciclo for e iniziato il gioco\">\r\n      <created>1679392892862</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679392892862</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\":add Dizionario obj, sistemato partita, manca parolaMigliore\">\r\n      <created>1679397101138</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679397101138</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\":sistemazione parolamigliore\">\r\n      <created>1679570450866</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679570450866</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\":sistemazione funzione doppione\">\r\n      <created>1683297492858</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683297492858</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\":sistemazione funzione doppione\">\r\n      <created>1683297535598</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683297535598</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"ADD: Created Menu GUI page and Classico Game GUI. Connected them\">\r\n      <created>1683308242016</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683308242016</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"ADD: Created Menu GUI page and Classico Game GUI. Connected them\">\r\n      <created>1683308426433</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683308426433</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"ADD: funzioni per tabellone e creazione array per dizionario\">\r\n      <created>1683811269024</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683811269024</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"ADD: stampawords\">\r\n      <created>1683813484618</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683813484618</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"ADD: Connected ParoleComuni.txt to the matrix and improved game flow\">\r\n      <created>1684162955447</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684162955447</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"FIX: Parole count and spelling\">\r\n      <created>1684163530580</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684163530580</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"FIX: minimal fixes\">\r\n      <created>1684165946943</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684165946944</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"FIX: minimal fixes\">\r\n      <created>1684165989033</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684165989033</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"17\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\":add user and dizionari\" />\r\n    <MESSAGE value=\":rename file to dictionary.txt\" />\r\n    <MESSAGE value=\": ADD ciclo for e iniziato il gioco\" />\r\n    <MESSAGE value=\":add Dizionario obj, sistemato partita, manca parolaMigliore\" />\r\n    <MESSAGE value=\":sistemazione parolamigliore\" />\r\n    <MESSAGE value=\":sistemazione funzione doppione\" />\r\n    <MESSAGE value=\"ADD: Created Menu GUI page and Classico Game GUI. Connected them\" />\r\n    <MESSAGE value=\"ADD: funzioni per tabellone e creazione array per dizionario\" />\r\n    <MESSAGE value=\"ADD: stampawords\" />\r\n    <MESSAGE value=\"ADD: Connected ParoleComuni.txt to the matrix and improved game flow\" />\r\n    <MESSAGE value=\"FIX: Parole count and spelling\" />\r\n    <MESSAGE value=\"FIX: minimal fixes\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"FIX: minimal fixes\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/IlParoliere$Main.ic\" NAME=\"Main Coverage Results\" MODIFIED=\"1683812690821\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\r\n    <SUITE FILE_PATH=\"coverage/IlParoliere$StartPage.ic\" NAME=\"StartPage Coverage Results\" MODIFIED=\"1683308106935\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 923d72f3f29e85e4c2cd5bd148f349fafda272bd)
++++ b/.idea/workspace.xml	(date 1684496738164)
+@@ -4,10 +4,21 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: minimal fixes">
++    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment=":creato form ResultPage">
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_2023_16_39__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_2023_16_39__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_2023_16_44__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_2023_16_44__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023_11_53__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023_11_53__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023_12_37__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023_12_37__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2023_15_22__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2023_15_22__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2023_16_28__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2023_16_28__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2023_16_28__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2023_16_28__Changes_1.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_05_2023_16_08__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_05_2023_16_08__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_05_2023_16_08__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_05_2023_16_08__Changes_1.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_2023_10_35__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_2023_10_35__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_23__11_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_23__11_01__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_23__11_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_23__11_17__Changes_.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Dizionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dizionario.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/ParoleComuni.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ParoleComuni.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/ResultPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultPage.form" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -23,14 +34,25 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;
++  }
++}</component>
++  <component name="GithubPullRequestsUISettings">
++    <option name="selectedUrlAndAccountId">
++      <UrlAndAccount>
++        <option name="accountId" value="a0133a2c-89f5-4ac4-a159-c88f1165f5bc" />
++        <option name="url" value="https://github.com/MaggyProtasio/IlParoliere.git" />
++      </UrlAndAccount>
++    </option>
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="2MgM7lntEbmlzdqeqLILpROIR0b" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+-    <ConfirmationsSetting value="2" id="Add" />
+-  </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -39,9 +61,8 @@
+   &quot;keyToString&quot;: {
+     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;261&quot;,
+     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maggy/IdeaProjects/IlParoliere/src/img&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/alice/eclipse-workspace/IlParoliere&quot;,
+     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+@@ -49,17 +70,6 @@
+     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+ }</component>
+-  <component name="RecentsManager">
+-    <key name="CopyFile.RECENT_KEYS">
+-      <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src\img" />
+-      <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src" />
+-      <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src\MenuPage" />
+-      <recent name="$PROJECT_DIR$" />
+-    </key>
+-    <key name="CopyClassDialog.RECENTS_KEY">
+-      <recent name="" />
+-    </key>
+-  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -69,133 +79,60 @@
+       <option name="presentableId" value="Default" />
+       <updated>1678184607277</updated>
+       <workItem from="1678184608473" duration="1000" />
+-      <workItem from="1678185005684" duration="1221000" />
+-      <workItem from="1678188292233" duration="1901000" />
+-      <workItem from="1679567791335" duration="2677000" />
+-      <workItem from="1679996146394" duration="3802000" />
+-      <workItem from="1680601684537" duration="1782000" />
+-      <workItem from="1681810082945" duration="575000" />
+-      <workItem from="1681810667700" duration="1221000" />
+-      <workItem from="1683020363813" duration="2223000" />
+-      <workItem from="1683023042829" duration="561000" />
+-      <workItem from="1683297457506" duration="225000" />
+-      <workItem from="1683716109530" duration="274000" />
+-      <workItem from="1683748303812" duration="4256000" />
+-      <workItem from="1684226082783" duration="2179000" />
++      <workItem from="1678184953155" duration="667000" />
++      <workItem from="1679391089464" duration="4206000" />
++      <workItem from="1679567902632" duration="64000" />
++      <workItem from="1679567983383" duration="1234000" />
++      <workItem from="1679996166363" duration="95000" />
++      <workItem from="1679996410242" duration="3096000" />
++      <workItem from="1683297401900" duration="6733000" />
++      <workItem from="1683716278338" duration="121000" />
++      <workItem from="1684404411408" duration="433000" />
++      <workItem from="1684410715321" duration="2854000" />
+     </task>
+-    <task id="LOCAL-00001" summary=":add user and dizionari">
+-      <created>1678188079722</created>
++    <task id="LOCAL-00001" summary="Creazione Utente">
++      <created>1679392748872</created>
+       <option name="number" value="00001" />
+       <option name="presentableId" value="LOCAL-00001" />
+       <option name="project" value="LOCAL" />
+-      <updated>1678188079722</updated>
++      <updated>1679392748872</updated>
+     </task>
+-    <task id="LOCAL-00002" summary=":add user and dizionari">
+-      <created>1678188096489</created>
++    <task id="LOCAL-00002" summary="implementazione funzione controllaParolaMigliore">
++      <created>1680022234978</created>
+       <option name="number" value="00002" />
+       <option name="presentableId" value="LOCAL-00002" />
+       <option name="project" value="LOCAL" />
+-      <updated>1678188096489</updated>
++      <updated>1680022234978</updated>
+     </task>
+-    <task id="LOCAL-00003" summary=":rename file to dictionary.txt">
+-      <created>1678189356605</created>
++    <task id="LOCAL-00003" summary="commentato funzione findDuplicates">
++      <created>1683298428078</created>
+       <option name="number" value="00003" />
+       <option name="presentableId" value="LOCAL-00003" />
+       <option name="project" value="LOCAL" />
+-      <updated>1678189356605</updated>
++      <updated>1683298428078</updated>
+     </task>
+-    <task id="LOCAL-00004" summary=": ADD ciclo for e iniziato il gioco">
+-      <created>1679392892862</created>
++    <task id="LOCAL-00004" summary=":migliorato funzione controllaParolaMigliore, eliminato funzioni che non servivano, stampato prima parola migliore inserita">
++      <created>1683302196558</created>
+       <option name="number" value="00004" />
+       <option name="presentableId" value="LOCAL-00004" />
+       <option name="project" value="LOCAL" />
+-      <updated>1679392892862</updated>
++      <updated>1683302196558</updated>
+     </task>
+-    <task id="LOCAL-00005" summary=":add Dizionario obj, sistemato partita, manca parolaMigliore">
+-      <created>1679397101138</created>
++    <task id="LOCAL-00005" summary=":creato funzione InizializzaTabellone">
++      <created>1683303977116</created>
+       <option name="number" value="00005" />
+       <option name="presentableId" value="LOCAL-00005" />
+       <option name="project" value="LOCAL" />
+-      <updated>1679397101138</updated>
++      <updated>1683303977116</updated>
+     </task>
+-    <task id="LOCAL-00006" summary=":sistemazione parolamigliore">
+-      <created>1679570450866</created>
++    <task id="LOCAL-00006" summary=":creato form ResultPage">
++      <created>1684414520721</created>
+       <option name="number" value="00006" />
+       <option name="presentableId" value="LOCAL-00006" />
+       <option name="project" value="LOCAL" />
+-      <updated>1679570450866</updated>
+-    </task>
+-    <task id="LOCAL-00007" summary=":sistemazione funzione doppione">
+-      <created>1683297492858</created>
+-      <option name="number" value="00007" />
+-      <option name="presentableId" value="LOCAL-00007" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1683297492858</updated>
+-    </task>
+-    <task id="LOCAL-00008" summary=":sistemazione funzione doppione">
+-      <created>1683297535598</created>
+-      <option name="number" value="00008" />
+-      <option name="presentableId" value="LOCAL-00008" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1683297535598</updated>
+-    </task>
+-    <task id="LOCAL-00009" summary="ADD: Created Menu GUI page and Classico Game GUI. Connected them">
+-      <created>1683308242016</created>
+-      <option name="number" value="00009" />
+-      <option name="presentableId" value="LOCAL-00009" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1683308242016</updated>
+-    </task>
+-    <task id="LOCAL-00010" summary="ADD: Created Menu GUI page and Classico Game GUI. Connected them">
+-      <created>1683308426433</created>
+-      <option name="number" value="00010" />
+-      <option name="presentableId" value="LOCAL-00010" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1683308426433</updated>
+-    </task>
+-    <task id="LOCAL-00011" summary="ADD: funzioni per tabellone e creazione array per dizionario">
+-      <created>1683811269024</created>
+-      <option name="number" value="00011" />
+-      <option name="presentableId" value="LOCAL-00011" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1683811269024</updated>
+-    </task>
+-    <task id="LOCAL-00012" summary="ADD: stampawords">
+-      <created>1683813484618</created>
+-      <option name="number" value="00012" />
+-      <option name="presentableId" value="LOCAL-00012" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1683813484618</updated>
++      <updated>1684414520721</updated>
+     </task>
+-    <task id="LOCAL-00013" summary="ADD: Connected ParoleComuni.txt to the matrix and improved game flow">
+-      <created>1684162955447</created>
+-      <option name="number" value="00013" />
+-      <option name="presentableId" value="LOCAL-00013" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1684162955447</updated>
+-    </task>
+-    <task id="LOCAL-00014" summary="FIX: Parole count and spelling">
+-      <created>1684163530580</created>
+-      <option name="number" value="00014" />
+-      <option name="presentableId" value="LOCAL-00014" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1684163530580</updated>
+-    </task>
+-    <task id="LOCAL-00015" summary="FIX: minimal fixes">
+-      <created>1684165946943</created>
+-      <option name="number" value="00015" />
+-      <option name="presentableId" value="LOCAL-00015" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1684165946944</updated>
+-    </task>
+-    <task id="LOCAL-00016" summary="FIX: minimal fixes">
+-      <created>1684165989033</created>
+-      <option name="number" value="00016" />
+-      <option name="presentableId" value="LOCAL-00016" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1684165989033</updated>
+-    </task>
+-    <option name="localTasksCounter" value="17" />
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -213,22 +150,12 @@
+     </option>
+   </component>
+   <component name="VcsManagerConfiguration">
+-    <MESSAGE value=":add user and dizionari" />
+-    <MESSAGE value=":rename file to dictionary.txt" />
+-    <MESSAGE value=": ADD ciclo for e iniziato il gioco" />
+-    <MESSAGE value=":add Dizionario obj, sistemato partita, manca parolaMigliore" />
+-    <MESSAGE value=":sistemazione parolamigliore" />
+-    <MESSAGE value=":sistemazione funzione doppione" />
+-    <MESSAGE value="ADD: Created Menu GUI page and Classico Game GUI. Connected them" />
+-    <MESSAGE value="ADD: funzioni per tabellone e creazione array per dizionario" />
+-    <MESSAGE value="ADD: stampawords" />
+-    <MESSAGE value="ADD: Connected ParoleComuni.txt to the matrix and improved game flow" />
+-    <MESSAGE value="FIX: Parole count and spelling" />
+-    <MESSAGE value="FIX: minimal fixes" />
+-    <option name="LAST_COMMIT_MESSAGE" value="FIX: minimal fixes" />
+-  </component>
+-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+-    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683812690821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+-    <SUITE FILE_PATH="coverage/IlParoliere$StartPage.ic" NAME="StartPage Coverage Results" MODIFIED="1683308106935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
++    <MESSAGE value="Creazione Utente" />
++    <MESSAGE value="implementazione funzione controllaParolaMigliore" />
++    <MESSAGE value="commentato funzione findDuplicates" />
++    <MESSAGE value=":migliorato funzione controllaParolaMigliore, eliminato funzioni che non servivano, stampato prima parola migliore inserita" />
++    <MESSAGE value=":creato funzione InizializzaTabellone" />
++    <MESSAGE value=":creato form ResultPage" />
++    <option name="LAST_COMMIT_MESSAGE" value=":creato form ResultPage" />
+   </component>
+ </project>
+\ No newline at end of file

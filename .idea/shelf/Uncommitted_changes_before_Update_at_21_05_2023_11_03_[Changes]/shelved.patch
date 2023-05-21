@@ -1,0 +1,219 @@
+Index: src/ResultPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import javax.swing.*;\r\nimport java.awt.event.ActionEvent;\r\nimport java.awt.event.ActionListener;\r\n\r\npublic class ResultPage extends JFrame {\r\n    private JButton retryButton; // manda alla pagina di menu\r\n    private JButton exitButton; //manda alla home\r\n    private JPanel labelPunti;\r\n    private JPanel panelMain;\r\n    private JLabel paroleTrovate;\r\n    private JLabel parolaMigliore;\r\n    private JLabel puntiTotali;\r\n\r\n    //costruttore\r\n    public ResultPage(Partita p, Utente g){\r\n        setContentPane(panelMain);\r\n        setTitle(\"WordCraft - Results\");\r\n        setSize(900,600);\r\n        setLocationRelativeTo(null);\r\n        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\r\n        //modifica label punteggio\r\n        String punti = Integer.toString(p.getPuntiTotali());\r\n        puntiTotali.setText(punti);\r\n        //modifica label parole trovate\r\n        String numParole = Integer.toString(p.getParolaNum());\r\n        paroleTrovate.setText(numParole);\r\n        //modifica label parola migliore\r\n        parolaMigliore.setText(p.getParolaMigliore());\r\n\r\n        //ActionListener per far funzionare il bottone \"Retry\"\r\n        retryButton.addActionListener(new ActionListener() {\r\n            @Override\r\n            public void actionPerformed(ActionEvent e) {\r\n                MenuPage menu = new MenuPage(g);\r\n                menu.setVisible(true);\r\n                dispose(); //chiude la pagina result\r\n            }\r\n        });\r\n\r\n        //ActionListener per far funzionare il bottone \"Exit\"\r\n        exitButton.addActionListener(new ActionListener() {\r\n            @Override\r\n            public void actionPerformed(ActionEvent e) {\r\n                StartPage start = new StartPage();\r\n                start.setVisible(true);\r\n                dispose();\r\n            }\r\n        });\r\n    }\r\n    private void createUIComponents() {\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ResultPage.java b/src/ResultPage.java
+--- a/src/ResultPage.java	(revision 2a71e124945e704c23091ec8fb1f0a5b5874a578)
++++ b/src/ResultPage.java	(date 1684595368543)
+@@ -43,7 +43,7 @@
+             public void actionPerformed(ActionEvent e) {
+                 StartPage start = new StartPage();
+                 start.setVisible(true);
+-                dispose();
++                dispose(); //chiude la pagina result
+             }
+         });
+     }
+Index: src/StartPage.form
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<form xmlns=\"http://www.intellij.com/uidesigner/form/\" version=\"1\" bind-to-class=\"StartPage\">\r\n  <grid id=\"27dc6\" binding=\"panelMain\" layout-manager=\"GridLayoutManager\" row-count=\"4\" column-count=\"3\" same-size-horizontally=\"false\" same-size-vertically=\"false\" hgap=\"-1\" vgap=\"-1\">\r\n    <margin top=\"0\" left=\"0\" bottom=\"0\" right=\"0\"/>\r\n    <constraints>\r\n      <xy x=\"48\" y=\"25\" width=\"882\" height=\"503\"/>\r\n    </constraints>\r\n    <properties>\r\n      <background color=\"-16630134\"/>\r\n      <enabled value=\"false\"/>\r\n    </properties>\r\n    <border type=\"none\"/>\r\n    <children>\r\n      <component id=\"3a841\" class=\"javax.swing.JLabel\">\r\n        <constraints>\r\n          <grid row=\"1\" column=\"1\" row-span=\"1\" col-span=\"1\" vsize-policy=\"0\" hsize-policy=\"0\" anchor=\"0\" fill=\"0\" indent=\"0\" use-parent-layout=\"false\"/>\r\n        </constraints>\r\n        <properties>\r\n          <font name=\"Rubik\" size=\"60\" style=\"1\"/>\r\n          <foreground color=\"-2592\"/>\r\n          <text value=\"Word Craft\"/>\r\n        </properties>\r\n      </component>\r\n      <component id=\"97643\" class=\"javax.swing.JLabel\" binding=\"image\">\r\n        <constraints>\r\n          <grid row=\"0\" column=\"1\" row-span=\"1\" col-span=\"1\" vsize-policy=\"0\" hsize-policy=\"0\" anchor=\"0\" fill=\"0\" indent=\"0\" use-parent-layout=\"false\">\r\n            <minimum-size width=\"0\" height=\"0\"/>\r\n          </grid>\r\n        </constraints>\r\n        <properties>\r\n          <icon value=\"img/ezgif.com-crop.gif\"/>\r\n          <text value=\"\"/>\r\n        </properties>\r\n      </component>\r\n      <grid id=\"b81a3\" binding=\"panelNome\" layout-manager=\"GridLayoutManager\" row-count=\"4\" column-count=\"1\" same-size-horizontally=\"false\" same-size-vertically=\"false\" hgap=\"-1\" vgap=\"-1\">\r\n        <margin top=\"0\" left=\"0\" bottom=\"0\" right=\"0\"/>\r\n        <constraints>\r\n          <grid row=\"2\" column=\"1\" row-span=\"1\" col-span=\"1\" vsize-policy=\"3\" hsize-policy=\"3\" anchor=\"0\" fill=\"0\" indent=\"0\" use-parent-layout=\"false\">\r\n            <preferred-size width=\"459\" height=\"158\"/>\r\n          </grid>\r\n        </constraints>\r\n        <properties>\r\n          <background color=\"-16630134\"/>\r\n        </properties>\r\n        <border type=\"none\"/>\r\n        <children>\r\n          <component id=\"88ae9\" class=\"javax.swing.JLabel\">\r\n            <constraints>\r\n              <grid row=\"0\" column=\"0\" row-span=\"1\" col-span=\"1\" vsize-policy=\"0\" hsize-policy=\"0\" anchor=\"0\" fill=\"0\" indent=\"0\" use-parent-layout=\"false\"/>\r\n            </constraints>\r\n            <properties>\r\n              <font name=\"Rubik\" size=\"20\" style=\"0\"/>\r\n              <foreground color=\"-2592\"/>\r\n              <text value=\"Inserisci il tuo nome:\"/>\r\n            </properties>\r\n          </component>\r\n          <component id=\"adc76\" class=\"javax.swing.JTextField\" binding=\"nomeBox\">\r\n            <constraints>\r\n              <grid row=\"1\" column=\"0\" row-span=\"1\" col-span=\"1\" vsize-policy=\"0\" hsize-policy=\"6\" anchor=\"0\" fill=\"0\" indent=\"0\" use-parent-layout=\"false\">\r\n                <preferred-size width=\"200\" height=\"-1\"/>\r\n              </grid>\r\n            </constraints>\r\n            <properties>\r\n              <background color=\"-16630134\"/>\r\n              <caretColor color=\"-2592\"/>\r\n              <font name=\"Rubik\" size=\"20\" style=\"0\"/>\r\n              <foreground color=\"-524292\"/>\r\n              <text value=\"\"/>\r\n            </properties>\r\n          </component>\r\n          <component id=\"271d7\" class=\"javax.swing.JButton\" binding=\"startButton\" default-binding=\"true\">\r\n            <constraints>\r\n              <grid row=\"3\" column=\"0\" row-span=\"1\" col-span=\"1\" vsize-policy=\"0\" hsize-policy=\"3\" anchor=\"0\" fill=\"1\" indent=\"0\" use-parent-layout=\"false\"/>\r\n            </constraints>\r\n            <properties>\r\n              <background color=\"-815562\"/>\r\n              <borderPainted value=\"false\"/>\r\n              <enabled value=\"true\"/>\r\n              <font name=\"Rubik\" size=\"26\" style=\"1\"/>\r\n              <foreground color=\"-11850215\"/>\r\n              <hideActionText value=\"false\"/>\r\n              <text value=\"Start\"/>\r\n            </properties>\r\n          </component>\r\n          <vspacer id=\"578f6\">\r\n            <constraints>\r\n              <grid row=\"2\" column=\"0\" row-span=\"1\" col-span=\"1\" vsize-policy=\"6\" hsize-policy=\"1\" anchor=\"0\" fill=\"2\" indent=\"0\" use-parent-layout=\"false\">\r\n                <preferred-size width=\"-1\" height=\"50\"/>\r\n              </grid>\r\n            </constraints>\r\n          </vspacer>\r\n        </children>\r\n      </grid>\r\n      <hspacer id=\"ab698\">\r\n        <constraints>\r\n          <grid row=\"2\" column=\"0\" row-span=\"2\" col-span=\"1\" vsize-policy=\"1\" hsize-policy=\"0\" anchor=\"4\" fill=\"0\" indent=\"0\" use-parent-layout=\"false\">\r\n            <preferred-size width=\"150\" height=\"150\"/>\r\n          </grid>\r\n        </constraints>\r\n      </hspacer>\r\n      <vspacer id=\"b72d7\">\r\n        <constraints>\r\n          <grid row=\"3\" column=\"1\" row-span=\"1\" col-span=\"1\" vsize-policy=\"6\" hsize-policy=\"1\" anchor=\"0\" fill=\"2\" indent=\"0\" use-parent-layout=\"false\">\r\n            <preferred-size width=\"50\" height=\"50\"/>\r\n          </grid>\r\n        </constraints>\r\n      </vspacer>\r\n      <hspacer id=\"3c371\">\r\n        <constraints>\r\n          <grid row=\"2\" column=\"2\" row-span=\"2\" col-span=\"1\" vsize-policy=\"1\" hsize-policy=\"0\" anchor=\"4\" fill=\"0\" indent=\"0\" use-parent-layout=\"false\">\r\n            <preferred-size width=\"150\" height=\"150\"/>\r\n          </grid>\r\n        </constraints>\r\n      </hspacer>\r\n    </children>\r\n  </grid>\r\n</form>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/StartPage.form b/src/StartPage.form
+--- a/src/StartPage.form	(revision 2a71e124945e704c23091ec8fb1f0a5b5874a578)
++++ b/src/StartPage.form	(date 1684596342540)
+@@ -49,7 +49,7 @@
+               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+             </constraints>
+             <properties>
+-              <font name="Rubik" size="20" style="0"/>
++              <font name="Rubik" size="25" style="0"/>
+               <foreground color="-2592"/>
+               <text value="Inserisci il tuo nome:"/>
+             </properties>
+@@ -63,7 +63,7 @@
+             <properties>
+               <background color="-16630134"/>
+               <caretColor color="-2592"/>
+-              <font name="Rubik" size="20" style="0"/>
++              <font name="Rubik" size="25" style="0"/>
+               <foreground color="-524292"/>
+               <text value=""/>
+             </properties>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"8462984d-23c0-4314-847e-acde3a7b6bf0\" name=\"Changes\" comment=\"FIX: Color correcting\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/img/menu8.gif\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/MenuPage.form\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/MenuPage.form\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/StartPage.form\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/StartPage.form\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/img/menu1.gif\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/img/menu2.gif\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/img/menu3.gif\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/img/menu5.gif\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2MgM7lntEbmlzdqeqLILpROIR0b\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;261&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maggy/IdeaProjects/IlParoliere/src/img&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Maggy\\IdeaProjects\\IlParoliere\\src\\img\" />\r\n      <recent name=\"C:\\Users\\Maggy\\IdeaProjects\\IlParoliere\\src\" />\r\n      <recent name=\"C:\\Users\\Maggy\\IdeaProjects\\IlParoliere\\src\\MenuPage\" />\r\n      <recent name=\"$PROJECT_DIR$\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"8462984d-23c0-4314-847e-acde3a7b6bf0\" name=\"Changes\" comment=\"\" />\r\n      <created>1678184607277</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1678184607277</updated>\r\n      <workItem from=\"1678184608473\" duration=\"1000\" />\r\n      <workItem from=\"1678185005684\" duration=\"1221000\" />\r\n      <workItem from=\"1678188292233\" duration=\"1901000\" />\r\n      <workItem from=\"1679567791335\" duration=\"2677000\" />\r\n      <workItem from=\"1679996146394\" duration=\"3802000\" />\r\n      <workItem from=\"1680601684537\" duration=\"1782000\" />\r\n      <workItem from=\"1681810082945\" duration=\"575000\" />\r\n      <workItem from=\"1681810667700\" duration=\"1221000\" />\r\n      <workItem from=\"1683020363813\" duration=\"2223000\" />\r\n      <workItem from=\"1683023042829\" duration=\"561000\" />\r\n      <workItem from=\"1683297457506\" duration=\"225000\" />\r\n      <workItem from=\"1683716109530\" duration=\"274000\" />\r\n      <workItem from=\"1683748303812\" duration=\"4256000\" />\r\n      <workItem from=\"1684226082783\" duration=\"10027000\" />\r\n      <workItem from=\"1684306601001\" duration=\"923000\" />\r\n      <workItem from=\"1684320773356\" duration=\"15000\" />\r\n      <workItem from=\"1684395897380\" duration=\"15408000\" />\r\n      <workItem from=\"1684428837470\" duration=\"2532000\" />\r\n      <workItem from=\"1684485401673\" duration=\"610000\" />\r\n      <workItem from=\"1684493040889\" duration=\"203000\" />\r\n      <workItem from=\"1684496346903\" duration=\"8260000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\":add user and dizionari\">\r\n      <created>1678188079722</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678188079722</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\":add user and dizionari\">\r\n      <created>1678188096489</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678188096489</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\":rename file to dictionary.txt\">\r\n      <created>1678189356605</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678189356605</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\": ADD ciclo for e iniziato il gioco\">\r\n      <created>1679392892862</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679392892862</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\":add Dizionario obj, sistemato partita, manca parolaMigliore\">\r\n      <created>1679397101138</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679397101138</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\":sistemazione parolamigliore\">\r\n      <created>1679570450866</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679570450866</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\":sistemazione funzione doppione\">\r\n      <created>1683297492858</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683297492858</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\":sistemazione funzione doppione\">\r\n      <created>1683297535598</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683297535598</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"ADD: Created Menu GUI page and Classico Game GUI. Connected them\">\r\n      <created>1683308242016</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683308242016</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"ADD: Created Menu GUI page and Classico Game GUI. Connected them\">\r\n      <created>1683308426433</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683308426433</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"ADD: funzioni per tabellone e creazione array per dizionario\">\r\n      <created>1683811269024</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683811269024</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"ADD: stampawords\">\r\n      <created>1683813484618</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683813484618</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"ADD: Connected ParoleComuni.txt to the matrix and improved game flow\">\r\n      <created>1684162955447</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684162955447</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"FIX: Parole count and spelling\">\r\n      <created>1684163530580</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684163530580</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"FIX: minimal fixes\">\r\n      <created>1684165946943</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684165946944</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"FIX: minimal fixes\">\r\n      <created>1684165989033</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684165989033</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"ADD: letters to GUI gioco page\">\r\n      <created>1684228312850</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684228312850</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"ADD: Design for start, menu and easy mode page\">\r\n      <created>1684499715079</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684499715079</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"FIX: design color\">\r\n      <created>1684503448770</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684503448770</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"FIX: Color correcting\">\r\n      <created>1684504298699</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684504298699</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"21\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\":add user and dizionari\" />\r\n    <MESSAGE value=\":rename file to dictionary.txt\" />\r\n    <MESSAGE value=\": ADD ciclo for e iniziato il gioco\" />\r\n    <MESSAGE value=\":add Dizionario obj, sistemato partita, manca parolaMigliore\" />\r\n    <MESSAGE value=\":sistemazione parolamigliore\" />\r\n    <MESSAGE value=\":sistemazione funzione doppione\" />\r\n    <MESSAGE value=\"ADD: Created Menu GUI page and Classico Game GUI. Connected them\" />\r\n    <MESSAGE value=\"ADD: funzioni per tabellone e creazione array per dizionario\" />\r\n    <MESSAGE value=\"ADD: stampawords\" />\r\n    <MESSAGE value=\"ADD: Connected ParoleComuni.txt to the matrix and improved game flow\" />\r\n    <MESSAGE value=\"FIX: Parole count and spelling\" />\r\n    <MESSAGE value=\"FIX: minimal fixes\" />\r\n    <MESSAGE value=\"ADD: letters to GUI gioco page\" />\r\n    <MESSAGE value=\"ADD: Design for start, menu and easy mode page\" />\r\n    <MESSAGE value=\"FIX: design color\" />\r\n    <MESSAGE value=\"FIX: Color correcting\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"FIX: Color correcting\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/IlParoliere$Main.ic\" NAME=\"Main Coverage Results\" MODIFIED=\"1684163274824\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\r\n    <SUITE FILE_PATH=\"coverage/IlParoliere$StartPage.ic\" NAME=\"StartPage Coverage Results\" MODIFIED=\"1683308106935\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 2a71e124945e704c23091ec8fb1f0a5b5874a578)
++++ b/.idea/workspace.xml	(date 1684614157312)
+@@ -4,15 +4,24 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: Color correcting">
+-      <change afterPath="$PROJECT_DIR$/src/img/menu8.gif" afterDir="false" />
++    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: if tempo scaduto per prova ResultPage">
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_2023_16_39__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_2023_16_39__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_2023_16_44__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_2023_16_44__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_23__17_58__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_05_23__17_58__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023_11_53__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023_11_53__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023_12_37__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023_12_37__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2023_16_28__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2023_16_28__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_23__15_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_23__15_17__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_05_2023_16_08__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_05_2023_16_08__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_05_2023_16_08__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_05_2023_16_08__Changes_1.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_05_23__12_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_05_23__12_09__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_05_23__12_09__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_05_23__12_09__Changes_1.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_2023_10_35__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_2023_10_35__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_23__11_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_23__11_01__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_23__11_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_23__11_17__Changes_.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/MenuPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuPage.form" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/ResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultPage.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/StartPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartPage.form" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/img/menu1.gif" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/img/menu2.gif" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/img/menu3.gif" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/img/menu5.gif" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -51,7 +60,6 @@
+     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+ }</component>
+@@ -66,6 +74,20 @@
+       <recent name="" />
+     </key>
+   </component>
++  <component name="RunManager">
++    <configuration name="TimerGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="TimerGUI" />
++      <module name="IlParoliere" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.TimerGUI" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -87,14 +109,13 @@
+       <workItem from="1683297457506" duration="225000" />
+       <workItem from="1683716109530" duration="274000" />
+       <workItem from="1683748303812" duration="4256000" />
+-      <workItem from="1684226082783" duration="10027000" />
+-      <workItem from="1684306601001" duration="923000" />
+-      <workItem from="1684320773356" duration="15000" />
+-      <workItem from="1684395897380" duration="15408000" />
+-      <workItem from="1684428837470" duration="2532000" />
+-      <workItem from="1684485401673" duration="610000" />
+-      <workItem from="1684493040889" duration="203000" />
+-      <workItem from="1684496346903" duration="8260000" />
++      <workItem from="1684226082783" duration="2179000" />
++      <workItem from="1684303407544" duration="3229000" />
++      <workItem from="1684408899295" duration="4821000" />
++      <workItem from="1684510817670" duration="1008000" />
++      <workItem from="1684577089654" duration="11855000" />
++      <workItem from="1684613376763" duration="479000" />
++      <workItem from="1684613877615" duration="279000" />
+     </task>
+     <task id="LOCAL-00001" summary=":add user and dizionari">
+       <created>1678188079722</created>
+@@ -208,35 +229,42 @@
+       <option name="project" value="LOCAL" />
+       <updated>1684165989033</updated>
+     </task>
+-    <task id="LOCAL-00017" summary="ADD: letters to GUI gioco page">
+-      <created>1684228312850</created>
++    <task id="LOCAL-00017" summary="MODIFY: sistemato file parole comuni e modificato size words">
++      <created>1684235207833</created>
+       <option name="number" value="00017" />
+       <option name="presentableId" value="LOCAL-00017" />
+       <option name="project" value="LOCAL" />
+-      <updated>1684228312850</updated>
++      <updated>1684235207833</updated>
+     </task>
+-    <task id="LOCAL-00018" summary="ADD: Design for start, menu and easy mode page">
+-      <created>1684499715079</created>
++    <task id="LOCAL-00018" summary="FIX:implemento ResultPage">
++      <created>1684510934574</created>
+       <option name="number" value="00018" />
+       <option name="presentableId" value="LOCAL-00018" />
+       <option name="project" value="LOCAL" />
+-      <updated>1684499715079</updated>
++      <updated>1684510934574</updated>
+     </task>
+-    <task id="LOCAL-00019" summary="FIX: design color">
+-      <created>1684503448770</created>
++    <task id="LOCAL-00019" summary="FIX:cambio colore e aggiunto commento">
++      <created>1684512721019</created>
+       <option name="number" value="00019" />
+       <option name="presentableId" value="LOCAL-00019" />
+       <option name="project" value="LOCAL" />
+-      <updated>1684503448770</updated>
++      <updated>1684512721019</updated>
+     </task>
+-    <task id="LOCAL-00020" summary="FIX: Color correcting">
+-      <created>1684504298699</created>
++    <task id="LOCAL-00020" summary="ADD: codice java per ResultPage">
++      <created>1684593165003</created>
+       <option name="number" value="00020" />
+       <option name="presentableId" value="LOCAL-00020" />
+       <option name="project" value="LOCAL" />
+-      <updated>1684504298699</updated>
++      <updated>1684593165003</updated>
+     </task>
+-    <option name="localTasksCounter" value="21" />
++    <task id="LOCAL-00021" summary="FIX: if tempo scaduto per prova ResultPage">
++      <created>1684595203877</created>
++      <option name="number" value="00021" />
++      <option name="presentableId" value="LOCAL-00021" />
++      <option name="project" value="LOCAL" />
++      <updated>1684595203877</updated>
++    </task>
++    <option name="localTasksCounter" value="22" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -266,14 +294,15 @@
+     <MESSAGE value="ADD: Connected ParoleComuni.txt to the matrix and improved game flow" />
+     <MESSAGE value="FIX: Parole count and spelling" />
+     <MESSAGE value="FIX: minimal fixes" />
+-    <MESSAGE value="ADD: letters to GUI gioco page" />
+-    <MESSAGE value="ADD: Design for start, menu and easy mode page" />
+-    <MESSAGE value="FIX: design color" />
+-    <MESSAGE value="FIX: Color correcting" />
+-    <option name="LAST_COMMIT_MESSAGE" value="FIX: Color correcting" />
++    <MESSAGE value="MODIFY: sistemato file parole comuni e modificato size words" />
++    <MESSAGE value="FIX:implemento ResultPage" />
++    <MESSAGE value="FIX:cambio colore e aggiunto commento" />
++    <MESSAGE value="ADD: codice java per ResultPage" />
++    <MESSAGE value="FIX: if tempo scaduto per prova ResultPage" />
++    <option name="LAST_COMMIT_MESSAGE" value="FIX: if tempo scaduto per prova ResultPage" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+-    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1684163274824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
++    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683812690821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+     <SUITE FILE_PATH="coverage/IlParoliere$StartPage.ic" NAME="StartPage Coverage Results" MODIFIED="1683308106935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+   </component>
+ </project>
+\ No newline at end of file

@@ -1,0 +1,338 @@
+Index: src/ResultPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class ResultPage {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ResultPage.java b/src/ResultPage.java
+--- a/src/ResultPage.java	(revision e7233bada4653519a69598e7331bcc2ad9d7e676)
++++ b/src/ResultPage.java	(date 1684504305816)
+@@ -1,2 +1,11 @@
++import javax.swing.*;
++
+ public class ResultPage {
++    private JButton retryButton; // manda alla pagina di menu
++    private JButton exitButton; //manda alla home
++    private JPanel labelPunti;
++
++    private void createUIComponents() {
++
++    }
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"8462984d-23c0-4314-847e-acde3a7b6bf0\" name=\"Changes\" comment=\"FIX: design color\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/MenuPage.form\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/MenuPage.form\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/StartPage.form\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/StartPage.form\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2MgM7lntEbmlzdqeqLILpROIR0b\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;261&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maggy/IdeaProjects/IlParoliere/src/img&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Maggy\\IdeaProjects\\IlParoliere\\src\\img\" />\r\n      <recent name=\"C:\\Users\\Maggy\\IdeaProjects\\IlParoliere\\src\" />\r\n      <recent name=\"C:\\Users\\Maggy\\IdeaProjects\\IlParoliere\\src\\MenuPage\" />\r\n      <recent name=\"$PROJECT_DIR$\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"8462984d-23c0-4314-847e-acde3a7b6bf0\" name=\"Changes\" comment=\"\" />\r\n      <created>1678184607277</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1678184607277</updated>\r\n      <workItem from=\"1678184608473\" duration=\"1000\" />\r\n      <workItem from=\"1678185005684\" duration=\"1221000\" />\r\n      <workItem from=\"1678188292233\" duration=\"1901000\" />\r\n      <workItem from=\"1679567791335\" duration=\"2677000\" />\r\n      <workItem from=\"1679996146394\" duration=\"3802000\" />\r\n      <workItem from=\"1680601684537\" duration=\"1782000\" />\r\n      <workItem from=\"1681810082945\" duration=\"575000\" />\r\n      <workItem from=\"1681810667700\" duration=\"1221000\" />\r\n      <workItem from=\"1683020363813\" duration=\"2223000\" />\r\n      <workItem from=\"1683023042829\" duration=\"561000\" />\r\n      <workItem from=\"1683297457506\" duration=\"225000\" />\r\n      <workItem from=\"1683716109530\" duration=\"274000\" />\r\n      <workItem from=\"1683748303812\" duration=\"4256000\" />\r\n      <workItem from=\"1684226082783\" duration=\"10027000\" />\r\n      <workItem from=\"1684306601001\" duration=\"923000\" />\r\n      <workItem from=\"1684320773356\" duration=\"15000\" />\r\n      <workItem from=\"1684395897380\" duration=\"15408000\" />\r\n      <workItem from=\"1684428837470\" duration=\"2532000\" />\r\n      <workItem from=\"1684485401673\" duration=\"610000\" />\r\n      <workItem from=\"1684493040889\" duration=\"203000\" />\r\n      <workItem from=\"1684496346903\" duration=\"7861000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\":add user and dizionari\">\r\n      <created>1678188079722</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678188079722</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\":add user and dizionari\">\r\n      <created>1678188096489</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678188096489</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\":rename file to dictionary.txt\">\r\n      <created>1678189356605</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678189356605</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\": ADD ciclo for e iniziato il gioco\">\r\n      <created>1679392892862</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679392892862</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\":add Dizionario obj, sistemato partita, manca parolaMigliore\">\r\n      <created>1679397101138</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679397101138</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\":sistemazione parolamigliore\">\r\n      <created>1679570450866</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679570450866</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\":sistemazione funzione doppione\">\r\n      <created>1683297492858</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683297492858</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\":sistemazione funzione doppione\">\r\n      <created>1683297535598</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683297535598</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"ADD: Created Menu GUI page and Classico Game GUI. Connected them\">\r\n      <created>1683308242016</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683308242016</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"ADD: Created Menu GUI page and Classico Game GUI. Connected them\">\r\n      <created>1683308426433</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683308426433</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"ADD: funzioni per tabellone e creazione array per dizionario\">\r\n      <created>1683811269024</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683811269024</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"ADD: stampawords\">\r\n      <created>1683813484618</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683813484618</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"ADD: Connected ParoleComuni.txt to the matrix and improved game flow\">\r\n      <created>1684162955447</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684162955447</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"FIX: Parole count and spelling\">\r\n      <created>1684163530580</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684163530580</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"FIX: minimal fixes\">\r\n      <created>1684165946943</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684165946944</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"FIX: minimal fixes\">\r\n      <created>1684165989033</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684165989033</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"ADD: letters to GUI gioco page\">\r\n      <created>1684228312850</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684228312850</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"ADD: Design for start, menu and easy mode page\">\r\n      <created>1684499715079</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684499715079</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"FIX: design color\">\r\n      <created>1684503448770</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684503448770</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"20\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\":add user and dizionari\" />\r\n    <MESSAGE value=\":rename file to dictionary.txt\" />\r\n    <MESSAGE value=\": ADD ciclo for e iniziato il gioco\" />\r\n    <MESSAGE value=\":add Dizionario obj, sistemato partita, manca parolaMigliore\" />\r\n    <MESSAGE value=\":sistemazione parolamigliore\" />\r\n    <MESSAGE value=\":sistemazione funzione doppione\" />\r\n    <MESSAGE value=\"ADD: Created Menu GUI page and Classico Game GUI. Connected them\" />\r\n    <MESSAGE value=\"ADD: funzioni per tabellone e creazione array per dizionario\" />\r\n    <MESSAGE value=\"ADD: stampawords\" />\r\n    <MESSAGE value=\"ADD: Connected ParoleComuni.txt to the matrix and improved game flow\" />\r\n    <MESSAGE value=\"FIX: Parole count and spelling\" />\r\n    <MESSAGE value=\"FIX: minimal fixes\" />\r\n    <MESSAGE value=\"ADD: letters to GUI gioco page\" />\r\n    <MESSAGE value=\"ADD: Design for start, menu and easy mode page\" />\r\n    <MESSAGE value=\"FIX: design color\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"FIX: design color\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/IlParoliere$Main.ic\" NAME=\"Main Coverage Results\" MODIFIED=\"1684163274824\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\r\n    <SUITE FILE_PATH=\"coverage/IlParoliere$StartPage.ic\" NAME=\"StartPage Coverage Results\" MODIFIED=\"1683308106935\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision e7233bada4653519a69598e7331bcc2ad9d7e676)
++++ b/.idea/workspace.xml	(date 1684504658369)
+@@ -4,10 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: design color">
++    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX:implemento ResultPage">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/MenuPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuPage.form" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/StartPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartPage.form" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/ResultPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultPage.form" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/ResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultPage.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -46,7 +46,6 @@
+     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+ }</component>
+@@ -60,6 +59,20 @@
+     <key name="CopyClassDialog.RECENTS_KEY">
+       <recent name="" />
+     </key>
++  </component>
++  <component name="RunManager">
++    <configuration name="TimerGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="TimerGUI" />
++      <module name="IlParoliere" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.TimerGUI" />
++      </list>
++    </recent_temporary>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+@@ -82,14 +95,9 @@
+       <workItem from="1683297457506" duration="225000" />
+       <workItem from="1683716109530" duration="274000" />
+       <workItem from="1683748303812" duration="4256000" />
+-      <workItem from="1684226082783" duration="10027000" />
+-      <workItem from="1684306601001" duration="923000" />
+-      <workItem from="1684320773356" duration="15000" />
+-      <workItem from="1684395897380" duration="15408000" />
+-      <workItem from="1684428837470" duration="2532000" />
+-      <workItem from="1684485401673" duration="610000" />
+-      <workItem from="1684493040889" duration="203000" />
+-      <workItem from="1684496346903" duration="7861000" />
++      <workItem from="1684226082783" duration="2179000" />
++      <workItem from="1684303407544" duration="3229000" />
++      <workItem from="1684408899295" duration="4821000" />
+     </task>
+     <task id="LOCAL-00001" summary=":add user and dizionari">
+       <created>1678188079722</created>
+@@ -203,28 +211,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1684165989033</updated>
+     </task>
+-    <task id="LOCAL-00017" summary="ADD: letters to GUI gioco page">
+-      <created>1684228312850</created>
++    <task id="LOCAL-00017" summary="MODIFY: sistemato file parole comuni e modificato size words">
++      <created>1684235207833</created>
+       <option name="number" value="00017" />
+       <option name="presentableId" value="LOCAL-00017" />
+       <option name="project" value="LOCAL" />
+-      <updated>1684228312850</updated>
++      <updated>1684235207833</updated>
+     </task>
+-    <task id="LOCAL-00018" summary="ADD: Design for start, menu and easy mode page">
+-      <created>1684499715079</created>
+-      <option name="number" value="00018" />
+-      <option name="presentableId" value="LOCAL-00018" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1684499715079</updated>
+-    </task>
+-    <task id="LOCAL-00019" summary="FIX: design color">
+-      <created>1684503448770</created>
+-      <option name="number" value="00019" />
+-      <option name="presentableId" value="LOCAL-00019" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1684503448770</updated>
+-    </task>
+-    <option name="localTasksCounter" value="20" />
++    <option name="localTasksCounter" value="18" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -254,13 +248,11 @@
+     <MESSAGE value="ADD: Connected ParoleComuni.txt to the matrix and improved game flow" />
+     <MESSAGE value="FIX: Parole count and spelling" />
+     <MESSAGE value="FIX: minimal fixes" />
+-    <MESSAGE value="ADD: letters to GUI gioco page" />
+-    <MESSAGE value="ADD: Design for start, menu and easy mode page" />
+-    <MESSAGE value="FIX: design color" />
+-    <option name="LAST_COMMIT_MESSAGE" value="FIX: design color" />
++    <MESSAGE value="MODIFY: sistemato file parole comuni e modificato size words" />
++    <option name="LAST_COMMIT_MESSAGE" value="MODIFY: sistemato file parole comuni e modificato size words" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+-    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1684163274824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
++    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683812690821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+     <SUITE FILE_PATH="coverage/IlParoliere$StartPage.ic" NAME="StartPage Coverage Results" MODIFIED="1683308106935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/ResultPage.form
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<form xmlns=\"http://www.intellij.com/uidesigner/form/\" version=\"1\" bind-to-class=\"ResultPage\">\r\n  <grid id=\"27dc6\" layout-manager=\"GridLayoutManager\" row-count=\"4\" column-count=\"1\" same-size-horizontally=\"false\" same-size-vertically=\"false\" hgap=\"-1\" vgap=\"-1\">\r\n    <margin top=\"0\" left=\"0\" bottom=\"0\" right=\"0\"/>\r\n    <constraints>\r\n      <xy x=\"20\" y=\"20\" width=\"1000\" height=\"700\"/>\r\n    </constraints>\r\n    <properties>\r\n      <background color=\"-7122923\"/>\r\n      <foreground color=\"-2829100\"/>\r\n      <maximumSize width=\"1000\" height=\"700\"/>\r\n      <minimumSize width=\"1000\" height=\"700\"/>\r\n      <preferredSize width=\"1000\" height=\"700\"/>\r\n    </properties>\r\n    <border type=\"none\"/>\r\n    <children>\r\n      <component id=\"50023\" class=\"javax.swing.JLabel\">\r\n        <constraints>\r\n          <grid row=\"0\" column=\"0\" row-span=\"1\" col-span=\"1\" vsize-policy=\"0\" hsize-policy=\"0\" anchor=\"0\" fill=\"0\" indent=\"0\" use-parent-layout=\"false\"/>\r\n        </constraints>\r\n        <properties>\r\n          <font name=\"Rubik\" size=\"60\" style=\"1\"/>\r\n          <foreground color=\"-1\"/>\r\n          <text value=\"Risultati\"/>\r\n        </properties>\r\n      </component>\r\n      <grid id=\"2e92d\" layout-manager=\"GridLayoutManager\" row-count=\"1\" column-count=\"2\" same-size-horizontally=\"false\" same-size-vertically=\"false\" hgap=\"-1\" vgap=\"-1\">\r\n        <margin top=\"0\" left=\"0\" bottom=\"0\" right=\"0\"/>\r\n        <constraints>\r\n          <grid row=\"1\" column=\"0\" row-span=\"1\" col-span=\"1\" vsize-policy=\"3\" hsize-policy=\"3\" anchor=\"0\" fill=\"3\" indent=\"0\" use-parent-layout=\"false\"/>\r\n        </constraints>\r\n        <properties>\r\n          <background color=\"-7122923\"/>\r\n        </properties>\r\n        <border type=\"none\"/>\r\n        <children>\r\n          <component id=\"8e937\" class=\"javax.swing.JLabel\">\r\n            <constraints>\r\n              <grid row=\"0\" column=\"0\" row-span=\"1\" col-span=\"1\" vsize-policy=\"0\" hsize-policy=\"0\" anchor=\"0\" fill=\"0\" indent=\"0\" use-parent-layout=\"false\"/>\r\n            </constraints>\r\n            <properties>\r\n              <font name=\"Rubik\" size=\"40\" style=\"1\"/>\r\n              <foreground color=\"-1\"/>\r\n              <text value=\"Parole Trovate\"/>\r\n            </properties>\r\n          </component>\r\n          <component id=\"36f1d\" class=\"javax.swing.JLabel\">\r\n            <constraints>\r\n              <grid row=\"0\" column=\"1\" row-span=\"1\" col-span=\"1\" vsize-policy=\"0\" hsize-policy=\"0\" anchor=\"0\" fill=\"0\" indent=\"0\" use-parent-layout=\"false\"/>\r\n            </constraints>\r\n            <properties>\r\n              <font name=\"Rubik\" size=\"40\" style=\"1\"/>\r\n              <foreground color=\"-1\"/>\r\n              <text value=\"Parola Migliore\"/>\r\n            </properties>\r\n          </component>\r\n        </children>\r\n      </grid>\r\n      <grid id=\"e130c\" layout-manager=\"GridLayoutManager\" row-count=\"1\" column-count=\"1\" same-size-horizontally=\"false\" same-size-vertically=\"false\" hgap=\"-1\" vgap=\"-1\">\r\n        <margin top=\"0\" left=\"0\" bottom=\"0\" right=\"0\"/>\r\n        <constraints>\r\n          <grid row=\"2\" column=\"0\" row-span=\"1\" col-span=\"1\" vsize-policy=\"3\" hsize-policy=\"3\" anchor=\"0\" fill=\"3\" indent=\"0\" use-parent-layout=\"false\"/>\r\n        </constraints>\r\n        <properties>\r\n          <background color=\"-7122923\"/>\r\n        </properties>\r\n        <border type=\"none\"/>\r\n        <children/>\r\n      </grid>\r\n    </children>\r\n  </grid>\r\n</form>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ResultPage.form b/src/ResultPage.form
+--- a/src/ResultPage.form	(revision e7233bada4653519a69598e7331bcc2ad9d7e676)
++++ b/src/ResultPage.form	(date 1684504309967)
+@@ -1,36 +1,26 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ResultPage">
+-  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
++  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+     <margin top="0" left="0" bottom="0" right="0"/>
+     <constraints>
+       <xy x="20" y="20" width="1000" height="700"/>
+     </constraints>
+     <properties>
+-      <background color="-7122923"/>
+-      <foreground color="-2829100"/>
+-      <maximumSize width="1000" height="700"/>
+-      <minimumSize width="1000" height="700"/>
+-      <preferredSize width="1000" height="700"/>
++      <background color="-10998005"/>
++      <foreground color="-7405646"/>
++      <maximumSize width="800" height="600"/>
++      <minimumSize width="800" height="600"/>
++      <preferredSize width="800" height="600"/>
+     </properties>
+     <border type="none"/>
+     <children>
+-      <component id="50023" class="javax.swing.JLabel">
+-        <constraints>
+-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+-        </constraints>
+-        <properties>
+-          <font name="Rubik" size="60" style="1"/>
+-          <foreground color="-1"/>
+-          <text value="Risultati"/>
+-        </properties>
+-      </component>
+       <grid id="2e92d" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+         <margin top="0" left="0" bottom="0" right="0"/>
+         <constraints>
+-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
++          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+         </constraints>
+         <properties>
+-          <background color="-7122923"/>
++          <background color="-10998005"/>
+         </properties>
+         <border type="none"/>
+         <children>
+@@ -56,17 +46,135 @@
+           </component>
+         </children>
+       </grid>
+-      <grid id="e130c" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
++      <grid id="e130c" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
++        <margin top="0" left="0" bottom="0" right="0"/>
++        <constraints>
++          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <autoscrolls value="false"/>
++          <background color="-10998005"/>
++          <font size="18"/>
++          <opaque value="true"/>
++        </properties>
++        <border type="none"/>
++        <children>
++          <component id="14489" class="javax.swing.JButton" binding="retryButton">
++            <constraints>
++              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
++                <minimum-size width="250" height="50"/>
++                <preferred-size width="250" height="50"/>
++                <maximum-size width="250" height="50"/>
++              </grid>
++            </constraints>
++            <properties>
++              <background color="-11108553"/>
++              <font name="Rubik" size="20" style="1"/>
++              <foreground color="-1"/>
++              <text value="Retry"/>
++            </properties>
++          </component>
++          <component id="ca908" class="javax.swing.JButton" binding="exitButton" default-binding="true">
++            <constraints>
++              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
++                <minimum-size width="250" height="50"/>
++                <preferred-size width="250" height="50"/>
++                <maximum-size width="250" height="50"/>
++              </grid>
++            </constraints>
++            <properties>
++              <background color="-5297374"/>
++              <font name="Rubik" size="20" style="1"/>
++              <foreground color="-1"/>
++              <text value="Exit"/>
++            </properties>
++          </component>
++        </children>
++      </grid>
++      <grid id="3f835" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+         <margin top="0" left="0" bottom="0" right="0"/>
+         <constraints>
+           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+         </constraints>
+         <properties>
+-          <background color="-7122923"/>
++          <background color="-10998005"/>
++        </properties>
++        <border type="none"/>
++        <children>
++          <component id="bf0c1" class="javax.swing.JLabel">
++            <constraints>
++              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
++            </constraints>
++            <properties>
++              <font name="Rubik" size="30" style="1"/>
++              <foreground color="-1"/>
++              <text value="11"/>
++            </properties>
++          </component>
++          <component id="d7740" class="javax.swing.JLabel">
++            <constraints>
++              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
++            </constraints>
++            <properties>
++              <font name="Rubik" size="30" style="1"/>
++              <foreground color="-1"/>
++              <text value="Ciao"/>
++            </properties>
++          </component>
++          <vspacer id="3092d">
++            <constraints>
++              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
++                <minimum-size width="30" height="30"/>
++                <preferred-size width="30" height="30"/>
++                <maximum-size width="30" height="30"/>
++              </grid>
++            </constraints>
++          </vspacer>
++        </children>
++      </grid>
++      <grid id="842a4" binding="labelPunti" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
++        <margin top="0" left="0" bottom="0" right="0"/>
++        <constraints>
++          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <background color="-10998005"/>
++          <font name="Rubik" size="30" style="1"/>
++          <foreground color="-1"/>
+         </properties>
+         <border type="none"/>
+-        <children/>
++        <children>
++          <component id="5becf" class="javax.swing.JLabel">
++            <constraints>
++              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++            </constraints>
++            <properties>
++              <font name="Rubik" size="72" style="1"/>
++              <foreground color="-7405646"/>
++              <text value="5300"/>
++            </properties>
++          </component>
++          <vspacer id="f2285">
++            <constraints>
++              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
++                <minimum-size width="30" height="30"/>
++                <preferred-size width="30" height="30"/>
++                <maximum-size width="30" height="30"/>
++              </grid>
++            </constraints>
++          </vspacer>
++        </children>
+       </grid>
++      <component id="50023" class="javax.swing.JLabel">
++        <constraints>
++          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <font name="Rubik" size="60" style="1"/>
++          <foreground color="-1"/>
++          <text value="Risultati"/>
++        </properties>
++      </component>
+     </children>
+   </grid>
+ </form>

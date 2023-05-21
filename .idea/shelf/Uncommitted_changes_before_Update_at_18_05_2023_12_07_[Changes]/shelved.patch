@@ -1,0 +1,141 @@
+Index: src/Partita.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.Arrays;\r\nimport java.util.Iterator;\r\nimport java.util.Vector;\r\n\r\npublic class Partita {\r\n    public int puntiTotali;\r\n    public Utente utente;\r\n    public String parolaMigliore;\r\n    public int parolaNum;\r\n\r\n    Vector<String> paroleArray= new Vector<>();\r\n\r\n    //costruttore\r\n    public Partita(Utente u){\r\n        this.utente = utente;\r\n        this.puntiTotali = 0;\r\n        this.parolaMigliore = null;\r\n    }\r\n\r\n    // getter e setter\r\n    public int getPuntiTotali() {\r\n        return puntiTotali;\r\n    }\r\n    public void setPuntiTotali(int puntiTotali) {\r\n        this.puntiTotali = puntiTotali;\r\n    }\r\n    public Utente getUtente() {\r\n        return utente;\r\n    }\r\n    public void setUtente(Utente utente) {\r\n        this.utente = utente;\r\n    }\r\n    public String getParolaMigliore() {\r\n        return parolaMigliore;\r\n    }\r\n    public void setParolaMigliore(String parolaMigliore) {\r\n        this.parolaMigliore = parolaMigliore;\r\n    }\r\n    public int getParolaNum() {\r\n        return parolaNum;\r\n    }\r\n    public void setParolaNum(int parolaNum) {\r\n        this.parolaNum = parolaNum;\r\n    }\r\n\r\n    //metodi\r\n    public void aggiungiPunti(String parola){\r\n        int lunghezzaParola = parola.length();\r\n        int k = 100;            //costante\r\n        int punti = lunghezzaParola * k;\r\n        puntiTotali = puntiTotali + punti;\r\n    }\r\n    public boolean controllaParolaMigliore() {\r\n        String best = \"\";\r\n        boolean unique = true;\r\n        Iterator<String> i = paroleArray.iterator();\r\n        while (i.hasNext()) {\r\n            String parola = i.next();\r\n            if (parola.length() > best.length()) {\r\n                best = parola;\r\n                unique = true;\r\n            } else if (parola.length() == best.length() && !parola.equals(best)) {\r\n                unique = false;\r\n            }\r\n        }\r\n        setParolaMigliore(best);\r\n        return unique;\r\n    }\r\n\r\n    public int puntiParola(String parola){\r\n        int lunghezzaParola = parola.length();\r\n        int k = 100;            //costante\r\n        int punti = lunghezzaParola * k;\r\n        paroleArray.add(parola);\r\n        return punti;\r\n    }\r\n\r\n    public void contaParola(){\r\n        parolaNum++;\r\n    }\r\n\r\n    public boolean doppione(String parolaInserita){\r\n        boolean d = false; //doppione\r\n        int size = paroleArray.size(); //grandezza array\r\n        for(int x=0; x<size; x++){ //ciclo vettore grande\r\n            if(parolaInserita.equals(paroleArray.get(x))){\r\n                d = true;\r\n            }\r\n        }\r\n        return d;\r\n    }\r\n\r\n    /***************************************************************/\r\n    //funzione che inizializza il tabellone di gioco\r\n    public void InizializzaTabellone(){\r\n        char[][] tabellone = new char[6][6];\r\n        char[] lettere = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',\r\n                'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};\r\n\r\n        for (int i = 0; i < 4; i++) {\r\n            for (int j = 0; j < 4; j++) {\r\n                int index = (int) (Math.random() * lettere.length);\r\n                tabellone[i][j] = lettere[index];\r\n            }\r\n        }\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Partita.java b/src/Partita.java
+--- a/src/Partita.java	(revision 9e471a753db96472bd2cb41d63a0928e028f2282)
++++ b/src/Partita.java	(date 1683304696313)
+@@ -7,6 +7,9 @@
+     public Utente utente;
+     public String parolaMigliore;
+     public int parolaNum;
++    char[][] tabellone = new char[6][6];
++    char[] lettere = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
++            'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+ 
+     Vector<String> paroleArray= new Vector<>();
+ 
+@@ -92,13 +95,10 @@
+ 
+     /***************************************************************/
+     //funzione che inizializza il tabellone di gioco
++    /** se facciamo una matrice di 6x6 possiamo avere parole solo lunghe 6 caratteri e non di più*/
+     public void InizializzaTabellone(){
+-        char[][] tabellone = new char[6][6];
+-        char[] lettere = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+-                'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+-
+-        for (int i = 0; i < 4; i++) {
+-            for (int j = 0; j < 4; j++) {
++        for (int i = 0; i < 6; i++) {
++            for (int j = 0; j < 6; j++) {
+                 int index = (int) (Math.random() * lettere.length);
+                 tabellone[i][j] = lettere[index];
+             }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"8462984d-23c0-4314-847e-acde3a7b6bf0\" name=\"Changes\" comment=\"Creazione Utente\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_23__12_16__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_23__12_16__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Partita.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Partita.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2MgM7lntEbmlzdqeqLILpROIR0b\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"8462984d-23c0-4314-847e-acde3a7b6bf0\" name=\"Changes\" comment=\"\" />\r\n      <created>1678184607277</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1678184607277</updated>\r\n      <workItem from=\"1678184608473\" duration=\"1000\" />\r\n      <workItem from=\"1678184953155\" duration=\"667000\" />\r\n      <workItem from=\"1679391089464\" duration=\"4206000\" />\r\n      <workItem from=\"1679567902632\" duration=\"64000\" />\r\n      <workItem from=\"1679567983383\" duration=\"1234000\" />\r\n      <workItem from=\"1679996166363\" duration=\"95000\" />\r\n      <workItem from=\"1679996410242\" duration=\"3028000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Creazione Utente\">\r\n      <created>1679392748872</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679392748872</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Creazione Utente\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Creazione Utente\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 9e471a753db96472bd2cb41d63a0928e028f2282)
++++ b/.idea/workspace.xml	(date 1683716401250)
+@@ -4,9 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="Creazione Utente">
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_23__12_16__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_23__12_16__Changes_.xml" afterDir="false" />
++    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment=":creato funzione InizializzaTabellone">
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_23__11_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_23__11_01__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_23__11_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_23__11_17__Changes_.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Partita.java" afterDir="false" />
+     </list>
+@@ -17,6 +17,19 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;
++  }
++}</component>
++  <component name="GithubPullRequestsUISettings">
++    <option name="selectedUrlAndAccountId">
++      <UrlAndAccount>
++        <option name="accountId" value="a0133a2c-89f5-4ac4-a159-c88f1165f5bc" />
++        <option name="url" value="https://github.com/MaggyProtasio/IlParoliere.git" />
++      </UrlAndAccount>
++    </option>
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+@@ -53,7 +66,9 @@
+       <workItem from="1679567902632" duration="64000" />
+       <workItem from="1679567983383" duration="1234000" />
+       <workItem from="1679996166363" duration="95000" />
+-      <workItem from="1679996410242" duration="3028000" />
++      <workItem from="1679996410242" duration="3096000" />
++      <workItem from="1683297401900" duration="6733000" />
++      <workItem from="1683716278338" duration="121000" />
+     </task>
+     <task id="LOCAL-00001" summary="Creazione Utente">
+       <created>1679392748872</created>
+@@ -62,7 +77,35 @@
+       <option name="project" value="LOCAL" />
+       <updated>1679392748872</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="implementazione funzione controllaParolaMigliore">
++      <created>1680022234978</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1680022234978</updated>
++    </task>
++    <task id="LOCAL-00003" summary="commentato funzione findDuplicates">
++      <created>1683298428078</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1683298428078</updated>
++    </task>
++    <task id="LOCAL-00004" summary=":migliorato funzione controllaParolaMigliore, eliminato funzioni che non servivano, stampato prima parola migliore inserita">
++      <created>1683302196558</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1683302196558</updated>
++    </task>
++    <task id="LOCAL-00005" summary=":creato funzione InizializzaTabellone">
++      <created>1683303977116</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1683303977116</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -81,6 +124,10 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Creazione Utente" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Creazione Utente" />
++    <MESSAGE value="implementazione funzione controllaParolaMigliore" />
++    <MESSAGE value="commentato funzione findDuplicates" />
++    <MESSAGE value=":migliorato funzione controllaParolaMigliore, eliminato funzioni che non servivano, stampato prima parola migliore inserita" />
++    <MESSAGE value=":creato funzione InizializzaTabellone" />
++    <option name="LAST_COMMIT_MESSAGE" value=":creato funzione InizializzaTabellone" />
+   </component>
+ </project>
+\ No newline at end of file
