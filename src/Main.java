@@ -1,10 +1,16 @@
+import javax.sound.sampled.*;
 import java.awt.*;
 import java.io.*;
 import java.util.Random;
 import java.util.Scanner;
 
+import javax.sound.sampled.*;
+import java.io.File;
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UnsupportedAudioFileException, IOException,LineUnavailableException {
+
         //creazione dizionario e variabili
         Dizionario diz = new Dizionario();
         Scanner in = new Scanner(System.in);
@@ -28,6 +34,14 @@ public class Main {
         //partita.stampaMatriceSemplice();
         //inizia gioco con GUI
         StartPage s = new StartPage();
+
+        //per audio background ----------------------------------------------
+        File file = new File("src/audio/hehe.wav");
+        AudioInputStream audiostream = AudioSystem.getAudioInputStream(file);
+        Clip clip =  AudioSystem.getClip();
+        clip.open(audiostream);
+
+        clip.start(); //per far inizare l'audio
 
         int i = 0;
         do {
