@@ -4,36 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: page flow">
-      <change afterPath="$PROJECT_DIR$/src/HardMode.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HardMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SpecialMode.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SpecialMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/audio/buttonPress.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/audio/correctWord.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/audio/fineGioco.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/audio/musicMainLowVolume.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/audio/themeMusicLowVolume.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/audio/wrongWord.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/logoEs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/teamwork.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/teamwork2.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dizionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dizionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EasyMode.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyMode.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EasyMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainprovaTimer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Partita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ResultPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StartPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/file/dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/file/dictionary.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/bgLett.png" beforeDir="false" />
-    </list>
+    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: grafica ResultPage" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,22 +31,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "190",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Maggy/IdeaProjects/IlParoliere/src/img",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;190&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maggy/IdeaProjects/IlParoliere/src/img&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src\img" />
@@ -303,10 +274,11 @@
     <MESSAGE value="FIX: design color" />
     <MESSAGE value="FIX: Color correcting" />
     <MESSAGE value="FIX: page flow" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX: page flow" />
+    <MESSAGE value="FIX: grafica ResultPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX: grafica ResultPage" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1684163274824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683812690821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/IlParoliere$StartPage.ic" NAME="StartPage Coverage Results" MODIFIED="1683308106935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -50,7 +50,7 @@
             </constraints>
             <properties>
               <background color="-11108553"/>
-              <font name="Rubik" size="20" style="1"/>
+              <font name="Rubik" size="22" style="1"/>
               <foreground color="-1"/>
               <text value="Retry"/>
             </properties>
@@ -65,7 +65,7 @@
             </constraints>
             <properties>
               <background color="-5297374"/>
-              <font name="Rubik" size="20" style="1"/>
+              <font name="Rubik" size="22" style="1"/>
               <foreground color="-1"/>
               <text value="Exit"/>
             </properties>
