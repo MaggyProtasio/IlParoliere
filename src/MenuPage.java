@@ -15,7 +15,10 @@ public class MenuPage extends JFrame {
     private JButton backBtn;
 
     public MenuPage(Utente giocatore){
-        // Set the properties of the frame
+        //icona
+        ImageIcon icon = new ImageIcon("src/img/Logo.png");
+        this.setIconImage(icon.getImage());
+        //Set the properties of the frame
         setContentPane(panelMain);
         setTitle("WordCraft");
         setSize(800,650);

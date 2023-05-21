@@ -18,7 +18,12 @@ public class ResultPage extends JFrame {
 
     //costruttore
     public ResultPage(Partita p, Utente g){
+        //icona
+        ImageIcon icon = new ImageIcon("src/img/Logo.png");
+        this.setIconImage(icon.getImage());
+        //suono
         playSound();
+        //set the properties of the frame
         setContentPane(panelMain);
         setTitle("WordCraft - Results");
         setSize(800,600);

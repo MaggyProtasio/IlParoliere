@@ -16,8 +16,10 @@ public class StartPage extends JFrame {
 
     //costruttore
     public StartPage(){
-        ImageIcon icon = new ImageIcon("src/img/logoEs.png"); // Replace "path/to/icon.png" with the actual path to your icon image
+        //icona
+        ImageIcon icon = new ImageIcon("src/img/Logo.png");
         this.setIconImage(icon.getImage());
+        //set the properties of the frame
         this.setResizable(false);
         this.setContentPane(this.panelMain);
         this.setTitle("WordCraft");
