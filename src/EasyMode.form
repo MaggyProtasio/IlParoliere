@@ -10,7 +10,7 @@
     </properties>
     <border type="none"/>
     <children>
-      <grid id="572a8" binding="panelMain" layout-manager="GridLayoutManager" row-count="6" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="572a8" binding="panelMain" layout-manager="GridLayoutManager" row-count="5" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
@@ -22,7 +22,7 @@
         <children>
           <vspacer id="5af4c">
             <constraints>
-              <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+              <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
                 <minimum-size width="120" height="120"/>
                 <preferred-size width="120" height="120"/>
                 <maximum-size width="120" height="120"/>
@@ -32,7 +32,7 @@
           <grid id="bae19" binding="PanelMatrice" layout-manager="GridLayoutManager" row-count="10" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <grid row="1" column="1" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
                 <minimum-size width="600" height="600"/>
                 <preferred-size width="600" height="600"/>
                 <maximum-size width="600" height="600"/>
@@ -41,7 +41,9 @@
             <properties>
               <background color="-15128753"/>
             </properties>
-            <border type="none"/>
+            <border type="line">
+              <color color="-15128753"/>
+            </border>
             <children>
               <component id="d9859" class="javax.swing.JButton" binding="Lettera1">
                 <constraints>
@@ -1748,7 +1750,7 @@
           </grid>
           <component id="bc4c6" class="javax.swing.JTextField" binding="parolaInput">
             <constraints>
-              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
                 <preferred-size width="508" height="33"/>
               </grid>
             </constraints>
@@ -1762,14 +1764,14 @@
           <grid id="1aa51" binding="panelCronologia" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <grid row="1" column="3" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <background color="-16630134"/>
+              <background color="-15128753"/>
               <foreground color="-1"/>
             </properties>
             <border type="line">
-              <color color="-524292"/>
+              <color color="-28647"/>
             </border>
             <children>
               <component id="e4b01" class="javax.swing.JLabel" binding="image">
@@ -1783,35 +1785,25 @@
                   <text value=""/>
                 </properties>
               </component>
-              <component id="25010" class="javax.swing.JLabel" binding="nomeBox">
-                <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <font name="Rubik" size="22" style="0"/>
-                  <foreground color="-524292"/>
-                  <text value=""/>
-                </properties>
-              </component>
               <grid id="77aff" binding="panelParoleTrovate" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                    <minimum-size width="250" height="410"/>
-                    <preferred-size width="250" height="410"/>
-                    <maximum-size width="250" height="410"/>
+                    <minimum-size width="300" height="450"/>
+                    <preferred-size width="300" height="450"/>
+                    <maximum-size width="300" height="450"/>
                   </grid>
                 </constraints>
                 <properties>
-                  <background color="-14667152"/>
+                  <background color="-15128753"/>
                 </properties>
-                <border type="line">
+                <border type="none">
                   <color color="-2592"/>
                 </border>
                 <children>
                   <component id="c3be4" class="javax.swing.JLabel" binding="labelParoleTrovate">
                     <constraints>
-                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <font name="Rubik" size="14" style="0"/>
@@ -1822,13 +1814,15 @@
                   <vspacer id="2e66d">
                     <constraints>
                       <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
-                        <preferred-size width="30" height="30"/>
+                        <minimum-size width="10" height="10"/>
+                        <preferred-size width="10" height="10"/>
+                        <maximum-size width="10" height="10"/>
                       </grid>
                     </constraints>
                   </vspacer>
                   <component id="ba93f" class="javax.swing.JLabel">
                     <constraints>
-                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <font name="Rubik" size="22" style="1"/>
@@ -1838,33 +1832,36 @@
                   </component>
                 </children>
               </grid>
-              <grid id="87de7" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="87de7" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                    <minimum-size width="250" height="370"/>
-                    <preferred-size width="250" height="370"/>
-                    <maximum-size width="250" height="370"/>
+                    <minimum-size width="220" height="400"/>
+                    <preferred-size width="220" height="400"/>
+                    <maximum-size width="220" height="400"/>
                   </grid>
                 </constraints>
                 <properties>
-                  <background color="-14667152"/>
+                  <background color="-15128753"/>
+                  <enabled value="true"/>
                 </properties>
-                <border type="none"/>
+                <border type="none">
+                  <color color="-855310"/>
+                </border>
                 <children>
                   <component id="f32d7" class="javax.swing.JLabel" binding="labelPunti">
                     <constraints>
-                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <font name="Rubik" size="22" style="1"/>
-                      <foreground color="-2592"/>
-                      <text value="Points:"/>
+                      <font name="Rubik" size="36" style="1"/>
+                      <foreground color="-154586"/>
+                      <text value="0 pts"/>
                     </properties>
                   </component>
                   <vspacer id="cbe1b">
                     <constraints>
-                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
                         <minimum-size width="185" height="185"/>
                         <preferred-size width="185" height="185"/>
                         <maximum-size width="185" height="185"/>
@@ -1882,12 +1879,22 @@
                   </vspacer>
                   <component id="6b713" class="javax.swing.JLabel" binding="labelTimer">
                     <constraints>
-                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <font name="Rubik" size="22" style="0"/>
                       <foreground color="-2592"/>
                       <text value="Timer: "/>
+                    </properties>
+                  </component>
+                  <component id="25010" class="javax.swing.JLabel" binding="nomeBox">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Rubik" size="22" style="0"/>
+                      <foreground color="-524292"/>
+                      <text value=""/>
                     </properties>
                   </component>
                 </children>
@@ -1896,10 +1903,10 @@
           </grid>
           <vspacer id="c37bd">
             <constraints>
-              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
-                <minimum-size width="120" height="120"/>
-                <preferred-size width="120" height="120"/>
-                <maximum-size width="120" height="120"/>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="150" height="150"/>
+                <preferred-size width="150" height="150"/>
+                <maximum-size width="150" height="150"/>
               </grid>
             </constraints>
           </vspacer>
@@ -1928,7 +1935,7 @@
           </vspacer>
           <vspacer id="af5ae">
             <constraints>
-              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
                 <minimum-size width="20" height="20"/>
                 <preferred-size width="20" height="20"/>
                 <maximum-size width="20" height="20"/>
@@ -1954,10 +1961,10 @@
           <grid id="a16ec" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <background color="-15128753"/>
+              <background color="-16630134"/>
             </properties>
             <border type="none"/>
             <children>

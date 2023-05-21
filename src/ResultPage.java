@@ -1,6 +1,11 @@
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import javax.sound.sampled.*;
+import java.io.File;
 
 public class ResultPage extends JFrame {
     private JButton retryButton; // manda alla pagina di menu
@@ -13,6 +18,7 @@ public class ResultPage extends JFrame {
 
     //costruttore
     public ResultPage(Partita p, Utente g){
+        playSound();
         setContentPane(panelMain);
         setTitle("WordCraft - Results");
         setSize(800,600);
@@ -47,6 +53,31 @@ public class ResultPage extends JFrame {
                 start.setVisible(true);
             }
         });
+    }
+    public void playSound(){
+        File file = new File("src/audio/fineGioco.wav");
+        AudioInputStream audiostream = null;
+        try {
+            audiostream = AudioSystem.getAudioInputStream(file);
+        } catch (UnsupportedAudioFileException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        Clip clip = null;
+        try {
+            clip = AudioSystem.getClip();
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        }
+        try {
+            clip.open(audiostream);
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        clip.start(); //per far inizare l'audio
     }
     private void createUIComponents() {
 
