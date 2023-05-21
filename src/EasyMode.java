@@ -125,6 +125,8 @@ public class EasyMode extends JFrame {
     private JLabel sampleLabel;
 
     public boolean stopTimer = false;       //per fermare timer quando giocatore esce dal gioco
+
+    //costruttore
     public EasyMode(Utente g, Partita p){
         // Set the properties of the frame
         setContentPane(panelMain);

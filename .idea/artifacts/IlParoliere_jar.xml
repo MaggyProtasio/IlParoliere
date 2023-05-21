@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="IlParoliere:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/IlParoliere_jar</output-path>
+    <root id="root">
+      <element id="archive" name="IlParoliere.jar">
+        <element id="module-output" name="IlParoliere" />
+      </element>
+    </root>
+  </artifact>
+</component>
