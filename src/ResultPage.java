@@ -15,7 +15,7 @@ public class ResultPage extends JFrame {
     public ResultPage(Partita p, Utente g){
         setContentPane(panelMain);
         setTitle("WordCraft - Results");
-        setSize(900,600);
+        setSize(800,600);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //modifica label punteggio
