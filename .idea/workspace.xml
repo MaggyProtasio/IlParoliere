@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="ADD:aggiunto icona, file &quot;Logo.png&quot; nella cartella img">
-      <change beforePath="$PROJECT_DIR$/src/EasyMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyMode.java" afterDir="false" />
-    </list>
+    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="ADD:aggiunto codice per icona in HardMode page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +23,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -122,7 +126,7 @@
       <workItem from="1684680036408" duration="5571000" />
       <workItem from="1684692439743" duration="552000" />
       <workItem from="1684693108858" duration="48000" />
-      <workItem from="1684693907762" duration="983000" />
+      <workItem from="1684693907762" duration="1358000" />
     </task>
     <task id="LOCAL-00001" summary=":add user and dizionari">
       <created>1678188079722</created>
@@ -285,7 +289,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684694513759</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="ADD:aggiunto codice per icona in EasyMode page">
+      <created>1684695132240</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1684695132240</updated>
+    </task>
+    <task id="LOCAL-00025" summary="ADD:aggiunto codice per icona in HardMode page">
+      <created>1684695195258</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1684695195258</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +325,26 @@
         <entry key="MAIN">
           <value>
             <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -333,7 +371,9 @@
     <MESSAGE value="FIX: grafica ResultPage" />
     <MESSAGE value="FIX: modifica font bottoni" />
     <MESSAGE value="ADD:aggiunto icona, file &quot;Logo.png&quot; nella cartella img" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD:aggiunto icona, file &quot;Logo.png&quot; nella cartella img" />
+    <MESSAGE value="ADD:aggiunto codice per icona in EasyMode page" />
+    <MESSAGE value="ADD:aggiunto codice per icona in HardMode page" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD:aggiunto codice per icona in HardMode page" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683812690821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
