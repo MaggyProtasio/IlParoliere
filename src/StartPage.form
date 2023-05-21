@@ -49,7 +49,7 @@
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <font name="Rubik" size="20" style="0"/>
+              <font name="Rubik" size="25" style="0"/>
               <foreground color="-2592"/>
               <text value="Inserisci il tuo nome:"/>
             </properties>
@@ -63,7 +63,7 @@
             <properties>
               <background color="-16630134"/>
               <caretColor color="-2592"/>
-              <font name="Rubik" size="20" style="0"/>
+              <font name="Rubik" size="25" style="0"/>
               <foreground color="-524292"/>
               <text value=""/>
             </properties>

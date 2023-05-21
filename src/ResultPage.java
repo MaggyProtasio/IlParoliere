@@ -24,6 +24,7 @@ public class ResultPage extends JFrame {
         //modifica label parole trovate
         String numParole = Integer.toString(p.getParolaNum());
         paroleTrovate.setText(numParole);
+        p.controllaParolaMigliore();
         //modifica label parola migliore
         parolaMigliore.setText(p.getParolaMigliore());
 
@@ -31,9 +32,9 @@ public class ResultPage extends JFrame {
         retryButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                dispose(); //chiude la pagina result
                 MenuPage menu = new MenuPage(g);
                 menu.setVisible(true);
-                dispose(); //chiude la pagina result
             }
         });
 
@@ -41,9 +42,9 @@ public class ResultPage extends JFrame {
         exitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                dispose(); //chiude la pagina result
                 StartPage start = new StartPage();
                 start.setVisible(true);
-                dispose();
             }
         });
     }

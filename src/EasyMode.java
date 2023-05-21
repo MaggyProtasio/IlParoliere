@@ -282,6 +282,7 @@ public class EasyMode extends JFrame {
                     ResultPage result = new ResultPage(p,g);
                     result.setVisible(true);
                     parolaInput.disable();
+                    dispose(); //chiude la pagina
                 }
             }
         });
