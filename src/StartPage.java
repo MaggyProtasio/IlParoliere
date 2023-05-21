@@ -1,7 +1,10 @@
+import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.border.AbstractBorder;
+import java.io.File;
+import java.io.IOException;
+
 
 public class StartPage extends JFrame {
     private JPanel panelMain;
@@ -13,16 +16,21 @@ public class StartPage extends JFrame {
 
     //costruttore
     public StartPage(){
+        ImageIcon icon = new ImageIcon("src/img/logoEs.png"); // Replace "path/to/icon.png" with the actual path to your icon image
+        this.setIconImage(icon.getImage());
         this.setResizable(false);
         this.setContentPane(this.panelMain);
-        this.setTitle("Start");
+        this.setTitle("WordCraft");
         this.setSize(760,510);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
         startButton.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e)  {
+                buttonSound();
+
                 //crea utente base del nome inserito
                 Utente giocatore = new Utente(nomeBox.getText());
 
@@ -33,22 +41,47 @@ public class StartPage extends JFrame {
             }
         });
 
-
+        //se preme enter tasto
         Action enterAction = new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //crea utente base del nome inserito
-                Utente giocatore = new Utente(nomeBox.getText());
+            buttonSound();
+            //crea utente base del nome inserito
+            Utente giocatore = new Utente(nomeBox.getText());
 
-                //lo passa giocatore cosi si può memorizzare il nome
-                MenuPage m = new MenuPage(giocatore);
-                m.setVisible(true);
-                dispose();
+            //lo passa giocatore cosi si può memorizzare il nome
+            MenuPage m = new MenuPage(giocatore);
+            m.setVisible(true);
+            dispose();
             }
         };
 
         nomeBox.addActionListener(enterAction);
     }
 
-
+    public void buttonSound(){
+        File file = new File("src/audio/buttonPress.wav");
+        AudioInputStream audiostream = null;
+        try {
+            audiostream = AudioSystem.getAudioInputStream(file);
+        } catch (UnsupportedAudioFileException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        Clip clip = null;
+        try {
+            clip = AudioSystem.getClip();
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        }
+        try {
+            clip.open(audiostream);
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        clip.start(); //per far inizare l'audio
+    }
 }

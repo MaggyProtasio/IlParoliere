@@ -1,7 +1,13 @@
+import javax.sound.sampled.*;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
 import java.text.DecimalFormat;
+import javax.swing.border.LineBorder;
+import java.awt.geom.RoundRectangle2D;
 
 public class EasyMode extends JFrame {
     private JPanel panelMain;
@@ -118,16 +124,17 @@ public class EasyMode extends JFrame {
     private JLabel labelTimer;
     private JLabel sampleLabel;
 
+    public boolean stopTimer = false;       //per fermare timer quando giocatore esce dal gioco
     public EasyMode(Utente g, Partita p){
         // Set the properties of the frame
         setContentPane(panelMain);
-        setTitle("Menu Page");
-        setSize(1400,750);
+        setTitle("WordCraft - Normal mode");
+        setSize(1400,780);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //scrive nome giocatore nello box
-        nomeBox.setText("Player: " + g.getNickname());
+        nomeBox.setText("Player " + g.getNickname());
 
         //inizializza dizionario
         Dizionario diz = new Dizionario();
@@ -164,6 +171,8 @@ public class EasyMode extends JFrame {
         exitBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                buttonSound();
+                stopTimer = true;
                 MenuPage menu = new MenuPage(g);
                 menu.setVisible(true);
                 dispose();
@@ -177,9 +186,6 @@ public class EasyMode extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 String parolaInserita = parolaInput.getText();
 
-                //controllo se parola valida per matrice e dizionario
-                int i = 0;
-
                 //controlla se parola esiste nella matrice
                 String parolaInseritaUpper = parolaInserita.toUpperCase();
                 boolean trovata = p.trovaParolaMatrice(parolaInseritaUpper);
@@ -189,28 +195,28 @@ public class EasyMode extends JFrame {
                     //controlla se parola esiste nel dizionario
                     if (diz.trovaParoladiz(parolaInserita)) {
                         if (p.doppione(parolaInserita) == false) {
+                            playCorrectWord();
                             System.out.println("Parola trovata nel dizionario!");
                             p.aggiungiPunti(parolaInserita);
                             System.out.println("Punti della parola: " + p.puntiParola(parolaInserita));
                             //aggiorna punti totali
-                            labelPunti.setText("Points: " + p.getPuntiTotali());
-
-                            //contatore
-                            p.contaParola();
+                            labelPunti.setText(p.getPuntiTotali() + " pts");
+                            p.contaParola();            //contatore
                             //mette nella lista di parole
                             String listaParole =  "<html>" + labelParoleTrovate.getText();
                             labelParoleTrovate.setText( listaParole + "<br>"+ parolaInserita);
                         } else {
+                            playWrongWord();
                             System.out.println("Hai già inserito questa parola >:(");
                         }
                     } else {
+                        playWrongWord();
                         System.out.println("Questa parola non esiste nel dizionario >:(");
                     }
                 } else {
+                    playWrongWord();
                     System.out.println("Parola " + parolaInserita + " non esiste nella matrice :(");
                 }
-                i++;
-
                 parolaInput.setText("");        //cancella input quando preme invio
 
             }
@@ -223,17 +229,40 @@ public class EasyMode extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 String parolaInserita = parolaInput.getText();
 
-                //controllo se parola valida per matrice e dizionario
+                //controlla se parola esiste nella matrice
+                String parolaInseritaUpper = parolaInserita.toUpperCase();
+                boolean trovata = p.trovaParolaMatrice(parolaInseritaUpper);
+                if (trovata) {
+                    System.out.println("Parola " + parolaInserita + " esiste nella matrice!");
 
-                String listaParole =  "<html>" + labelParoleTrovate.getText();
-                labelParoleTrovate.setText( listaParole + "<br>"+ parolaInserita);
-                parolaInput.setText("");
-
-
+                    //controlla se parola esiste nel dizionario
+                    if (diz.trovaParoladiz(parolaInserita)) {
+                        if (p.doppione(parolaInserita) == false) {
+                            playCorrectWord();
+                            System.out.println("Parola trovata nel dizionario!");
+                            p.aggiungiPunti(parolaInserita);
+                            System.out.println("Punti della parola: " + p.puntiParola(parolaInserita));
+                            //aggiorna punti totali
+                            labelPunti.setText(p.getPuntiTotali() + " pts");
+                            p.contaParola();            //contatore
+                            //mette nella lista di parole
+                            String listaParole =  "<html>" + labelParoleTrovate.getText();
+                            labelParoleTrovate.setText( listaParole + "<br>"+ parolaInserita);
+                        } else {
+                            playWrongWord();
+                            System.out.println("Hai già inserito questa parola >:(");
+                        }
+                    } else {
+                        playWrongWord();
+                        System.out.println("Questa parola non esiste nel dizionario >:(");
+                    }
+                } else {
+                    playWrongWord();
+                    System.out.println("Parola " + parolaInserita + " non esiste nella matrice :(");
+                }
+                parolaInput.setText("");        //cancella input quando preme invio
             }
         });
-
-
     }
 
     private JButton getButtonByName(String buttonName) {
@@ -277,15 +306,96 @@ public class EasyMode extends JFrame {
                 }
 
                 //tempo scaduto!
-                if(minuti == 0 && secondi == 0){
+                if(minuti == 0 && secondi == 0 ){
                     timer.stop();
                     ResultPage result = new ResultPage(p,g);
                     result.setVisible(true);
                     parolaInput.disable();
-                    dispose(); //chiude la pagina
+                    dispose();
+                }
+                if(stopTimer == true){
+                    timer.stop();
                 }
             }
         });
-
     }
+
+    public void buttonSound(){
+        File file = new File("src/audio/buttonPress.wav");
+        AudioInputStream audiostream = null;
+        try {
+            audiostream = AudioSystem.getAudioInputStream(file);
+        } catch (UnsupportedAudioFileException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        Clip clip = null;
+        try {
+            clip = AudioSystem.getClip();
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        }
+        try {
+            clip.open(audiostream);
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        clip.start(); //per far inizare l'audio
+    }
+
+    public void playWrongWord(){
+        File file = new File("src/audio/wrongWord.wav");
+        AudioInputStream audiostream = null;
+        try {
+            audiostream = AudioSystem.getAudioInputStream(file);
+        } catch (UnsupportedAudioFileException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        Clip clip = null;
+        try {
+            clip = AudioSystem.getClip();
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        }
+        try {
+            clip.open(audiostream);
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        clip.start(); //per far inizare l'audio
+    }
+
+    public void playCorrectWord(){
+        File file = new File("src/audio/correctWord.wav");
+        AudioInputStream audiostream = null;
+        try {
+            audiostream = AudioSystem.getAudioInputStream(file);
+        } catch (UnsupportedAudioFileException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        Clip clip = null;
+        try {
+            clip = AudioSystem.getClip();
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        }
+        try {
+            clip.open(audiostream);
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        clip.start(); //per far inizare l'audio
+    }
+
 }
