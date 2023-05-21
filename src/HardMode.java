@@ -124,6 +124,9 @@ public class HardMode extends JFrame {
     public boolean stopTimer = false;
 
     public HardMode(Utente g, Partita p){
+        //icona
+        ImageIcon icon = new ImageIcon("src/img/Logo.png");
+        this.setIconImage(icon.getImage());
         // Set the properties of the frame
         setContentPane(panelMain);
         setTitle("WordCraft - Hard mode");
