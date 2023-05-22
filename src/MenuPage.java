@@ -100,5 +100,4 @@ public class MenuPage extends JFrame {
         }
         clip.start(); //per far inizare l'audio
     }
-
 }

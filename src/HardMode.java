@@ -404,5 +404,4 @@ public class HardMode extends JFrame {
         }
         clip.start(); //per far inizare l'audio
     }
-
 }

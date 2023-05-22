@@ -179,7 +179,6 @@ public class EasyMode extends JFrame {
             }
         }
         p.stampaMatrice();
-
         exitBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -230,7 +229,6 @@ public class EasyMode extends JFrame {
                     System.out.println("Parola " + parolaInserita + " non esiste nella matrice :(");
                 }
                 parolaInput.setText("");        //cancella input quando preme invio
-
             }
         };
         parolaInput.addActionListener(enterAction);

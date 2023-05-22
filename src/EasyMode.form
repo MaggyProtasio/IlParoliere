@@ -42,7 +42,9 @@
               <background color="-15128753"/>
             </properties>
             <border type="line">
-              <color color="-15128753"/>
+              <font/>
+              <title-color color="-16777216"/>
+              <color color="-16216646"/>
             </border>
             <children>
               <component id="d9859" class="javax.swing.JButton" binding="Lettera1">
@@ -1771,7 +1773,7 @@
               <foreground color="-1"/>
             </properties>
             <border type="line">
-              <color color="-28647"/>
+              <color color="-16216646"/>
             </border>
             <children>
               <component id="e4b01" class="javax.swing.JLabel" binding="image">
@@ -1795,6 +1797,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <autoscrolls value="false"/>
                   <background color="-15128753"/>
                 </properties>
                 <border type="none">
@@ -1806,7 +1809,8 @@
                       <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <font name="Rubik" size="14" style="0"/>
+                      <autoscrolls value="false"/>
+                      <font name="Rubik" size="13" style="0"/>
                       <foreground color="-2592"/>
                       <text value=""/>
                     </properties>
