@@ -51,12 +51,7 @@ public class Partita {
     }
 
     //metodi
-    public void aggiungiPunti(String parola){
-        int lunghezzaParola = parola.length();
-        int k = 100;            //costante
-        int punti = lunghezzaParola * k;
-        puntiTotali = puntiTotali + punti;
-    }
+
 
     public boolean controllaParolaMigliore() {
         String best = "";
@@ -81,6 +76,12 @@ public class Partita {
         int punti = lunghezzaParola * k;
         paroleArray.add(parola);
         return punti;
+    }
+    public void aggiungiPunti(String parola){
+        int lunghezzaParola = parola.length();
+        int k = 100;            //costante
+        int punti = lunghezzaParola * k;
+        puntiTotali = puntiTotali + punti;
     }
 
     public void contaParola(){

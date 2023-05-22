@@ -1903,6 +1903,16 @@
                   </component>
                 </children>
               </grid>
+              <component id="2261f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Rubik" size="16" style="1"/>
+                  <foreground color="-2592"/>
+                  <text value="Try to find as many words as you can!"/>
+                </properties>
+              </component>
             </children>
           </grid>
           <vspacer id="c37bd">
