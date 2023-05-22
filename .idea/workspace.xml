@@ -1,34 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="IlParoliere:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: algorithm problems, timer management, design">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_05_2023_12_07__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_05_2023_12_07__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_05_2023_13_51__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_05_2023_13_51__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_05_2023_14_47__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_05_2023_14_47__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_05_2023_15_37__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_05_2023_15_37__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_05_2023_15_51__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_05_2023_15_51__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_05_2023_17_41__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_05_2023_17_41__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_05_2023_11_03__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_05_2023_11_03__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_05_2023_18_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_05_2023_18_54__Changes_.xml" afterDir="false" />
+    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: aggiustamenti">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dizionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dizionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EasyMode.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyMode.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EasyMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HardMode.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/HardMode.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HardMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HardMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Partita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ResultPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpecialMode.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpecialMode.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StartPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +25,32 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a0133a2c-89f5-4ac4-a159-c88f1165f5bc" />
+        <option name="url" value="https://github.com/MaggyProtasio/IlParoliere.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -60,25 +67,37 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;190&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;236&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maggy/IdeaProjects/IlParoliere/src/img&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alice/eclipse-workspace/IlParoliere/src/img&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alice\eclipse-workspace\IlParoliere\src\img" />
       <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src\img" />
       <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src\audio" />
       <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src" />
       <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src\MenuPage" />
-      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alice\eclipse-workspace\IlParoliere\src\img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -115,11 +134,14 @@
       <workItem from="1684496346903" duration="8350000" />
       <workItem from="1684506442873" duration="14342000" />
       <workItem from="1684656399641" duration="11149000" />
-      <workItem from="1684680036408" duration="5903000" />
-      <workItem from="1684686609541" duration="4646000" />
-      <workItem from="1684737678174" duration="1992000" />
-      <workItem from="1684740199422" duration="852000" />
-      <workItem from="1684762647204" duration="481000" />
+      <workItem from="1684680036408" duration="5571000" />
+      <workItem from="1684692439743" duration="552000" />
+      <workItem from="1684693108858" duration="48000" />
+      <workItem from="1684693907762" duration="1542000" />
+      <workItem from="1684695480728" duration="954000" />
+      <workItem from="1684751397385" duration="93000" />
+      <workItem from="1684763433379" duration="2374000" />
+      <workItem from="1684765855438" duration="2973000" />
     </task>
     <task id="LOCAL-00001" summary=":add user and dizionari">
       <created>1678188079722</created>
@@ -268,21 +290,98 @@
       <option name="project" value="LOCAL" />
       <updated>1684504696081</updated>
     </task>
-    <task id="LOCAL-00022" summary="FIX: algorithm problems, timer management, design">
-      <created>1684686392618</created>
+    <task id="LOCAL-00022" summary="FIX: modifica font bottoni">
+      <created>1684688679907</created>
       <option name="number" value="00022" />
       <option name="presentableId" value="LOCAL-00022" />
       <option name="project" value="LOCAL" />
-      <updated>1684686392618</updated>
+      <updated>1684688679907</updated>
     </task>
-    <task id="LOCAL-00023" summary="FIX: algorithm problems, timer management, design">
-      <created>1684686446115</created>
+    <task id="LOCAL-00023" summary="ADD:aggiunto icona, file &quot;Logo.png&quot; nella cartella img">
+      <created>1684694513759</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1684686446115</updated>
+      <updated>1684694513759</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="ADD:aggiunto codice per icona in EasyMode page">
+      <created>1684695132240</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1684695132240</updated>
+    </task>
+    <task id="LOCAL-00025" summary="ADD:aggiunto codice per icona in HardMode page">
+      <created>1684695195258</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1684695195258</updated>
+    </task>
+    <task id="LOCAL-00026" summary="ADD:aggiunto codice per icona in HardMode page">
+      <created>1684695354792</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1684695354792</updated>
+    </task>
+    <task id="LOCAL-00027" summary="FIX:codice per icona in HardMode page">
+      <created>1684695596310</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1684695596310</updated>
+    </task>
+    <task id="LOCAL-00028" summary="ADD:codice per icona in MenuPage, ResultPage, SpecialMode, StartPage">
+      <created>1684696085511</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1684696085511</updated>
+    </task>
+    <task id="LOCAL-00029" summary="ADD:Copyright">
+      <created>1684764477775</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1684764477775</updated>
+    </task>
+    <task id="LOCAL-00030" summary="DELETE: file logoEs.png">
+      <created>1684764543250</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1684764543250</updated>
+    </task>
+    <task id="LOCAL-00031" summary="FIX: file Logo.png">
+      <created>1684764735062</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1684764735062</updated>
+    </task>
+    <task id="LOCAL-00032" summary="FIX: aggiustamenti">
+      <created>1684765827166</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1684765827166</updated>
+    </task>
+    <task id="LOCAL-00033" summary="FIX: aggiustamenti">
+      <created>1684766103367</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1684766103367</updated>
+    </task>
+    <task id="LOCAL-00034" summary="FIX: aggiustamenti">
+      <created>1684766191477</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1684766191477</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,18 +390,63 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
-        <entry key="MAIN">
+        <entry key="2492afbb-a6ec-45c8-93e6-189dc945b3e3">
           <value>
             <State />
+          </value>
+        </entry>
+        <entry key="8cba96a9-870a-4180-9974-21fe3ea5b71f">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="53" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="104" />
+                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="47" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="icona" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":add user and dizionari" />
-    <MESSAGE value=":rename file to dictionary.txt" />
-    <MESSAGE value=": ADD ciclo for e iniziato il gioco" />
     <MESSAGE value=":add Dizionario obj, sistemato partita, manca parolaMigliore" />
     <MESSAGE value=":sistemazione parolamigliore" />
     <MESSAGE value=":sistemazione funzione doppione" />
@@ -317,11 +461,21 @@
     <MESSAGE value="FIX: design color" />
     <MESSAGE value="FIX: Color correcting" />
     <MESSAGE value="FIX: page flow" />
-    <MESSAGE value="FIX: algorithm problems, timer management, design" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX: algorithm problems, timer management, design" />
+    <MESSAGE value="FIX: grafica ResultPage" />
+    <MESSAGE value="FIX: modifica font bottoni" />
+    <MESSAGE value="ADD:aggiunto icona, file &quot;Logo.png&quot; nella cartella img" />
+    <MESSAGE value="ADD:aggiunto codice per icona in EasyMode page" />
+    <MESSAGE value="ADD:aggiunto codice per icona in HardMode page" />
+    <MESSAGE value="FIX:codice per icona in HardMode page" />
+    <MESSAGE value="ADD:codice per icona in MenuPage, ResultPage, SpecialMode, StartPage" />
+    <MESSAGE value="ADD:Copyright" />
+    <MESSAGE value="DELETE: file logoEs.png" />
+    <MESSAGE value="FIX: file Logo.png" />
+    <MESSAGE value="FIX: aggiustamenti" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX: aggiustamenti" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1684163274824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683812690821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/IlParoliere$StartPage.ic" NAME="StartPage Coverage Results" MODIFIED="1683308106935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
