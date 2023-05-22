@@ -7,6 +7,13 @@ import java.io.IOException;
 import javax.sound.sampled.*;
 import java.io.File;
 
+/**
+ * Copyright (c) 2023, Anastasiya Kozemko, Alice Minuzzo, Brend Margarette Protasio
+ * All rights reserved.
+ *
+ * This file is part of the WordCraft project.
+ */
+
 public class ResultPage extends JFrame {
     private JButton retryButton; // manda alla pagina di menu
     private JButton exitButton; //manda alla home
