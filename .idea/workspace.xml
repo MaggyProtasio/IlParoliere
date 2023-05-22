@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: Check for errors, testing, improves interfaces">
+    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX: UX improvement on game modes">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2023_16_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2023_16_21__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EasyMode.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyMode.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HardMode.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/HardMode.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Partita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpecialMode.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpecialMode.form" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,23 +35,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "70",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "190",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Maggy/IdeaProjects/IlParoliere/src/img",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;70&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;190&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maggy/IdeaProjects/IlParoliere/src/img&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src\img" />
@@ -101,7 +99,7 @@
       <workItem from="1684686609541" duration="4646000" />
       <workItem from="1684737678174" duration="1992000" />
       <workItem from="1684740199422" duration="852000" />
-      <workItem from="1684762647204" duration="7005000" />
+      <workItem from="1684762647204" duration="7204000" />
     </task>
     <task id="LOCAL-00001" summary=":add user and dizionari">
       <created>1678188079722</created>
@@ -271,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684763357103</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="FIX: UX improvement on game modes">
+      <created>1684775612147</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1684775612147</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +313,8 @@
     <MESSAGE value="FIX: page flow" />
     <MESSAGE value="FIX: algorithm problems, timer management, design" />
     <MESSAGE value="FIX: Check for errors, testing, improves interfaces" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX: Check for errors, testing, improves interfaces" />
+    <MESSAGE value="FIX: UX improvement on game modes" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX: UX improvement on game modes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1684163274824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
