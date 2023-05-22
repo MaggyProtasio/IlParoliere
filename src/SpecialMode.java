@@ -149,7 +149,7 @@ public class SpecialMode extends JFrame {
         diz.inizializzaWordsSpecial();   //mette tutti parole comuni nell'array per usarlo dopo
 
         //inizializza timer
-        int mintmp = 3;         //3 minuto per hard mode
+        int mintmp = 3;         //3 minuti per special mode
         labelTimer.setText("0"+ mintmp +":00"); //metti minuti necessari
         secondi = 0;
         minuti = mintmp;        //metti anche qui, 5 esempio

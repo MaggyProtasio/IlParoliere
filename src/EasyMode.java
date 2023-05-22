@@ -153,7 +153,7 @@ public class EasyMode extends JFrame {
         diz.inizializzaWords();   //mette tutti parole comuni nell'array per usarlo dopo
 
         //inizializza timer
-        int mintmp = 3;         //3 minuti per easy mode
+        int mintmp = 3;         //3 minuti per normal mode
         labelTimer.setText("0"+ mintmp +":00"); //metti minuti necessari
         secondi = 0;
         minuti = mintmp;        //metti anche qui, 5 esempio
