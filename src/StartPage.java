@@ -5,7 +5,6 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 
-
 public class StartPage extends JFrame {
     private JPanel panelMain;
     private JButton startButton;
@@ -23,7 +22,7 @@ public class StartPage extends JFrame {
         this.setResizable(false);
         this.setContentPane(this.panelMain);
         this.setTitle("WordCraft");
-        this.setSize(760,510);
+        this.setSize(760,555);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -32,7 +31,6 @@ public class StartPage extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e)  {
                 buttonSound();
-
                 //crea utente base del nome inserito
                 Utente giocatore = new Utente(nomeBox.getText());
 
@@ -57,7 +55,6 @@ public class StartPage extends JFrame {
             dispose();
             }
         };
-
         nomeBox.addActionListener(enterAction);
     }
 

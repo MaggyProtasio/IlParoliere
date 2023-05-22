@@ -43,6 +43,7 @@ public class ResultPage extends JFrame {
         retryButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                buttonSound();
                 dispose(); //chiude la pagina result
                 MenuPage menu = new MenuPage(g);
                 menu.setVisible(true);
@@ -53,6 +54,7 @@ public class ResultPage extends JFrame {
         exitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                buttonSound();
                 dispose(); //chiude la pagina result
                 StartPage start = new StartPage();
                 start.setVisible(true);
@@ -84,7 +86,31 @@ public class ResultPage extends JFrame {
         }
         clip.start(); //per far inizare l'audio
     }
+    public void buttonSound(){
+        File file = new File("src/audio/buttonPress.wav");
+        AudioInputStream audiostream = null;
+        try {
+            audiostream = AudioSystem.getAudioInputStream(file);
+        } catch (UnsupportedAudioFileException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        Clip clip = null;
+        try {
+            clip = AudioSystem.getClip();
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        }
+        try {
+            clip.open(audiostream);
+        } catch (LineUnavailableException ex) {
+            throw new RuntimeException(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+        clip.start(); //per far inizare l'audio
+    }
     private void createUIComponents() {
-
     }
 }

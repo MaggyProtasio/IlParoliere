@@ -43,11 +43,9 @@ public class Partita {
     public void setParolaNum(int parolaNum) {
         this.parolaNum = parolaNum;
     }
-
     public char[][] getMatrice() {
         return matrice;
     }
-
     public void setMatrice(char[][] matrice) {
         this.matrice = matrice;
     }
@@ -59,6 +57,7 @@ public class Partita {
         int punti = lunghezzaParola * k;
         puntiTotali = puntiTotali + punti;
     }
+
     public boolean controllaParolaMigliore() {
         String best = "";
         boolean unique = true;

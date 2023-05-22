@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Scanner; // Import the Scanner class to read text files
 
 public class Dizionario {
-    String[] words = new String[1068]; // parole in file NON MODIFICARE
+    String[] words = new String[1068];      // parole in file
     String[] specialwords = new String[419];
 
     public String[] getWords() {
@@ -22,7 +22,6 @@ public class Dizionario {
     }
 
     public Dizionario() {
-
     }
 
     // dizionario originale --------------------------------------------------------------------------
@@ -95,7 +94,6 @@ public class Dizionario {
     }
 
     public void stampaWords() {
-
         for (int i = 0; i < words.length; i++) {
             System.out.println(words[i]);
         }
