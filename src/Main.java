@@ -9,6 +9,13 @@ import java.io.IOException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * Copyright (c) 2023, Anastasiya Kozemko, Alice Minuzzo, Brend Margarette Protasio
+ * All rights reserved.
+ *
+ * This file is part of the WordCraft project.
+ */
+
 public class Main {
     public static void main(String[] args) throws UnsupportedAudioFileException, IOException,LineUnavailableException {
         //creazione dizionario e variabili

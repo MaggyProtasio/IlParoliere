@@ -1,3 +1,10 @@
+/**
+ * Copyright (c) 2023, Anastasiya Kozemko, Alice Minuzzo, Brend Margarette Protasio
+ * All rights reserved.
+ *
+ * This file is part of the WordCraft project.
+ */
+
 public class Utente {
     private String nickname;
 

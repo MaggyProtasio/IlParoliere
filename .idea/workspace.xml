@@ -9,12 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="FIX:codice per icona in HardMode page">
+    <list default="true" id="8462984d-23c0-4314-847e-acde3a7b6bf0" name="Changes" comment="ADD:codice per icona in MenuPage, ResultPage, SpecialMode, StartPage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dizionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dizionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EasyMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EasyMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HardMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HardMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Partita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Partita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ResultPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultPage.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SpecialMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpecialMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/logoEs.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +44,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -88,6 +98,9 @@
       <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src" />
       <recent name="C:\Users\Maggy\IdeaProjects\IlParoliere\src\MenuPage" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alice\eclipse-workspace\IlParoliere\src\img" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -127,7 +140,9 @@
       <workItem from="1684692439743" duration="552000" />
       <workItem from="1684693108858" duration="48000" />
       <workItem from="1684693907762" duration="1542000" />
-      <workItem from="1684695480728" duration="351000" />
+      <workItem from="1684695480728" duration="954000" />
+      <workItem from="1684751397385" duration="93000" />
+      <workItem from="1684763433379" duration="727000" />
     </task>
     <task id="LOCAL-00001" summary=":add user and dizionari">
       <created>1678188079722</created>
@@ -318,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684695596310</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="ADD:codice per icona in MenuPage, ResultPage, SpecialMode, StartPage">
+      <created>1684696085511</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1684696085511</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,19 +361,7 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -401,7 +411,8 @@
     <MESSAGE value="ADD:aggiunto codice per icona in EasyMode page" />
     <MESSAGE value="ADD:aggiunto codice per icona in HardMode page" />
     <MESSAGE value="FIX:codice per icona in HardMode page" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX:codice per icona in HardMode page" />
+    <MESSAGE value="ADD:codice per icona in MenuPage, ResultPage, SpecialMode, StartPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD:codice per icona in MenuPage, ResultPage, SpecialMode, StartPage" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IlParoliere$Main.ic" NAME="Main Coverage Results" MODIFIED="1683812690821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -1,6 +1,12 @@
 import java.io.*;
 import java.util.Scanner; // Import the Scanner class to read text files
 
+/**
+ * Copyright (c) 2023, Anastasiya Kozemko, Alice Minuzzo, Brend Margarette Protasio
+ * All rights reserved.
+ *
+ * This file is part of the WordCraft project.
+ */
 public class Dizionario {
     String[] words = new String[1068]; // parole in file NON MODIFICARE
     String[] specialwords = new String[419];
