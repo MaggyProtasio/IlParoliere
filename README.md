@@ -8,10 +8,11 @@
   <h3>An amusing word game created in Java</h3>
   <p>With 3 different modes including one to make you laugh</p>
   <div>
-    <img src="src/screenshots/startScreen.jpg">
-    <img src="src/screenshots/menuScreen.jpg">
-    <img src="src/screenshots/normalMode.jpg">
-    <img src="src/screenshots/hardMode.jpg">
+    <img src="src/screenshots/startScreen.jpg" width="750"><br>
+    <img src="src/screenshots/menuScreen.jpg" width="750"><br>
+    <b>Modes</b><br>
+    <img src="src/screenshots/normalMode.jpg" width="750"><br>
+    <img src="src/screenshots/hardMode.jpg" width="750"><br>
     <p>We also have a third mode but of its explicit nature, we won't add a screenshot here</p>
   </div>
 </div>
