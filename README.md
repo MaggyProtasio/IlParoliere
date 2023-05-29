@@ -10,7 +10,7 @@
   <div>
     <img src="src/screenshots/startScreen.jpg" width="750"><br>
     <img src="src/screenshots/menuScreen.jpg" width="750"><br>
-    <b>Modes</b><br>
+    <h2>Modes</h2>
     <img src="src/screenshots/normalMode.jpg" width="750"><br>
     <img src="src/screenshots/hardMode.jpg" width="750"><br>
     <p>We also have a third mode but of its explicit nature, we won't add a screenshot here</p>
